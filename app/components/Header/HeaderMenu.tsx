@@ -3,6 +3,8 @@ import { capitalizeFirstChar, t } from "~/utils";
 
 export const HeaderMenu = (headerData: headerTypeValue) => {
   return (
-    <a href={headerData.link}>{capitalizeFirstChar(t(headerData.title))}</a>
+    <a href={headerData.link} className="text-base font-medium">
+      {capitalizeFirstChar(t(headerData.title))}
+    </a>
   );
 };

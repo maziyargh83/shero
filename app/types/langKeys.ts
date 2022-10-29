@@ -5,4 +5,5 @@ export enum languageKeys {
   "HEADER_OVULATION_CALCULATOR",
   "HEADER_BLOG",
   "HEADER_ABOUT_US",
+  "HEADER_DOWNLOAD",
 }

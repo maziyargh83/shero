@@ -7,5 +7,6 @@ const FA: Record<keyof typeof languageKeys, string> = {
   HEADER_BLOG: "بلاگ",
   HEADER_ABOUT_US: "درباره ما",
   HEADER_OVULATION_CALCULATOR: "محاسبه‌گر پریود",
+  HEADER_DOWNLOAD: "دانلود",
 };
 export default FA;
