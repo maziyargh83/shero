@@ -46,7 +46,7 @@ module.exports = {
           G11: "#F2F4FB",
         },
         background: {
-          light: "#F9F9FC",
+          light: "#F3F3F6",
         },
       },
     },

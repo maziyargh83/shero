@@ -3,10 +3,10 @@ import {
   Links,
   LiveReload,
   Meta,
-  Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import { Layout } from "~/components";
 import styles from "./styles/app.css";
 
 export const meta: MetaFunction = () => ({
@@ -25,8 +25,8 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
+      <body className="bg-background-light">
+        <Layout />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

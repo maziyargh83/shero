@@ -52,3 +52,16 @@
 *::before {
   font-family: "San Francisco";
 }
+@layer components {
+  .blobs {
+    @apply relative;
+  }
+  .blobs::after {
+    content: "";
+    @apply w-64 h-64 bg-purple-P3 block absolute blur-[150px] rounded-full;
+  }
+  .blobs::before {
+    content: "";
+    @apply w-64 h-64 bg-red-R3 block absolute blur-[150px] rounded-full;
+  }
+}
