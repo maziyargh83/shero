@@ -1,7 +1,10 @@
+import { imageBuilder } from "~/utils";
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>
       <h1 className="bg-background-light">Welcome to Remix</h1>
+      <img src={imageBuilder("LOGO")} />
       <ul>
         <li>
           <a
