@@ -6,3 +6,5 @@ export * from "./Portal";
 export * from "./TypoGraphy";
 export * from "./Section";
 export * from "./Frame";
+export * from "./Icons";
+export * from "./Blob";

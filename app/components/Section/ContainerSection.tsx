@@ -10,7 +10,7 @@ export const ContainerSection = ({
   return (
     <div
       className={classNames("flex ", {
-        className,
+        [className!]: !!className,
       })}
     >
       {children}

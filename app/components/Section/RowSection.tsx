@@ -8,7 +8,9 @@ export const RowSection = ({
   className?: string;
 }) => {
   return (
-    <div className={classNames("sm:w-1/2 w-full", { className })}>
+    <div
+      className={classNames("md:w-1/2 w-full", { [className!]: className!! })}
+    >
       {children}
     </div>
   );

@@ -10,7 +10,7 @@ import { t } from "~/utils";
 export default function Index() {
   return (
     <Fragment>
-      <ContainerSection>
+      <ContainerSection className="md:mt-20">
         <RowSection>
           <SectionTitle
             title={t("APP_NAME")}
@@ -22,7 +22,7 @@ export default function Index() {
             containerClass=""
           />
         </RowSection>
-        <RowSection>
+        <RowSection className="justify-center flex items-center">
           <FrameMobileHome />
         </RowSection>
       </ContainerSection>

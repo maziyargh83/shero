@@ -25,32 +25,34 @@ export const Header = () => {
   return (
     <header
       className={classNames(
-        "flex container px-8 sm:px-0 transition-colors duration-300 mx-auto sticky top-0 justify-between items-center h-20 sm:h-32",
+        "   transition-colors duration-300  sticky top-0 ",
         { "bg-white/70": scrolled }
       )}
     >
-      <div className="block sm:hidden">
-        <FaBars />
-      </div>
-      <div className="flex items-center ">
-        <img
-          className="w-14 h-14 md:mr-8"
-          src={imageBuilder("LOGO")}
-          alt="logo"
-        />
-        <HeaderWrapper>
-          {HeaderData.map((data) => {
-            return <HeaderMenu key={data.title + "_menu_item"} {...data} />;
-          })}
-        </HeaderWrapper>
-      </div>
-      <div>
-        <a
-          href="/download"
-          className="text-base font-bold rounded-full border-2 border-purple-P1 text-purple-P1 px-8 py-2 "
-        >
-          {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
-        </a>
+      <div className="flex container px-8 md:px-0 mx-auto justify-between  h-20 md:h-32 items-center">
+        <div className="block md:hidden">
+          <FaBars />
+        </div>
+        <div className="flex items-center ">
+          <img
+            className="w-14 h-14 md:mr-8"
+            src={imageBuilder("LOGO")}
+            alt="logo"
+          />
+          <HeaderWrapper>
+            {HeaderData.map((data) => {
+              return <HeaderMenu key={data.title + "_menu_item"} {...data} />;
+            })}
+          </HeaderWrapper>
+        </div>
+        <div>
+          <a
+            href="/download"
+            className="text-base font-bold rounded-full border-2 border-purple-P1 text-purple-P1 px-8 py-2 "
+          >
+            {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
+          </a>
+        </div>
       </div>
     </header>
   );
