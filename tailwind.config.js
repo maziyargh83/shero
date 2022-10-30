@@ -7,7 +7,7 @@ module.exports = {
         purple: {
           P1: "#3E1F90",
           P2: "#754BE4",
-          P3: "#754BE4",
+          P3: "#9E81EC",
           P4: "#E3DBFA",
           P5: "#F2F0FE",
         },

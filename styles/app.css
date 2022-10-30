@@ -52,6 +52,7 @@
 *::before {
   font-family: "San Francisco";
 }
+
 @layer components {
   .blobs {
     @apply relative;

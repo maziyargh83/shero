@@ -6,4 +6,7 @@ export enum languageKeys {
   "HEADER_BLOG",
   "HEADER_ABOUT_US",
   "HEADER_DOWNLOAD",
+  "APP_NAME",
+  "APP_SUBTITLE",
+  "APP_DESCRIPTION",
 }
