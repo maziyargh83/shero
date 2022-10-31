@@ -8,3 +8,5 @@ export * from "./Section";
 export * from "./Frame";
 export * from "./Icons";
 export * from "./Blob";
+export * from "./Download";
+export * from "./ImageBlob";

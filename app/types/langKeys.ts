@@ -9,4 +9,5 @@ export enum languageKeys {
   "APP_NAME",
   "APP_SUBTITLE",
   "APP_DESCRIPTION",
+  "GETTING_START",
 }

@@ -21,11 +21,12 @@ export const Header = () => {
     return () => {
       unsubscribe();
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <header
       className={classNames(
-        "   transition-colors duration-300  sticky top-0 ",
+        "z-50 transition-colors duration-300  sticky top-0 ",
         { "bg-white/70": scrolled }
       )}
     >

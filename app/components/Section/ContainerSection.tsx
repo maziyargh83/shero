@@ -9,7 +9,7 @@ export const ContainerSection = ({
 }) => {
   return (
     <div
-      className={classNames("flex ", {
+      className={classNames("flex flex-wrap", {
         [className!]: !!className,
       })}
     >
