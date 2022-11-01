@@ -3,9 +3,11 @@ import { imageBuilder } from "~/utils";
 
 export const ImageBlob = ({
   img,
+  size,
   blobs,
 }: {
   img: keyof typeof imagesKey;
+  size?: number | string;
   blobs: JSX.Element[];
 }) => {
   return (

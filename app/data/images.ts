@@ -45,4 +45,8 @@ export const images: imageTypes = {
   FRAME_5: {
     url: "shero/frames/frame-5.png",
   },
+
+  SLIDER_1: {
+    url: "shero/slider/slider1.png",
+  },
 };
