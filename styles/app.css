@@ -52,17 +52,19 @@
 *::before {
   font-family: "San Francisco";
 }
-
+html {
+  overflow-x: hidden;
+}
 @layer components {
   .blobs {
-    @apply relative  -z-50;
+    @apply relative  -z-50 inline-block;
   }
   .blobs::after {
     content: "";
-    @apply w-64 h-64 bg-purple-P3 block absolute blur-[150px] rounded-full -z-50;
+    @apply w-64 h-64 bg-purple-P3 block absolute blur-[150px] top-[50%] left-[70%] -translate-y-[50%] rounded-full -z-40;
   }
   .blobs::before {
     content: "";
-    @apply w-64 h-64 bg-red-R3 block absolute blur-[150px] rounded-full -z-50;
+    @apply w-64 h-64 bg-red-R3 block absolute blur-[150px] top-[50%] rounded-full  -translate-y-[50%] -z-50;
   }
 }

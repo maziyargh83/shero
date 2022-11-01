@@ -6,6 +6,12 @@ export const enum imagesKey {
   "PERSON_1",
   "PERSON_2",
   "PERSON_3",
+  "ICON",
+  "FRAME_1",
+  "FRAME_2",
+  "FRAME_3",
+  "FRAME_4",
+  "FRAME_5",
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };

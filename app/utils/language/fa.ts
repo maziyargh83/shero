@@ -13,5 +13,10 @@ const FA: Record<keyof typeof languageKeys, string> = {
   APP_DESCRIPTION:
     "لونا یک تقویم هوشمند و ساده برای دنبال کردن سلامتی زنان است. لونا دارای امکاناتی مانند ردیابی و پیش‌بینی تقویم دقیق پریود و دوران تخمک‌گذاری است و به زودی ردیابی دوران بارداری هم به امکانات لونا اضافه خواهد شد.",
   GETTING_START: "راهنمای نصب و استفاده",
+  FEATURE_DESCRIPTION: "",
+  FEATURE_TITLE: "",
+  FEATURE_SECTION_1: "",
+  FEATURE_SECTION_2: "",
+  FEATURE_SECTION_3: "",
 };
 export default FA;

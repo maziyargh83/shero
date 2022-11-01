@@ -6,6 +6,12 @@ export const images: imageTypes = {
       shero: "shero/Logo/logo.png",
     },
   },
+  ICON: {
+    url: {
+      luna: "",
+      shero: "shero/Logo/sheroIcon.png",
+    },
+  },
   FRAME_MAIN: {
     url: "shero/frames/main-frame.png",
   },
@@ -23,5 +29,20 @@ export const images: imageTypes = {
   },
   PERSON_3: {
     url: "shero/people/person3.png",
+  },
+  FRAME_1: {
+    url: "shero/frames/frame-1.png",
+  },
+  FRAME_2: {
+    url: "shero/frames/frame-2.png",
+  },
+  FRAME_3: {
+    url: "shero/frames/frame-3.png",
+  },
+  FRAME_4: {
+    url: "shero/frames/frame-4.png",
+  },
+  FRAME_5: {
+    url: "shero/frames/frame-5.png",
   },
 };

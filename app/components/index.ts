@@ -10,3 +10,4 @@ export * from "./Icons";
 export * from "./Blob";
 export * from "./Download";
 export * from "./ImageBlob";
+export * from "./ScrollSlider";
