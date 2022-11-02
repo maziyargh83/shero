@@ -1,5 +1,4 @@
 /* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable react/jsx-key */
 import { Fragment } from "react";
 import { AiFillRightCircle } from "react-icons/ai";
 import {
@@ -9,10 +8,12 @@ import {
   FrameMobileHome,
   ImageBlob,
   RowSection,
+  ScrollLogsIcon,
   ScrollSlider,
   SectionTitle,
 } from "~/components";
 import { imageBuilder, t } from "~/utils";
+import { v4 } from "uuid";
 
 export default function Index() {
   return (
@@ -62,11 +63,13 @@ export default function Index() {
           img="PERSON_2"
           blobs={[
             <Blob
+              key={v4()}
               size={315}
               className="absolute -left-2 -top-3 -z-10"
               color="#E3DBFA"
             />,
             <Blob
+              key={v4()}
               size={315}
               className="absolute -right-4 rotate-90 -top-4 -z-20"
               color="#D7F7F3"
@@ -77,11 +80,13 @@ export default function Index() {
           img="PERSON_1"
           blobs={[
             <Blob
+              key={v4()}
               size={390}
               className="absolute -bottom-4 rotate-90 left-2 -z-10"
               color="#E3DBFA"
             />,
             <Blob
+              key={v4()}
               size={390}
               className="absolute rotate-90 -left-3 -top-4 -z-10"
               color="#FBCBC5"
@@ -92,11 +97,13 @@ export default function Index() {
           img="PERSON_3"
           blobs={[
             <Blob
+              key={v4()}
               size={225}
               className="absolute -top-2 -rotate-12 -right-4 -z-20"
               color="#E3DBFA"
             />,
             <Blob
+              key={v4()}
               size={225}
               className="absolute -bottom-3 -right-2 -rotate-90 -z-10"
               color="#FBCBC5"
@@ -149,6 +156,9 @@ export default function Index() {
       </div>
       <div>
         <ScrollSlider />
+      </div>
+      <div>
+        <ScrollLogsIcon />
       </div>
     </Fragment>
   );
