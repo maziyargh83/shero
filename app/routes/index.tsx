@@ -157,7 +157,7 @@ export default function Index() {
       <div>
         <ScrollSlider />
       </div>
-      <div>
+      <div className="mt-24">
         <ScrollLogsIcon />
       </div>
     </Fragment>

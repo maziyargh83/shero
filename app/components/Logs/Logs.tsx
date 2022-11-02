@@ -7,8 +7,13 @@ interface LogsType {
 }
 export const Logs = ({ icon: Icon, title }: LogsType) => {
   return (
-    <div>
-      {t(title)} <Icon />
+    <div className="inline-flex items-center bg-white rounded-full p-2 ">
+      <div className="bg-purple-P5 rounded-[100px] mr-2">
+        <Icon />
+      </div>
+      <span className="text-gray-G5 text-lg font-medium whitespace-nowrap">
+        {t(title)}
+      </span>
     </div>
   );
 };

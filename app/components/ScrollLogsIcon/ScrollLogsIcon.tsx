@@ -9,7 +9,7 @@ import { Logs } from "~/components";
 import { v4 } from "uuid";
 export const ScrollWheel = ({ data }: { data: LogType }) => {
   return (
-    <div className="flex">
+    <div className="flex space-x-10 mb-6 overflow-scroll scrollbar-hidden">
       {Object.keys(data).map((key) => {
         return (
           <Logs
@@ -24,11 +24,13 @@ export const ScrollWheel = ({ data }: { data: LogType }) => {
 };
 export const ScrollLogsIcon = () => {
   return (
-    <div>
+    <div className="relative">
+      <div className="absolute h-full left-0 w-20 top-0 left-gradient-logs" />
+      <div className="absolute h-full right-0 w-20 top-0 right-gradient-logs -rotate-180" />
       <ScrollWheel data={SYMPTOM_BELLY} />
       <ScrollWheel data={SYMPTOM_BODY} />
       <ScrollWheel data={SYMPTOM_COMMON} />
-      <ScrollWheel data={SYMPTOM_HEAD} />
+      {/* <ScrollWheel data={SYMPTOM_HEAD} /> */}
     </div>
   );
 };

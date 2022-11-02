@@ -11,6 +11,43 @@
   font-weight: 100;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
 }
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge add Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
+}
+.left-gradient-logs {
+  background: linear-gradient(
+      90deg,
+      #f3f3f6 0%,
+      rgba(243, 243, 246, 0.9) 49.64%,
+      rgba(243, 243, 246, 0) 84.35%
+    ),
+    linear-gradient(
+      90deg,
+      #f3f3f6 0%,
+      rgba(243, 243, 246, 0.9) 49.64%,
+      rgba(243, 243, 246, 0) 84.35%
+    );
+}
+.right-gradient-logs {
+  background: linear-gradient(
+      90deg,
+      #f3f3f6 0%,
+      rgba(243, 243, 246, 0.9) 49.64%,
+      rgba(243, 243, 246, 0) 84.35%
+    ),
+    linear-gradient(
+      90deg,
+      #f3f3f6 0%,
+      rgba(243, 243, 246, 0.9) 49.64%,
+      rgba(243, 243, 246, 0) 84.35%
+    );
+}
 
 /** Thin */
 @font-face {
