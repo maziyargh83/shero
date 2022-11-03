@@ -54,5 +54,8 @@ const FA: Record<keyof typeof languageKeys, string> = {
   DIARRHEA: "اسهال",
   GAS: "گاز معده",
   STOMACHACHE: "دل درد",
+  //
+  FREQUENCY_DESCRIPTION: "",
+  FREQUENCY_TITLE: "",
 };
 export default FA;

@@ -50,4 +50,7 @@ export enum languageKeys {
   "GAS",
   "STOMACHACHE",
   "VAGINAL_ITCHINESS",
+  // Frequancy Quastions
+  "FREQUENCY_TITLE",
+  "FREQUENCY_DESCRIPTION",
 }

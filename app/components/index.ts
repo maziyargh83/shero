@@ -13,3 +13,5 @@ export * from "./ImageBlob";
 export * from "./ScrollSlider";
 export * from "./ScrollLogsIcon";
 export * from "./Logs";
+export * from "./FAQ";
+export * from "./Accordion";

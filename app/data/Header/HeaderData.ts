@@ -23,6 +23,6 @@ export const HeaderData: headerType = [
   },
   {
     title: "HEADER_ABOUT_US",
-    link: "/about_us",
+    link: "/AboutUs",
   },
 ];

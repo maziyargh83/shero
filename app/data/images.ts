@@ -6,6 +6,7 @@ export const images: imageTypes = {
       shero: "shero/Logo/logo.png",
     },
   },
+
   ICON: {
     url: {
       luna: "",

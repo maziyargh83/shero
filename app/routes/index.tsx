@@ -5,6 +5,7 @@ import {
   Blob,
   ContainerSection,
   DownloadIcon,
+  FAQ,
   FrameMobileHome,
   ImageBlob,
   RowSection,
@@ -159,6 +160,15 @@ export default function Index() {
       </div>
       <div className="mt-24">
         <ScrollLogsIcon />
+      </div>
+      <div className="mt-32">
+        <SectionTitle
+          subTitle={t("FREQUENCY_TITLE")}
+          subTitleClass="text-gray-G1 font-bold text-4xl"
+          description={t("FREQUENCY_DESCRIPTION")}
+          descriptionClass="text-xl font-normal mt-2"
+        />
+        <FAQ />
       </div>
     </Fragment>
   );

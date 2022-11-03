@@ -56,5 +56,7 @@ const EN: Record<keyof typeof languageKeys, string> = {
   DIARRHEA: "diarrhea",
   GAS: "gas",
   STOMACHACHE: "stomachache",
+  FREQUENCY_TITLE: "Frequancy Quastions",
+  FREQUENCY_DESCRIPTION: "Describe",
 };
 export default EN;
