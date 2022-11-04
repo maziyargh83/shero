@@ -57,5 +57,9 @@ const FA: Record<keyof typeof languageKeys, string> = {
   //
   FREQUENCY_DESCRIPTION: "",
   FREQUENCY_TITLE: "",
+  // about us
+  ABOUT_US_TITLE: "",
+  ABOUT_US_DESCRIPTION: "",
+  TEAM_NAME: "",
 };
 export default FA;

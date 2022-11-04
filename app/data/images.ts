@@ -50,4 +50,7 @@ export const images: imageTypes = {
   SLIDER_1: {
     url: "shero/slider/slider1.png",
   },
+  ABOUT_TITLE: {
+    url: "shero/imageTitle/imageTitle.png",
+  },
 };

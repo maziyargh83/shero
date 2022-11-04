@@ -53,4 +53,9 @@ export enum languageKeys {
   // Frequancy Quastions
   "FREQUENCY_TITLE",
   "FREQUENCY_DESCRIPTION",
+  //
+  "ABOUT_US_TITLE",
+  "ABOUT_US_DESCRIPTION",
+  // Team
+  "TEAM_NAME",
 }

@@ -58,5 +58,10 @@ const EN: Record<keyof typeof languageKeys, string> = {
   STOMACHACHE: "stomachache",
   FREQUENCY_TITLE: "Frequancy Quastions",
   FREQUENCY_DESCRIPTION: "Describe",
+  // about us
+  ABOUT_US_TITLE: "About US",
+  ABOUT_US_DESCRIPTION:
+    "We came together in a friendly environment to help each other live healthier lives. We try to provide a smart solution for every problem that exists in the field of health and healthy lifestyle. ",
+  TEAM_NAME: "Shero Team",
 };
 export default EN;

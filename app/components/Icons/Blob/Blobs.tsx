@@ -42,3 +42,31 @@ export const Blob2 = ({
     </svg>
   );
 };
+
+export const Blob3 = ({
+  size = 344,
+  color = "#E3DBFA",
+}: {
+  size?: string | number;
+  color?: string;
+}) => {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 394 344"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect
+        x="41.1328"
+        y="-23"
+        width="383.916"
+        height="319.247"
+        rx="129"
+        transform="rotate(11.5888 41.1328 -23)"
+        fill={color}
+      />
+    </svg>
+  );
+};
