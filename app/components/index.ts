@@ -15,3 +15,4 @@ export * from "./ScrollLogsIcon";
 export * from "./Logs";
 export * from "./FAQ";
 export * from "./Accordion";
+export * from "./Team";

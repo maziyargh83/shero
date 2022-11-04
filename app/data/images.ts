@@ -53,4 +53,43 @@ export const images: imageTypes = {
   ABOUT_TITLE: {
     url: "shero/imageTitle/imageTitle.png",
   },
+  ASHKAN: {
+    url: "shero/team/ashkan.png",
+  },
+  ATABAK: {
+    url: "shero/team/atabak.png",
+  },
+  BEHRAD: {
+    url: "shero/team/behrad.png",
+  },
+  EHSAN: {
+    url: "shero/team/ehsan.png",
+  },
+  MAZIYAR: {
+    url: "shero/team/maziyar.png",
+  },
+  MOHAMMAD: {
+    url: "shero/team/mohammad.png",
+  },
+  MOHAMMAD_TP: {
+    url: "shero/team/mohammadTP.png",
+  },
+  NEDA: {
+    url: "shero/team/neda.png",
+  },
+  RAHIL: {
+    url: "shero/team/rahil.png",
+  },
+  RAMIN: {
+    url: "shero/team/ramin.png",
+  },
+  SAHAR: {
+    url: "shero/team/sahar.png",
+  },
+  SANA: {
+    url: "shero/team/sana.png",
+  },
+  YASER: {
+    url: "shero/team/yaser.png",
+  },
 };

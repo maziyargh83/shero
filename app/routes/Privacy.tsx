@@ -5,11 +5,10 @@ import {
   ImageBlob,
   RowSection,
   SectionTitle,
-  Team,
 } from "~/components";
 import { t } from "~/utils";
 
-export default function AboutUs() {
+export default function Privacy() {
   return (
     <div>
       <ContainerSection className="md:mt-20">
@@ -37,13 +36,6 @@ export default function AboutUs() {
           </div>
         </RowSection>
       </ContainerSection>
-      <div className="mt-52">
-        <SectionTitle
-          subTitle={t("TEAM_NAME")}
-          subTitleClass="text-gray-G1 font-bold text-4xl"
-        />
-        <Team />
-      </div>
     </div>
   );
 }

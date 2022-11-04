@@ -14,6 +14,20 @@ export const enum imagesKey {
   "FRAME_5",
   "SLIDER_1",
   "ABOUT_TITLE",
+  // team
+  "ASHKAN",
+  "ATABAK",
+  "BEHRAD",
+  "EHSAN",
+  "MAZIYAR",
+  "MOHAMMAD",
+  "MOHAMMAD_TP",
+  "NEDA",
+  "RAHIL",
+  "RAMIN",
+  "SAHAR",
+  "SANA",
+  "YASER",
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };

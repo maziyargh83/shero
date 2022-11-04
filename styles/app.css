@@ -48,7 +48,9 @@
       rgba(243, 243, 246, 0) 84.35%
     );
 }
-
+.clip-path {
+  clip-path: url(#myClip);
+}
 /** Thin */
 @font-face {
   font-family: "San Francisco";

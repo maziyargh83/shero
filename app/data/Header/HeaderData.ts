@@ -7,7 +7,7 @@ export const HeaderData: headerType = [
   },
   {
     title: "HEADER_SUPPORT",
-    link: "/support",
+    link: "/Privacy",
   },
   {
     title: "HEADER_PREGNANCY_TOOLS",
