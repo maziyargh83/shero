@@ -16,3 +16,5 @@ export * from "./Logs";
 export * from "./FAQ";
 export * from "./Accordion";
 export * from "./Team";
+export * from "./Box";
+export * from "./Tabs";

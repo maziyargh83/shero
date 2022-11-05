@@ -22,6 +22,9 @@ export const images: imageTypes = {
   GOOGLE_PLAY: {
     url: "shero/downloadIcon/googleplay.png",
   },
+  PWA: {
+    url: "shero/downloadIcon/PWA.png",
+  },
   PERSON_1: {
     url: "shero/people/person1.png",
   },
@@ -94,5 +97,11 @@ export const images: imageTypes = {
   },
   PRIVACY_TITLE: {
     url: "shero/imageTitle/privacy-title.png",
+  },
+  GETTING_STARTED: {
+    url: "shero/imageTitle/Getting_Started.png",
+  },
+  FRAME_MAIN_DARK_HALF: {
+    url: "shero/frames/main-frame-dark-half.png",
   },
 };

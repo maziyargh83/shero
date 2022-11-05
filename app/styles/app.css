@@ -863,6 +863,18 @@ video {
   margin-top: 2rem;
 }
 
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -915,6 +927,18 @@ video {
   height: 50%;
 }
 
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -937,6 +961,22 @@ video {
 
 .w-7\/12 {
   width: 58.333333%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
+}
+
+.w-2\/6 {
+  width: 33.333333%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .-translate-y-\[50\%\] {
@@ -1056,6 +1096,12 @@ video {
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .self-end {
   align-self: flex-end;
 }
@@ -1098,6 +1144,10 @@ video {
 
 .rounded-\[100px\] {
   border-radius: 100px;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
 }
 
 .border-2 {
@@ -1168,6 +1218,16 @@ video {
 .bg-purple-P2 {
   --tw-bg-opacity: 1;
   background-color: rgb(117 75 228 / var(--tw-bg-opacity));
+}
+
+.bg-gray-G1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 53 81 / var(--tw-bg-opacity));
+}
+
+.bg-gray-G4 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(106 114 133 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-r {
@@ -1243,6 +1303,26 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -1299,6 +1379,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1352,6 +1437,16 @@ video {
 .text-gray-G7 {
   --tw-text-opacity: 1;
   color: rgb(170 174 185 / var(--tw-text-opacity));
+}
+
+.text-gray-G6 {
+  --tw-text-opacity: 1;
+  color: rgb(149 154 168 / var(--tw-text-opacity));
+}
+
+.text-gray-G2 {
+  --tw-text-opacity: 1;
+  color: rgb(63 73 98 / var(--tw-text-opacity));
 }
 
 .opacity-60 {

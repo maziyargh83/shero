@@ -48,12 +48,14 @@ export default function Index() {
             <DownloadIcon rate="4.9" image="GOOGLE_PLAY" />
             <DownloadIcon rate="4.5" image="APP_STORE" />
           </div>
-          <div className="mt-7 flex items-center space-x-2">
-            <span className="text-purple-P1 font-medium text-base">
-              {t("GETTING_START")}
-            </span>
-            <AiFillRightCircle className="text-purple-P3" />
-          </div>
+          <a href="GettingStarted">
+            <div className="mt-7 flex items-center space-x-2">
+              <span className="text-purple-P1 font-medium text-base">
+                {t("GETTING_START")}
+              </span>
+              <AiFillRightCircle className="text-purple-P3" />
+            </div>
+          </a>
         </RowSection>
         <RowSection className="justify-center flex items-center">
           <FrameMobileHome />

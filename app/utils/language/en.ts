@@ -106,5 +106,15 @@ If the user does not follow the rules of using Shero, Shero`,
   DOWNLOAD_TITLE: "Download",
   DOWNLOAD_DESCRIPTION:
     "You can download Shero directly and also in different stores",
+  GETTING_STARTED_TITLE: "Getting Started",
+  GETTING_STARTED_DESCRIPTION: "How to install Shero",
+  GETTING_STARTED_DOWNLOAD_DETAIL:
+    "You can download the Shero application through one of the commands below.",
+  GETTING_STARTED_DOWNLOAD_ANDROID: "Android app",
+  GETTING_STARTED_DOWNLOAD_IOS: "iOS",
+  GETTING_STARTED_DOWNLOAD_PWA: "PWA",
+  //
+  HELP_CENTER_DESCRIPTION: `Using scientifically researched data for the betterment of women's health, worldwide.`,
+  HELP_CENTER_TITLE: "Help center ",
 };
 export default EN;

@@ -1,17 +1,23 @@
 export const enum imagesKey {
   "LOGO",
-  "FRAME_MAIN",
+  // market
   "APP_STORE",
   "GOOGLE_PLAY",
+  "PWA",
+  //
   "PERSON_1",
   "PERSON_2",
   "PERSON_3",
   "ICON",
+  //
+  "FRAME_MAIN",
+  "FRAME_MAIN_DARK_HALF",
   "FRAME_1",
   "FRAME_2",
   "FRAME_3",
   "FRAME_4",
   "FRAME_5",
+  //
   "SLIDER_1",
   "ABOUT_TITLE",
   // team
@@ -30,6 +36,8 @@ export const enum imagesKey {
   "YASER",
   //
   "PRIVACY_TITLE",
+  //
+  "GETTING_STARTED",
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };
