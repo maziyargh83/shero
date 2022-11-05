@@ -48,7 +48,7 @@ export const Header = () => {
         </div>
         <div>
           <a
-            href="/download"
+            href="/Download"
             className="text-base font-bold rounded-full border-2 border-purple-P1 text-purple-P1 px-8 py-2 "
           >
             {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}

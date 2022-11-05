@@ -103,5 +103,8 @@ Collecting and providing private information of other users.
 Actions that technically cause damage, such as restriction removal, computer viruses, corrupted information or other malicious software, etc.
 Abusing the Instagram application or page, such as hacking and...
 If the user does not follow the rules of using Shero, Shero`,
+  DOWNLOAD_TITLE: "Download",
+  DOWNLOAD_DESCRIPTION:
+    "You can download Shero directly and also in different stores",
 };
 export default EN;

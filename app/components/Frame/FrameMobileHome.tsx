@@ -3,7 +3,11 @@ import { Blob, PregnancyIcon, TryToConceiveIcon } from "~/components";
 import { TrackingIcon } from "~/components/Icons/Home/TrackingIcon";
 import { imageBuilder } from "~/utils";
 
-export const FrameMobileHome = () => {
+export const FrameMobileHome = ({
+  downloadPage,
+}: {
+  downloadPage?: boolean;
+}) => {
   return (
     <div className="inline-flex flex-wrap self-center justify-center items-center md:mt-0 mt-24 relative ">
       <div className="relative ">
@@ -18,22 +22,26 @@ export const FrameMobileHome = () => {
         <Blob color="#FF7878" className="absolute top-5 -z-30 -right-10 " />
         <Blob color="#F2F0FE" className="absolute bottom-5 -z-30 -left-20 " />
         <Blob color="#E3DBFA" className="absolute -bottom-10 -z-30 -left-10 " />
-        <Blob className=" hidden absolute md:block bottom-5 -z-30 -right-60 " />
+        {!downloadPage && (
+          <Blob className=" hidden absolute md:block bottom-5 -z-30 -right-60 " />
+        )}
       </div>
-      <div className="flex relative md:static mt-14 space-x-4 md:mt-0">
-        <Box
-          className="bg-blue-B2 bottom-48 -left-24"
-          icon={<TryToConceiveIcon />}
-        />
-        <Box
-          className="bg-green-G2 bottom-24 -left-12"
-          icon={<PregnancyIcon />}
-        />
-        <Box
-          className="bg-red-R2 md:w-28 md:h-28 bottom-32 -right-12"
-          icon={<TrackingIcon />}
-        />
-      </div>
+      {!downloadPage && (
+        <div className="flex relative md:static mt-14 space-x-4 md:mt-0">
+          <Box
+            className="bg-blue-B2 bottom-48 -left-24"
+            icon={<TryToConceiveIcon />}
+          />
+          <Box
+            className="bg-green-G2 bottom-24 -left-12"
+            icon={<PregnancyIcon />}
+          />
+          <Box
+            className="bg-red-R2 md:w-28 md:h-28 bottom-32 -right-12"
+            icon={<TrackingIcon />}
+          />
+        </div>
+      )}
     </div>
   );
 };

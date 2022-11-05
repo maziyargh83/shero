@@ -62,4 +62,7 @@ export enum languageKeys {
   "PRIVACY_TITLE",
   "PRIVACY_DESCRIPTION",
   "PRIVACY",
+  // Download
+  "DOWNLOAD_TITLE",
+  "DOWNLOAD_DESCRIPTION",
 }
