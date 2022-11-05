@@ -51,7 +51,7 @@ export const images: imageTypes = {
     url: "shero/slider/slider1.png",
   },
   ABOUT_TITLE: {
-    url: "shero/imageTitle/imageTitle.png",
+    url: "shero/imageTitle/team-title.png",
   },
   ASHKAN: {
     url: "shero/team/ashkan.png",
@@ -91,5 +91,8 @@ export const images: imageTypes = {
   },
   YASER: {
     url: "shero/team/yaser.png",
+  },
+  PRIVACY_TITLE: {
+    url: "shero/imageTitle/privacy-title.png",
   },
 };

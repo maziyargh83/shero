@@ -22,13 +22,13 @@ const TeamBlob = ({ data }: { data: teamType }) => {
             <Blob
               color="#FBCBC5"
               size={"100%"}
-              className="absolute top-1 -z-10 -left-2 -rotate-12"
+              className="absolute top-0 -z-10 -left-2 -rotate-12"
               key={v4()}
             />,
             <Blob
               color="#E3DBFA"
               size={"100%"}
-              className="absolute -top-3 -right-3 -z-20"
+              className="absolute -top-2 -right-2 -z-20"
               key={v4()}
             />,
           ]}

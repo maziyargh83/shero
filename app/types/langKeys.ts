@@ -58,4 +58,8 @@ export enum languageKeys {
   "ABOUT_US_DESCRIPTION",
   // Team
   "TEAM_NAME",
+  // privacy
+  "PRIVACY_TITLE",
+  "PRIVACY_DESCRIPTION",
+  "PRIVACY",
 }

@@ -14,16 +14,16 @@ export default function Privacy() {
       <ContainerSection className="md:mt-20">
         <RowSection className="relative">
           <SectionTitle
-            subTitle={t("ABOUT_US_TITLE")}
-            subTitleClass="text-gray-G1 font-bold text-4xl"
-            description={t("ABOUT_US_DESCRIPTION")}
-            descriptionClass="text-xl font-normal mt-7"
+            subTitle={t("PRIVACY_TITLE")}
+            subTitleClass="text-gray-G1 font-bold text-4xl  my-24"
+            description={t("PRIVACY_DESCRIPTION")}
+            descriptionClass="text-base font-normal"
           />
         </RowSection>
-        <RowSection className="relative flex justify-end items-center">
+        <RowSection className="relative flex justify-end items-start">
           <div className="relative">
             <ImageBlob
-              img="ABOUT_TITLE"
+              img="PRIVACY_TITLE"
               blobs={[
                 <Blob
                   type={3}
@@ -36,6 +36,9 @@ export default function Privacy() {
           </div>
         </RowSection>
       </ContainerSection>
+      <div className="mt-8 whitespace-pre-wrap">
+        <p>{t("PRIVACY")}</p>
+      </div>
     </div>
   );
 }
