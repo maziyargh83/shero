@@ -49,9 +49,17 @@ export default function Index() {
             />
             <div className="blobs md:hidden" />
 
-            <div className="flex space-x-12 mt-5">
-              <DownloadIcon rate="4.9" image="GOOGLE_PLAY" />
-              <DownloadIcon rate="4.5" image="APP_STORE" />
+            <div className="flex md:space-x-12 mt-5 flex-col  md:flex-row">
+              <DownloadIcon
+                className="self-center"
+                rate="4.9"
+                image="GOOGLE_PLAY"
+              />
+              <DownloadIcon
+                className="self-center mt-6"
+                rate="4.5"
+                image="APP_STORE"
+              />
             </div>
             <a href="GettingStarted">
               <div className="mt-7 flex items-center space-x-2">

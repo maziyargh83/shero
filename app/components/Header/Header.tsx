@@ -7,9 +7,11 @@ import classNames from "classnames";
 import { useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 import { TypoLogo } from "~/components/Icons/Logo";
+import { MobileMenu } from "~/components/Header/MobileMenu";
 export const Header = () => {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
+  const [showMobile, setShowMobile] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       if (scrollY.get() > 30) {
@@ -60,10 +62,11 @@ export const Header = () => {
             {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
           </a>
         </div>
-        <div className="block md:hidden">
+        <div className="block md:hidden" onClick={() => setShowMobile(true)}>
           <FaBars />
         </div>
       </div>
+      {showMobile && <MobileMenu close={() => setShowMobile(false)} />}
     </header>
   );
 };

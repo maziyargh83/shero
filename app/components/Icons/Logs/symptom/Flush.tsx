@@ -11,8 +11,8 @@ export const FlushSvg = () => (
       fill="url(#paint0_linear_5908_241)"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M48.9423 47.9397C52.5898 43.8546 54.5683 38.1508 54.5683 31.7474C54.5683 24.427 51.9823 19.0613 47.992 15.512C43.9783 11.9419 38.4243 10.1053 32.3368 10.1053C26.2555 10.1053 20.8577 11.9379 16.9206 15.5694C12.9993 19.1862 10.3938 24.7099 10.1052 32.3618C10.1107 38.7264 12.2178 44.2566 16.0587 48.1905C19.8976 52.1224 25.5744 54.5685 32.9262 54.5685C39.9411 54.5685 45.3121 52.0052 48.9423 47.9397ZM8.75781 32.3369C8.75781 45.6847 17.5999 55.9158 32.9262 55.9158C47.6631 55.9158 55.9157 45.0953 55.9157 31.7474C55.9157 16.4211 45.0335 8.75793 32.3368 8.75793C19.64 8.75793 9.34729 16.4211 8.75781 32.3369Z"
       fill="#3F446A"
     />
@@ -25,8 +25,8 @@ export const FlushSvg = () => (
       fill="url(#paint2_radial_5908_241)"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M41.0673 38.5896C40.9626 38.9466 40.5883 39.1512 40.2313 39.0464C36.9962 38.0976 34.8173 37.6993 32.6669 37.7277C30.5075 37.7562 28.3338 38.2149 25.0947 39.0522C24.7345 39.1453 24.367 38.9288 24.2739 38.5686C24.1808 38.2084 24.3973 37.8409 24.7575 37.7477C28.0007 36.9093 30.3126 36.4113 32.6491 36.3805C34.9946 36.3495 37.3219 36.789 40.6105 37.7535C40.9675 37.8582 41.172 38.2326 41.0673 38.5896Z"
       fill="#3F446A"
     />
@@ -35,8 +35,8 @@ export const FlushSvg = () => (
       fill="#3F446A"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M22.0632 26.6105C23.0864 26.6105 23.9158 25.7811 23.9158 24.7579C23.9158 23.7347 23.0864 22.9053 22.0632 22.9053C21.04 22.9053 20.2105 23.7347 20.2105 24.7579C20.2105 25.7811 21.04 26.6105 22.0632 26.6105ZM22.0632 27.2842C23.4584 27.2842 24.5895 26.1531 24.5895 24.7579C24.5895 23.3626 23.4584 22.2316 22.0632 22.2316C20.6679 22.2316 19.5369 23.3626 19.5369 24.7579C19.5369 26.1531 20.6679 27.2842 22.0632 27.2842Z"
       fill="#3F446A"
     />
@@ -45,8 +45,8 @@ export const FlushSvg = () => (
       fill="#3F446A"
     />
     <path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
+      fillRule="evenodd"
+      clipRule="evenodd"
       d="M42.2736 26.6105C43.2968 26.6105 44.1263 25.7811 44.1263 24.7579C44.1263 23.7347 43.2968 22.9053 42.2736 22.9053C41.2505 22.9053 40.421 23.7347 40.421 24.7579C40.421 25.7811 41.2505 26.6105 42.2736 26.6105ZM42.2736 27.2842C43.6689 27.2842 44.7999 26.1531 44.7999 24.7579C44.7999 23.3626 43.6689 22.2316 42.2736 22.2316C40.8784 22.2316 39.7473 23.3626 39.7473 24.7579C39.7473 26.1531 40.8784 27.2842 42.2736 27.2842Z"
       fill="#3F446A"
     />
@@ -59,8 +59,8 @@ export const FlushSvg = () => (
         y2="61.979"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#F9B97D" />
-        <stop offset="1" stop-color="#FFFA7D" />
+        <stop stopColor="#F9B97D" />
+        <stop offset="1" stopColor="#FFFA7D" />
       </linearGradient>
       <radialGradient
         id="paint1_radial_5908_241"
@@ -70,8 +70,8 @@ export const FlushSvg = () => (
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(44.8043 34.358) rotate(90) scale(7.74249)"
       >
-        <stop stop-color="#FF6B4F" stop-opacity="0.57" />
-        <stop offset="1" stop-color="#FF6B4F" stop-opacity="0" />
+        <stop stopColor="#FF6B4F" stopOpacity="0.57" />
+        <stop offset="1" stopColor="#FF6B4F" stopOpacity="0" />
       </radialGradient>
       <radialGradient
         id="paint2_radial_5908_241"
@@ -81,8 +81,8 @@ export const FlushSvg = () => (
         gradientUnits="userSpaceOnUse"
         gradientTransform="translate(19.1951 34.3578) rotate(90) scale(7.74249 7.74249)"
       >
-        <stop stop-color="#FF6B4F" stop-opacity="0.57" />
-        <stop offset="1" stop-color="#FF6B4F" stop-opacity="0" />
+        <stop stopColor="#FF6B4F" stopOpacity="0.57" />
+        <stop offset="1" stopColor="#FF6B4F" stopOpacity="0" />
       </radialGradient>
     </defs>
   </svg>

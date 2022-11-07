@@ -33,7 +33,7 @@ export const ImageBlob = ({
       {img && (
         <img
           className={classNames("", {
-            "clip-path": !!clipPath,
+            clipPath: !!clipPath,
             [className!]: !!className,
           })}
           src={imageBuilder(img)}
