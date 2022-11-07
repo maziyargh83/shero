@@ -24,7 +24,7 @@ export default function GettingStarted() {
             subTitle={t("GETTING_STARTED_TITLE")}
             subTitleClass="text-gray-G1 font-bold text-4xl"
             description={t("GETTING_STARTED_DESCRIPTION")}
-            descriptionClass="text-xl font-normal mt-7"
+            descriptionClass="text-xl font-normal mt-7 text-gray-G2"
           />
         </RowSection>
         <RowSection className="relative flex justify-end items-center">

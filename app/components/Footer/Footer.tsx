@@ -13,7 +13,7 @@ export const Footer = () => {
       <footer className="xl:container xl:p-0 px-16 mx-auto mb-14">
         <div className="flex xl:justify-between justify-center  flex-wrap items-center border-b-2 pb-4">
           <div className="mx-auto md:mx-0">
-            <TypoLogo />
+            <TypoLogo width="226" height="62" />
           </div>
 
           <div>

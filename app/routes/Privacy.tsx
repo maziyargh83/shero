@@ -17,7 +17,7 @@ export default function Privacy() {
             subTitle={t("PRIVACY_TITLE")}
             subTitleClass="text-gray-G1 font-bold text-4xl  my-24"
             description={t("PRIVACY_DESCRIPTION")}
-            descriptionClass="text-base font-normal"
+            descriptionClass="text-base font-normal text-gray-G2"
           />
         </RowSection>
         <RowSection className="relative flex justify-end items-start">

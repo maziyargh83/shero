@@ -18,7 +18,7 @@ export default function AboutUs() {
             subTitle={t("ABOUT_US_TITLE")}
             subTitleClass="text-gray-G1 font-bold text-4xl"
             description={t("ABOUT_US_DESCRIPTION")}
-            descriptionClass="text-xl font-normal mt-7"
+            descriptionClass="text-xl font-normal mt-7 text-gray-G2"
           />
         </RowSection>
         <RowSection className="relative flex justify-end items-center">

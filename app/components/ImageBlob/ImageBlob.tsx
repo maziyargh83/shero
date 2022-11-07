@@ -7,21 +7,41 @@ export const ImageBlob = ({
   size,
   blobs,
   clipPath,
+  className,
+  icon,
+  containerClassName,
+  textComponent,
+  notRelative = false,
 }: {
-  img: keyof typeof imagesKey;
+  img?: keyof typeof imagesKey;
   size?: number | string;
   blobs: JSX.Element[];
+  icon?: JSX.Element;
+  textComponent?: JSX.Element;
   clipPath?: boolean;
+  className?: string;
+  containerClassName?: string;
+  notRelative?: boolean;
 }) => {
   return (
-    <div className="relative">
-      <img
-        className={classNames("", {
-          "clip-path": !!clipPath,
-        })}
-        src={imageBuilder(img)}
-        alt=""
-      />
+    <div
+      className={classNames("", {
+        [containerClassName!]: !!containerClassName,
+        relative: !notRelative,
+      })}
+    >
+      {img && (
+        <img
+          className={classNames("", {
+            "clip-path": !!clipPath,
+            [className!]: !!className,
+          })}
+          src={imageBuilder(img)}
+          alt=""
+        />
+      )}
+      {icon}
+      {textComponent}
       {blobs}
     </div>
   );

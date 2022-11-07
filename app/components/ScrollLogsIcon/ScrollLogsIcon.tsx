@@ -25,8 +25,8 @@ export const ScrollWheel = ({ data }: { data: LogType }) => {
 export const ScrollLogsIcon = () => {
   return (
     <div className="relative">
-      <div className="absolute h-full left-0 w-20 top-0 left-gradient-logs" />
-      <div className="absolute h-full right-0 w-20 top-0 right-gradient-logs -rotate-180" />
+      <div className="absolute h-full hidden xl:block left-0 w-20 top-0 left-gradient-logs" />
+      <div className="absolute h-full hidden xl:block right-0 w-20 top-0 right-gradient-logs -rotate-180" />
       <ScrollWheel data={SYMPTOM_BELLY} />
       <ScrollWheel data={SYMPTOM_BODY} />
       <ScrollWheel data={SYMPTOM_COMMON} />

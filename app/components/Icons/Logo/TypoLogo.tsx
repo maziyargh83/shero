@@ -1,8 +1,16 @@
-export const TypoLogo = () => {
+export const TypoLogo = ({
+  width = 95,
+  height = 26,
+  color = "#FFACA7",
+}: {
+  width?: string | number;
+  height?: string | number;
+  color?: string;
+}) => {
   return (
     <svg
-      width="226"
-      height="62"
+      width={width}
+      height={height}
       viewBox="0 0 226 62"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

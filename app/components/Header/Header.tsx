@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import classNames from "classnames";
 import { useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
+import { TypoLogo } from "~/components/Icons/Logo";
 export const Header = () => {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
@@ -26,15 +27,15 @@ export const Header = () => {
   return (
     <header
       className={classNames(
-        "z-50 transition-colors duration-300  sticky top-0 ",
-        { "bg-white/70": scrolled }
+        "z-50 transition-colors  md:bg-transparent bg-white duration-300 w-full fixed top-0 ",
+        { "bg-white/70 backdrop-blur-sm": scrolled }
       )}
     >
       <div className="flex container px-8 md:px-0 mx-auto justify-between  h-20 md:h-32 items-center">
-        <div className="block md:hidden">
-          <FaBars />
+        <div className="md:hidden">
+          <TypoLogo />
         </div>
-        <div className="flex items-center ">
+        <div className="md:flex items-center hidden">
           <img
             className="w-14 h-14 md:mr-8"
             src={imageBuilder("LOGO")}
@@ -49,10 +50,18 @@ export const Header = () => {
         <div>
           <a
             href="/Download"
-            className="text-base font-bold rounded-full border-2 border-purple-P1 text-purple-P1 px-8 py-2 "
+            className={classNames(
+              "text-base hidden md:inline-block font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 text-purple-P1 px-8 py-2 ",
+              {
+                "bg-purple-P1 text-white": scrolled,
+              }
+            )}
           >
             {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
           </a>
+        </div>
+        <div className="block md:hidden">
+          <FaBars />
         </div>
       </div>
     </header>

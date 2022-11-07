@@ -25,7 +25,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-background-light">
+      <body className="bg-background-light max-w-[100vw] overflow-x-hidden">
         <Layout />
         <ScrollRestoration />
         <Scripts />

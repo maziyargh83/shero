@@ -13,10 +13,13 @@ export const Accordion = ({ title, children, opened }: AccordionProps) => {
   return (
     <div
       onClick={toggle}
-      className="w-full bg-white rounded-3xl mb-4 cursor-pointer"
+      className="w-full bg-white rounded-xl md:rounded-3xl mb-4 cursor-pointer"
     >
-      <div className="flex justify-between items-center py-7 px-12">
-        <h3 className="text-purple-P1 text-2xl font-medium"> {title}</h3>
+      <div className="flex justify-between items-center p-3 md:py-7 md:px-12">
+        <h3 className="text-purple-P1 text-sm md:text-2xl font-medium  flex-1">
+          {" "}
+          {title}
+        </h3>
         <motion.div
           className={classNames("transition-all duration-500", {
             "rotate-180 ": isOpen,
@@ -34,7 +37,7 @@ export const Accordion = ({ title, children, opened }: AccordionProps) => {
           }
         )}
       >
-        <div className=" px-12 py-6">{children}</div>
+        <div className=" p-3 md:py-7 md:px-12">{children}</div>
       </motion.div>
     </div>
   );
