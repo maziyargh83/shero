@@ -9,7 +9,7 @@ export const FrameMobileHome = ({
   downloadPage?: boolean;
 }) => {
   return (
-    <div className="inline-flex flex-wrap self-center justify-center items-center md:mt-0 mt-24 relative ">
+    <div className="inline-flex flex-col md:flex-row self-center justify-center items-center md:mt-0 mt-24 relative ">
       <div className="relative ">
         <img
           className="image "

@@ -24,7 +24,7 @@ export const Footer = () => {
             </HeaderWrapper>
           </div>
         </div>
-        <div className="flex justify-between items-center mt-9">
+        <div className="flex justify-center md:justify-between items-center mt-9">
           <div>All rights reserved. &copy; 2022</div>
           {/* <div className="flex space-x-7">
             <FaInstagram />

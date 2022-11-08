@@ -22,7 +22,15 @@ export const HeaderData: headerType = [
   //   link: "/blog",
   // },
   {
+    title: "HELP_CENTER_TITLE",
+    link: "/HelpCenter",
+  },
+  {
     title: "HEADER_ABOUT_US",
     link: "/AboutUs",
+  },
+  {
+    title: "PRIVACY_TITLE",
+    link: "/Privacy",
   },
 ];

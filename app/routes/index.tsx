@@ -6,6 +6,7 @@ import {
   ContainerSection,
   DownloadIcon,
   FAQ,
+  FeatureSection,
   FrameMobileHome,
   ImageBlob,
   PregnancyIcon,
@@ -23,9 +24,9 @@ import { TrackingIcon } from "~/components/Icons/Home/TrackingIcon";
 export default function Index() {
   return (
     <Fragment>
-      <Section>
+      <Section className="pt-10">
         <div className="blobs absolute hidden md:block right-0 w-1/3" />
-        <ContainerSection className="md:mt-20">
+        <ContainerSection className="md:mt-20 relative">
           <RowSection className="relative">
             <Blob
               size={29}
@@ -61,7 +62,7 @@ export default function Index() {
                 image="APP_STORE"
               />
             </div>
-            <a href="GettingStarted">
+            <a href="GettingStarted" className="md:block hidden">
               <div className="mt-7 flex items-center space-x-2">
                 <span className="text-purple-P1 font-medium text-base">
                   {t("GETTING_START")}
@@ -159,109 +160,7 @@ export default function Index() {
         <div className="flex w-full justify-center items-center">
           <img src={imageBuilder("FRAME_2")} className="mt-24" />
         </div>
-        <div className="h-[500px] relative mt-12">
-          <ImageBlob
-            icon={<PregnancyIcon color="#3E1F90" />}
-            containerClassName="w-36 h-36 flex flex-col  absolute bottom-4 left-0  justify-center items-center"
-            textComponent={
-              <span className="text-base font-semibold text-purple-P1 w-[90%] mx-auto text-center">
-                Pregnancy calendar
-              </span>
-            }
-            notRelative
-            blobs={[
-              <Blob
-                key={v4()}
-                size={140}
-                color={"#FFFFFF"}
-                className="absolute top-0 -z-10"
-              />,
-              <Blob
-                key={v4()}
-                size={140}
-                color={"#E8FBFF"}
-                className="absolute top-0 -z-20 rotate-[150px] -top-2"
-              />,
-            ]}
-          />
-          <ImageBlob
-            notRelative
-            icon={<TrackingIcon color="#3E1F90" />}
-            containerClassName="w-36 h-36 flex flex-col absolute bottom-4 right-0 justify-center items-center"
-            textComponent={
-              <span className="text-base font-semibold text-purple-P1 w-[90%] mx-auto text-center">
-                Pregnancy calendar
-              </span>
-            }
-            blobs={[
-              <Blob
-                key={v4()}
-                size={140}
-                color={"#FFFFFF"}
-                className="absolute top-0 -z-10"
-              />,
-              <Blob
-                key={v4()}
-                size={140}
-                color={"#E8FBFF"}
-                className="absolute top-0 -z-20 rotate-[150px] -top-2"
-              />,
-            ]}
-          />
-          <ImageBlob
-            icon={<FiBook size={50} className="text-purple-P1" />}
-            notRelative
-            containerClassName="w-36 h-36 absolute top-4 right-0 flex flex-col justify-center items-center"
-            textComponent={
-              <span className="text-base font-semibold text-purple-P1 w-[90%] mx-auto text-center">
-                Pregnancy calendar
-              </span>
-            }
-            blobs={[
-              <Blob
-                key={v4()}
-                size={140}
-                color={"#FFFFFF"}
-                className="absolute top-0 -z-10"
-              />,
-              <Blob
-                key={v4()}
-                size={140}
-                color={"#E8FBFF"}
-                className="absolute top-0 -z-20 rotate-[150px] -top-2"
-              />,
-            ]}
-          />
-          <ImageBlob
-            notRelative
-            icon={<FiBook size={50} className="text-purple-P1" />}
-            containerClassName="w-36 h-36 absolute top-4 left-0 flex flex-col justify-center items-center"
-            textComponent={
-              <span className="text-base font-semibold text-purple-P1 w-[90%] mx-auto text-center">
-                Content
-              </span>
-            }
-            blobs={[
-              <Blob
-                key={v4()}
-                size={140}
-                color={"#FFFFFF"}
-                className="absolute top-0 -z-10"
-              />,
-              <Blob
-                key={v4()}
-                size={140}
-                color={"#E8FBFF"}
-                className="absolute top-0 -z-20 rotate-[150px] -top-2"
-              />,
-            ]}
-          />
-
-          <img
-            src={imageBuilder("ICON")}
-            className="w-24 h-24 top-[50%] left-[50%] absolute -translate-x-[50%] -translate-y-[50%]"
-          />
-        </div>
+        <FeatureSection />
       </Section>
       <Section>
         <div className="hidden md:block">

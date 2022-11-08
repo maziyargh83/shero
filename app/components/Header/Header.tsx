@@ -29,8 +29,11 @@ export const Header = () => {
   return (
     <header
       className={classNames(
-        "z-50 transition-colors  md:bg-transparent bg-white duration-300 w-full fixed top-0 ",
-        { "bg-white/70 backdrop-blur-sm": scrolled }
+        "z-50 transition-colors duration-300 w-full fixed top-0 ",
+        {
+          "bg-white/70 backdrop-blur-sm": scrolled,
+          "  bg-white md:bg-transparent": !scrolled,
+        }
       )}
     >
       <div className="flex container px-8 md:px-0 mx-auto justify-between  h-20 md:h-32 items-center">

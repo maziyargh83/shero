@@ -116,5 +116,10 @@ If the user does not follow the rules of using Shero, Shero`,
   //
   HELP_CENTER_DESCRIPTION: `Using scientifically researched data for the betterment of women's health, worldwide.`,
   HELP_CENTER_TITLE: "Help center ",
+  //
+  FEATURE_SECTION_CALENDAR: "Menstrual calendar",
+  FEATURE_SECTION_COMMUNITY: "Community",
+  FEATURE_SECTION_CONTENT: "Content",
+  FEATURE_SECTION_PREGNANCY: "Pregnancy calendar",
 };
 export default EN;

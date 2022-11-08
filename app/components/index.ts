@@ -18,3 +18,4 @@ export * from "./Accordion";
 export * from "./Team";
 export * from "./Box";
 export * from "./Tabs";
+export * from "./FeatureSection";

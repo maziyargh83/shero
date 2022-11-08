@@ -72,5 +72,12 @@ const FA: Record<keyof typeof languageKeys, string> = {
   PRIVACY: "",
   PRIVACY_DESCRIPTION: "",
   PRIVACY_TITLE: "",
+  HELP_CENTER_DESCRIPTION: "",
+  HELP_CENTER_TITLE: "",
+  //
+  FEATURE_SECTION_CALENDAR: "",
+  FEATURE_SECTION_COMMUNITY: "",
+  FEATURE_SECTION_CONTENT: "",
+  FEATURE_SECTION_PREGNANCY: "",
 };
 export default FA;
