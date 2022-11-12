@@ -131,4 +131,7 @@ export const images: imageTypes = {
   CONTACT_US_TITLE: {
     url: "shero/imageTitle/contact-us.png",
   },
+  PREGNANCY_TITLE: {
+    url: "shero/imageTitle/pregnancy-title.png",
+  },
 };

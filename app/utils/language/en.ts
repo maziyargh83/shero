@@ -148,5 +148,8 @@ All users can read terms and condition and privacy policy in the onboarding page
   CONTACT_FORM_DESCRIPTION: `You can contact us through the following communication channels and
     send us your comments, suggestions and criticisms. We need your
     feedback to make Shero better.`,
+  PREGNANCY_TITLE: "Pregnancy due date calculator",
+  PREGNANCY_DESCRIPTION:
+    "Positive pregnancy test? You’ll probably have lots of questions like how far along am I? And when is my due date? Or maybe you’re thinking about timings before you start trying? Our Pregnancy Due Date Calculator can help you work out your estimated due date or when your baby might arrive.",
 };
 export default EN;

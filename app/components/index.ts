@@ -20,3 +20,4 @@ export * from "./Box";
 export * from "./Tabs";
 export * from "./FeatureSection";
 export * from "./ContactForm";
+export * from "./DatePicker";

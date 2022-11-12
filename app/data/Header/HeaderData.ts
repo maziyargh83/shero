@@ -9,10 +9,10 @@ export const HeaderData: headerType = [
     title: "HEADER_SUPPORT",
     link: "/HelpCenter",
   },
-  // {
-  //   title: "HEADER_PREGNANCY_TOOLS",
-  //   link: "/pregnancy_tool",
-  // },
+  {
+    title: "HEADER_PREGNANCY_TOOLS",
+    link: "/Pregnancy-calculator",
+  },
   // {
   //   title: "HEADER_OVULATION_CALCULATOR",
   //   link: "/ovulation_calculator",

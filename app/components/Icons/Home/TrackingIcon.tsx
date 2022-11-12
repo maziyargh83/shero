@@ -1,8 +1,14 @@
-export const TrackingIcon = ({ color = "white" }: { color?: string }) => {
+export const TrackingIcon = ({
+  color = "white",
+  size = 53,
+}: {
+  color?: string;
+  size?: number;
+}) => {
   return (
     <svg
-      width="53"
-      height="52"
+      width={size}
+      height={size}
       viewBox="0 0 53 52"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
