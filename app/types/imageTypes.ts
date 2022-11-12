@@ -39,6 +39,8 @@ export const enum imagesKey {
   "PRIVACY_TITLE",
   //
   "GETTING_STARTED",
+  //
+  "CONTACT_US_TITLE",
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };

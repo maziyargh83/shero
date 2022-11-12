@@ -34,6 +34,10 @@ export const HeaderData: headerType = [
     link: "/Privacy",
   },
   {
+    title: "CONTACT_US_TITLE",
+    link: "/ContactUs",
+  },
+  {
     title: "TERMS_TITLE",
     link: "/Terms",
   },

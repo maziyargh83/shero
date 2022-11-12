@@ -107,4 +107,7 @@ export const images: imageTypes = {
   TERM_TITLE: {
     url: "shero/imageTitle/term-title.png",
   },
+  CONTACT_US_TITLE: {
+    url: "shero/imageTitle/contact-us.png",
+  },
 };

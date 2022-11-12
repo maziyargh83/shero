@@ -24,7 +24,7 @@ import { TrackingIcon } from "~/components/Icons/Home/TrackingIcon";
 export default function Index() {
   return (
     <Fragment>
-      <Section className="pt-10">
+      <Section className="pt-5">
         <div className="blobs absolute hidden md:block right-0 w-1/3" />
         <ContainerSection className="md:mt-20 relative">
           <RowSection className="relative">

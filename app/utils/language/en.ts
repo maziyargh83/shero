@@ -139,5 +139,14 @@ All users can read terms and condition and privacy policy in the onboarding page
   TERMS_DESCRIPTION:
     "This Terms and Conditions for all products and services provided by Shero website and application. Shero is a period tracker application designed to raise awareness about women's health, predict menstruation and ovulation, and allow users to prevent possible disease by registering, entering their personal details, entering their symptoms, and following up on them in order to experience a healthier life.",
   TERMS_TITLE: "Terms And Condition",
+  CONTACT_US_DESCRIPTION:
+    "We help women put themselves first.Shero exists to empower women by giving them a space they can access the knowledge and support they need to prioritise their health and wellbeing.",
+  CONTACT_US_TITLE: "Contact US",
+  CONTACT_US_SUBMIT_TITLE: "Submit a request",
+  CONTACT_US_SUBMIT_DESCRIPTION:
+    "Please enter the details of your request. A member of our support staff will respond as soon as possible.",
+  CONTACT_FORM_DESCRIPTION: `You can contact us through the following communication channels and
+    send us your comments, suggestions and criticisms. We need your
+    feedback to make Shero better.`,
 };
 export default EN;
