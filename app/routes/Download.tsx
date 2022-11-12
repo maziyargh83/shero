@@ -5,13 +5,14 @@ import {
   DownloadWrapper,
   FrameMobileHome,
   RowSection,
+  Section,
   SectionTitle,
 } from "~/components";
 import { t } from "~/utils";
 
 export default function Download() {
   return (
-    <div className="mt-32">
+    <Section className="mt-32">
       <ContainerSection>
         <RowSection className="relative">
           <SectionTitle
@@ -20,7 +21,7 @@ export default function Download() {
             description={t("DOWNLOAD_DESCRIPTION")}
             descriptionClass="text-base font-normal mt-8 text-gray-G2"
           />
-          <div className="flex space-x-7 mt-28">
+          <div className="md:flex space-x-7 mt-28 hidden">
             <DownloadWrapper
               icon={<FaAndroid size={30} className="text-gray-G7" />}
             >
@@ -38,7 +39,19 @@ export default function Download() {
             <FrameMobileHome downloadPage />
           </div>
         </RowSection>
+        <div className="flex flex-wrap justify-center mt-28 md:hidden">
+          <DownloadWrapper
+            icon={<FaAndroid size={30} className="text-gray-G7" />}
+          >
+            <DownloadIcon className="mx-auto" image="GOOGLE_PLAY" />
+          </DownloadWrapper>
+          <DownloadWrapper
+            icon={<FaApple size={30} className="text-gray-G7" />}
+          >
+            <DownloadIcon className="mx-auto" image="APP_STORE" />
+          </DownloadWrapper>
+        </div>
       </ContainerSection>
-    </div>
+    </Section>
   );
 }

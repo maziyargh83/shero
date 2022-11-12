@@ -57,7 +57,7 @@ export default function Index() {
                 image="GOOGLE_PLAY"
               />
               <DownloadIcon
-                className="self-center mt-6"
+                className="self-center"
                 rate="4.5"
                 image="APP_STORE"
               />
