@@ -104,4 +104,7 @@ export const images: imageTypes = {
   FRAME_MAIN_DARK_HALF: {
     url: "shero/frames/main-frame-dark-half.png",
   },
+  TERM_TITLE: {
+    url: "shero/imageTitle/term-title.png",
+  },
 };

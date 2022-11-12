@@ -20,6 +20,7 @@ export const enum imagesKey {
   //
   "SLIDER_1",
   "ABOUT_TITLE",
+  "TERM_TITLE",
   // team
   "ASHKAN",
   "ATABAK",
