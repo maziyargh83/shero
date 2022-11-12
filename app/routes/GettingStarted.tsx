@@ -27,7 +27,7 @@ export default function GettingStarted() {
             descriptionClass="text-xl font-normal mt-7 text-gray-G2"
           />
         </RowSection>
-        <RowSection className="relative flex justify-end items-center">
+        <RowSection className="relative flex justify-end items-center  mt-20 md:mt-0">
           <div className="relative">
             <ImageBlob
               img="GETTING_STARTED"

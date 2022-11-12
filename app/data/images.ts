@@ -14,7 +14,10 @@ export const images: imageTypes = {
     },
   },
   FRAME_MAIN: {
-    url: "shero/frames/main-frame.png",
+    url: {
+      luna: "luna/frames/main-frame.png",
+      shero: "shero/frames/main-frame.png",
+    },
   },
   APP_STORE: {
     url: "shero/downloadIcon/appstore.png",
@@ -35,19 +38,34 @@ export const images: imageTypes = {
     url: "shero/people/person3.png",
   },
   FRAME_1: {
-    url: "shero/frames/frame-1.png",
+    url: {
+      luna: "luna/frames/frame-1.png",
+      shero: "shero/frames/frame-1.png",
+    },
   },
   FRAME_2: {
-    url: "shero/frames/frame-2.png",
+    url: {
+      luna: "luna/frames/frame-2.png",
+      shero: "shero/frames/frame-2.png",
+    },
   },
   FRAME_3: {
-    url: "shero/frames/frame-3.png",
+    url: {
+      luna: "luna/frames/frame-3.png",
+      shero: "shero/frames/frame-3.png",
+    },
   },
   FRAME_4: {
-    url: "shero/frames/frame-4.png",
+    url: {
+      luna: "luna/frames/frame-4.png",
+      shero: "shero/frames/frame-4.png",
+    },
   },
   FRAME_5: {
-    url: "shero/frames/frame-5.png",
+    url: {
+      luna: "luna/frames/frame-5.png",
+      shero: "shero/frames/frame-5.png",
+    },
   },
 
   SLIDER_1: {
@@ -102,7 +120,10 @@ export const images: imageTypes = {
     url: "shero/imageTitle/Getting_Started.png",
   },
   FRAME_MAIN_DARK_HALF: {
-    url: "shero/frames/main-frame-dark-half.png",
+    url: {
+      luna: "luna/frames/main-frame-dark-half.png",
+      shero: "shero/frames/main-frame-dark-half.png",
+    },
   },
   TERM_TITLE: {
     url: "shero/imageTitle/term-title.png",
