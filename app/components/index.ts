@@ -21,3 +21,4 @@ export * from "./Tabs";
 export * from "./FeatureSection";
 export * from "./ContactForm";
 export * from "./DatePicker";
+export * from "./Column";

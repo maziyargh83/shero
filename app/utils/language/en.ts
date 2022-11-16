@@ -151,5 +151,8 @@ All users can read terms and condition and privacy policy in the onboarding page
   PREGNANCY_TITLE: "Pregnancy due date calculator",
   PREGNANCY_DESCRIPTION:
     "Positive pregnancy test? You’ll probably have lots of questions like how far along am I? And when is my due date? Or maybe you’re thinking about timings before you start trying? Our Pregnancy Due Date Calculator can help you work out your estimated due date or when your baby might arrive.",
+  PERIOD_TITLE: "Period calculator",
+  PERIOD_DESCRIPTION:
+    "Being able to predict when your next period will arrive can save you a lot of hassle and help you to understand your own menstrual cycle. Predict your next period now with Shero easy-to-use period calculator.",
 };
 export default EN;

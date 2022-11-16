@@ -6,7 +6,7 @@ export const HeaderMenu = (headerData: headerTypeValue) => {
   return (
     <a
       href={headerData.link}
-      className={classNames("text-base font-medium", {
+      className={classNames("text-base text-gray-G1 font-medium", {
         [headerData.className!]: headerData.className!!,
       })}
     >

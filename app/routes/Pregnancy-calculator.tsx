@@ -1,4 +1,3 @@
-import { v4 } from "uuid";
 import {
   Section,
   ContainerSection,
@@ -6,7 +5,6 @@ import {
   SectionTitle,
   DatePicker,
 } from "~/components";
-import { TrackingIcon } from "~/components/Icons/Home/TrackingIcon";
 import { imageBuilder, t } from "~/utils";
 
 export default function PregnancyCalculator() {

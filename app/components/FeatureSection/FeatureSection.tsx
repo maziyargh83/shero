@@ -114,7 +114,7 @@ export const FeatureSection = () => {
       })}
       <img
         src={imageBuilder("ICON")}
-        className="w-24 h-24 top-[50%] left-[50%] absolute -translate-x-[50%] -translate-y-[50%]"
+        className="w-[125px]  top-[50%] left-[50%] absolute -translate-x-[50%] -translate-y-[50%]"
         alt=""
       />
     </div>
