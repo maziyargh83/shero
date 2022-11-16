@@ -134,7 +134,4 @@ export const images: imageTypes = {
   PREGNANCY_TITLE: {
     url: "shero/imageTitle/pregnancy-title.png",
   },
-  PERIOD_TITLE: {
-    url: "shero/imageTitle/period-title.png",
-  },
 };

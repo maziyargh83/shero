@@ -93,7 +93,4 @@ export enum languageKeys {
   // Pregnancy
   "PREGNANCY_TITLE",
   "PREGNANCY_DESCRIPTION",
-  // period
-  "PERIOD_TITLE",
-  "PERIOD_DESCRIPTION",
 }
