@@ -51,7 +51,7 @@ export default function Download() {
             <FrameMobileHome downloadPage />
           </div>
         </RowSection>
-        <div className="flex flex-wrap justify-center mt-28 md:hidden">
+        <div className="flex flex-wrap justify-center mt-28 space-y-6 md:hidden">
           <DownloadWrapper
             icon={<FaAndroid size={30} className="text-gray-G7" />}
           >

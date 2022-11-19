@@ -13,10 +13,13 @@ import {
   SectionTitle,
   Tabs,
 } from "~/components";
+import { useWindowSize } from "~/hook";
 import { t } from "~/utils";
 
 export default function GettingStarted() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const [activeBox, setActiveBox] = useState<string>();
+  const { width } = useWindowSize();
   return (
     <div>
       <Section>
@@ -51,26 +54,19 @@ export default function GettingStarted() {
         <div className="mb-16">
           <Tabs
             activeIndex={activeTabIndex}
-            data={[{ title: "Today" }, { title: "Profile" }, { title: "Logs" }]}
-            onChange={setActiveTabIndex}
+            data={[{ title: "Today" }, { title: "Today2" }, { title: "Logs" }]}
+            onChange={({ index, title }) => {
+              setActiveTabIndex(index);
+              width && width < 767 && setActiveBox(title);
+            }}
+            mobilePortal
+            activePortal={!!activeBox}
           />
         </div>
         <Box
           title={"Today"}
-          tabs={
-            <div className="mb-12">
-              <Tabs
-                box
-                activeIndex={activeTabIndex}
-                data={[
-                  { title: "Today" },
-                  { title: "Profile" },
-                  { title: "Logs" },
-                ]}
-                onChange={setActiveTabIndex}
-              />
-            </div>
-          }
+          activeBox={activeBox}
+          changeActiveBox={setActiveBox}
           rightFrame="FRAME_MAIN_DARK_HALF"
         >
           <p className="text-gray-G6 text-lg font-normal">
@@ -80,6 +76,21 @@ export default function GettingStarted() {
             will have your period (bleeding) - Day 11 to 19 of the period: the
             window of fertility and ovulation - Day 24 to 31 of the period:
             Premenstrual syndrome (PMS)
+          </p>
+        </Box>
+        <Box
+          title={"Today2"}
+          activeBox={activeBox}
+          changeActiveBox={setActiveBox}
+          rightFrame="FRAME_MAIN_DARK_HALF"
+        >
+          <p className="text-gray-G6 text-lg font-normal">
+            2222222 Based on the information you entered in your profile, this
+            circle shows the stages you go through during your period. The
+            length of your period is 31 days, including: - Day 1 to 5 of the
+            period: you will have your period (bleeding) - Day 11 to 19 of the
+            period: the window of fertility and ovulation - Day 24 to 31 of the
+            period: Premenstrual syndrome (PMS)
           </p>
         </Box>
       </Section>
