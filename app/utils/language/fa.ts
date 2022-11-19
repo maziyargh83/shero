@@ -69,7 +69,6 @@ const FA: Record<keyof typeof languageKeys, string> = {
   GETTING_STARTED_DOWNLOAD_IOS: "",
   GETTING_STARTED_DOWNLOAD_PWA: "",
   GETTING_STARTED_TITLE: "",
-  PRIVACY: "",
   PRIVACY_DESCRIPTION: "",
   PRIVACY_TITLE: "",
   HELP_CENTER_DESCRIPTION: "",
@@ -86,7 +85,6 @@ const FA: Record<keyof typeof languageKeys, string> = {
   CONTACT_US_TITLE: "",
   PREGNANCY_DESCRIPTION: "",
   PREGNANCY_TITLE: "",
-  TERMS: "",
   TERMS_DESCRIPTION: "",
   TERMS_TITLE: "",
 };

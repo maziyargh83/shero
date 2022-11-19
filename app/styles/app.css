@@ -956,6 +956,14 @@ video {
   margin-top: 1rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -970,6 +978,10 @@ video {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.list-item {
+  display: list-item;
 }
 
 .hidden {
@@ -1270,6 +1282,14 @@ video {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.whitespace-pre {
+  white-space: pre;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
 }
 
 .whitespace-pre-wrap {

@@ -61,7 +61,6 @@ export enum languageKeys {
   // privacy
   "PRIVACY_TITLE",
   "PRIVACY_DESCRIPTION",
-  "PRIVACY",
   // Download
   "DOWNLOAD_TITLE",
   "DOWNLOAD_DESCRIPTION",
@@ -83,7 +82,6 @@ export enum languageKeys {
   // terms
   "TERMS_TITLE",
   "TERMS_DESCRIPTION",
-  "TERMS",
   //
   "CONTACT_US_TITLE",
   "CONTACT_US_DESCRIPTION",

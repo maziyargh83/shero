@@ -5,8 +5,10 @@ import {
   ImageBlob,
   RowSection,
   Section,
+  SectionGenerator,
   SectionTitle,
 } from "~/components";
+import { termsData } from "~/data/rules/Terms";
 import { t } from "~/utils";
 
 export default function Terms() {
@@ -19,7 +21,7 @@ export default function Terms() {
               subTitle={t("TERMS_TITLE")}
               subTitleClass="text-gray-G1 font-bold text-4xl  mb-7 md:my-24"
               description={t("TERMS_DESCRIPTION")}
-              descriptionClass="text-base font-normal text-gray-G2"
+              descriptionClass="list-item text-base font-normal text-gray-G2"
             />
           </RowSection>
           <RowSection className="relative flex justify-end items-start  mt-20 md:mt-0">
@@ -40,7 +42,7 @@ export default function Terms() {
         </ContainerSection>
       </Section>
       <Section className="mt-8 whitespace-pre-wrap">
-        <p>{t("TERMS")}</p>
+        <SectionGenerator {...termsData} />
       </Section>
     </div>
   );

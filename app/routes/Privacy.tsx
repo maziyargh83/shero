@@ -5,8 +5,10 @@ import {
   ImageBlob,
   RowSection,
   Section,
+  SectionGenerator,
   SectionTitle,
 } from "~/components";
+import { privacyData } from "~/data/rules/Privacy";
 import { t } from "~/utils";
 
 export default function Privacy() {
@@ -40,8 +42,8 @@ export default function Privacy() {
         </ContainerSection>
       </Section>
 
-      <Section className="mt-8 whitespace-pre-wrap">
-        <p>{t("PRIVACY")}</p>
+      <Section className="mt-8">
+        <SectionGenerator {...privacyData} />
       </Section>
     </div>
   );
