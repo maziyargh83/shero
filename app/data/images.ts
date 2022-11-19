@@ -137,4 +137,7 @@ export const images: imageTypes = {
   PROFILE1: {
     url: "shero/profile/profile1.png",
   },
+  SHADOW: {
+    url: "shero/shadow/shadow.png",
+  },
 };

@@ -45,6 +45,8 @@ export const enum imagesKey {
   "PREGNANCY_TITLE",
   //
   "PROFILE1",
+  //
+  "SHADOW",
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };

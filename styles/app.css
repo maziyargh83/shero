@@ -99,8 +99,11 @@ html {
 .swiper-pagination-fraction {
   bottom: -45px !important;
 }
-.swiper {
+.comment-slider > .swiper {
   overflow: visible !important;
+}
+.scrollSlide .swiper {
+  height: 100%;
 }
 .swiper-pagination-bullet {
   width: 15px !important;
@@ -117,6 +120,10 @@ html {
 .clipPath {
   clip-path: url(#myClip);
 }
+.shadow-mobile {
+  filter: drop-shadow(34px 24px 11px rgba(0, 0, 0, 0.088));
+}
+
 @layer components {
   .blobs {
     @apply relative  -z-50 inline-block;

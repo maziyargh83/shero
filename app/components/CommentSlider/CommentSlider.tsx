@@ -13,24 +13,26 @@ export const CommentSlider = ({
   console.log(data);
   console.log("====================================");
   return (
-    <Swiper
-      modules={[Virtual, Pagination]}
-      pagination={{ clickable: true }}
-      spaceBetween={50}
-      slidesPerView={1}
-      breakpoints={{
-        768: {
-          slidesPerView: 2,
-        },
-      }}
-      height={300}
-      virtual
-    >
-      {data.map((slideContent, index) => (
-        <SwiperSlide key={v4()} virtualIndex={index}>
-          <Comment {...slideContent} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="comment-slider">
+      <Swiper
+        modules={[Virtual, Pagination]}
+        pagination={{ clickable: true }}
+        spaceBetween={50}
+        slidesPerView={1}
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+        }}
+        height={300}
+        virtual
+      >
+        {data.map((slideContent, index) => (
+          <SwiperSlide key={v4()} virtualIndex={index}>
+            <Comment {...slideContent} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };

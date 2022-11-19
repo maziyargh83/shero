@@ -175,26 +175,41 @@ export default function Index() {
           />
           <div className="flex mt-28 space-x-24 justify-between">
             <div className="w-1/3 flex flex-col">
-              <img src={imageBuilder("FRAME_1")} />
-              <img src={imageBuilder("FRAME_2")} className="mt-24" />
+              <img src={imageBuilder("FRAME_1")} className="shadow-mobile " />
+              <img
+                src={imageBuilder("FRAME_2")}
+                className="mt-24 shadow-mobile "
+              />
               <p className="mt-24 text-gray-G1 font-medium text-xl">
                 {t("FEATURE_SECTION_3")}
               </p>
               <Blob size={46} color="#FBCBC5" className="self-center mt-10" />
             </div>
             <div className="w-1/3 flex flex-col">
-              <img src={imageBuilder("ICON")} className="self-end" />
-              <img src={imageBuilder("FRAME_3")} className="mt-11" />
+              <img
+                src={imageBuilder("ICON")}
+                className="self-end shadow-mobile "
+              />
+              <img
+                src={imageBuilder("FRAME_3")}
+                className="mt-11 shadow-mobile "
+              />
               <p className="mt-24 text-gray-G1 font-medium text-xl">
                 {t("FEATURE_SECTION_2")}
               </p>
-              <img className="mt-24" src={imageBuilder("FRAME_4")} />
+              <img
+                className="mt-24 shadow-mobile "
+                src={imageBuilder("FRAME_4")}
+              />
             </div>
             <div className="w-1/3 flex flex-col items-center justify-center relative">
               <p className="text-gray-G1 font-medium text-xl">
                 {t("FEATURE_SECTION_3")}
               </p>
-              <img className="mt-24 " src={imageBuilder("FRAME_5")} />
+              <img
+                className="mt-24 shadow-mobile "
+                src={imageBuilder("FRAME_5")}
+              />
               <Blob size={21} color="#9E81EC" className="absolute bottom-2" />
             </div>
           </div>
