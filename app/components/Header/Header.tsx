@@ -37,8 +37,21 @@ export const Header = () => {
       )}
     >
       <div className="flex container px-8 md:px-0 mx-auto justify-between  h-20 md:h-32 items-center">
-        <div className="md:hidden">
-          <TypoLogo />
+        <div className="w-1/3 md:hidden">
+          <a
+            href="/Download"
+            className={classNames(
+              "text-base md:hidden w-full inline-block font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 text-purple-P1 px-4 py-2 ",
+              {
+                "bg-purple-P1 text-white": scrolled,
+              }
+            )}
+          >
+            {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
+          </a>
+        </div>
+        <div className="md:hidden w-1/3">
+          <img src={imageBuilder("LOGO_TYPO")} />
         </div>
         <div className="md:flex items-center hidden">
           <img
@@ -65,7 +78,10 @@ export const Header = () => {
             {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
           </a>
         </div>
-        <div className="block md:hidden" onClick={() => setShowMobile(true)}>
+        <div
+          className="md:hidden w-1/3 flex justify-center items-center"
+          onClick={() => setShowMobile(true)}
+        >
           <FaBars />
         </div>
       </div>

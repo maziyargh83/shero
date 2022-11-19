@@ -18,7 +18,7 @@ export const DownloadIcon = ({
         [className!]: !!className,
       })}
     >
-      {rate && (
+      {!!rate && (
         <div className="inline-flex items-center space-x-2">
           <FaStar color="#FFBA07" />
           <span className="text-gray-G4 text-sm font-medium">{rate}</span>

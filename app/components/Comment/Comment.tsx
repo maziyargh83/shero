@@ -4,7 +4,7 @@ import { imageBuilder } from "~/utils";
 
 export const Comment = ({}: commentType) => {
   return (
-    <div className="p-6 bg-white rounded-3xl mt-32">
+    <div className="p-6 bg-white rounded-3xl">
       <div className="flex items-center">
         <div className="w-1/4 mr-2">
           <img src={imageBuilder("PROFILE1")} />
@@ -17,7 +17,7 @@ export const Comment = ({}: commentType) => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between mt-9 items-center">
+      <div className="flex  flex-wrap justify-between mt-9 items-center">
         <div className="text-gray-G5 text-xs md:text-xl  font-medium">
           Fa****mi
         </div>

@@ -65,8 +65,8 @@ export default function Index() {
                 image="APP_STORE"
               />
             </div>
-            <a href="GettingStarted" className="md:block hidden">
-              <div className="mt-7 flex items-center space-x-2">
+            <a href="HelpCenter ">
+              <div className="mt-7 flex justify-center md:justify-start items-center space-x-2">
                 <span className="text-purple-P1 font-medium text-base">
                   {t("GETTING_START")}
                 </span>
@@ -239,7 +239,7 @@ export default function Index() {
         />
         <FAQ />
       </Section>
-      <Section>
+      <Section className="mt-16 md:mt-32">
         <CommentSlider />
       </Section>
     </Fragment>

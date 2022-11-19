@@ -1,5 +1,6 @@
 export const enum imagesKey {
   "LOGO",
+  "LOGO_TYPO",
   // market
   "APP_STORE",
   "GOOGLE_PLAY",
@@ -47,6 +48,7 @@ export const enum imagesKey {
   "PROFILE1",
   //
   "SHADOW",
+  //
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };

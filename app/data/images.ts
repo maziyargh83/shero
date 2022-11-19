@@ -140,4 +140,7 @@ export const images: imageTypes = {
   SHADOW: {
     url: "shero/shadow/shadow.png",
   },
+  LOGO_TYPO: {
+    url: "shero/logo/logoTypo.png",
+  },
 };

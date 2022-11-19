@@ -1,13 +1,13 @@
 import React, { cloneElement } from "react";
 import { FiInstagram, FiMail, FiPhoneCall } from "react-icons/fi";
-import { TypoLogo } from "~/components/Icons/Logo";
-import { t } from "~/utils";
+import { imageBuilder, t } from "~/utils";
 
 export const ContactForm = () => {
   return (
     <div className="flex flex-wrap justify-center md:space-x-8">
       <Container>
-        <TypoLogo width="234" height="65" />
+        <img src={imageBuilder("LOGO_TYPO")} />
+
         <p className="text-xl font-normal text-gray-G1 mt-10 border-b border-purple-P5 pb-6">
           {t("CONTACT_FORM_DESCRIPTION")}
         </p>
@@ -20,10 +20,10 @@ export const ContactForm = () => {
             <FiPhoneCall />
             <p>+1 - 121212121</p>
           </div>
-          <div className="flex mt-1 items-center space-x-2">
+          {/* <div className="flex mt-1 items-center space-x-2">
             <FiInstagram />
             <p>@Shero.application</p>
-          </div>
+          </div> */}
         </div>
       </Container>
       <Container>

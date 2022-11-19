@@ -13,25 +13,25 @@ export const HeaderData: headerType = [
     title: "HEADER_PREGNANCY_TOOLS",
     link: "/Pregnancy-calculator",
   },
-  // {
-  //   title: "HEADER_OVULATION_CALCULATOR",
-  //   link: "/ovulation_calculator",
-  // },
+  {
+    title: "HEADER_OVULATION_CALCULATOR",
+    link: "/Pregnancy-calculator",
+  },
 
-  {
-    title: "HEADER_ABOUT_US",
-    link: "/AboutUs",
-  },
-  {
-    title: "PRIVACY_TITLE",
-    link: "/Privacy",
-  },
+  // {
+  //   title: "HEADER_ABOUT_US",
+  //   link: "/AboutUs",
+  // },
+  // {
+  //   title: "PRIVACY_TITLE",
+  //   link: "/Privacy",
+  // },
   {
     title: "CONTACT_US_TITLE",
     link: "/ContactUs",
   },
-  {
-    title: "TERMS_TITLE",
-    link: "/Terms",
-  },
+  // {
+  //   title: "TERMS_TITLE",
+  //   link: "/Terms",
+  // },
 ];

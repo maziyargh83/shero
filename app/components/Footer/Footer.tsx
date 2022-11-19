@@ -5,6 +5,7 @@ import { HeaderWrapper } from "~/components/Header/HeaderWrapper";
 import { FooterWave } from "~/components/Icons";
 import { TypoLogo } from "~/components/Icons/Logo";
 import { HeaderData } from "~/data";
+import { imageBuilder } from "~/utils";
 export const Footer = () => {
   return (
     <Fragment>
@@ -12,8 +13,8 @@ export const Footer = () => {
 
       <footer className="xl:container xl:p-0 px-16 mx-auto mb-14">
         <div className="flex md:justify-between justify-center  flex-wrap items-center border-b-2 pb-4">
-          <div className="mx-auto md:mx-0">
-            <TypoLogo width="226" height="62" />
+          <div className="mx-auto xl:mx-0">
+            <img src={imageBuilder("LOGO_TYPO")} />
           </div>
 
           <div>
