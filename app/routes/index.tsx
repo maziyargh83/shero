@@ -3,23 +3,26 @@ import { Fragment } from "react";
 import { AiFillRightCircle } from "react-icons/ai";
 import {
   Blob,
+  CommentSlider,
   ContainerSection,
   DownloadIcon,
   FAQ,
   FeatureSection,
   FrameMobileHome,
   ImageBlob,
-  PregnancyIcon,
   RowSection,
   ScrollLogsIcon,
   ScrollSlider,
   Section,
   SectionTitle,
 } from "~/components";
-import { FiBook } from "react-icons/fi";
 import { imageBuilder, t } from "~/utils";
 import { v4 } from "uuid";
-import { TrackingIcon } from "~/components/Icons/Home/TrackingIcon";
+import styles from "swiper/swiper-bundle.min.css";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function Index() {
   return (
@@ -57,7 +60,7 @@ export default function Index() {
                 image="GOOGLE_PLAY"
               />
               <DownloadIcon
-                className="self-center"
+                className="self-center mt-8 md:mt-0"
                 rate="4.5"
                 image="APP_STORE"
               />
@@ -220,6 +223,9 @@ export default function Index() {
           descriptionClass="text-xl font-normal mt-2 text-gray-G2"
         />
         <FAQ />
+      </Section>
+      <Section>
+        <CommentSlider />
       </Section>
     </Fragment>
   );
