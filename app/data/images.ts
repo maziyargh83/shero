@@ -143,4 +143,7 @@ export const images: imageTypes = {
   LOGO_TYPO: {
     url: "shero/logo/logoTypo.png",
   },
+  PERIOD_TITLE: {
+    url: "shero/imageTitle/period-title.png",
+  },
 };

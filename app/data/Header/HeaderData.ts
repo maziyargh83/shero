@@ -15,7 +15,7 @@ export const HeaderData: headerType = [
   },
   {
     title: "HEADER_OVULATION_CALCULATOR",
-    link: "/Pregnancy-calculator",
+    link: "/Period-calculator",
   },
 
   // {

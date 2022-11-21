@@ -22,6 +22,12 @@ export const enum imagesKey {
   "SLIDER_1",
   "ABOUT_TITLE",
   "TERM_TITLE",
+  "PERIOD_TITLE",
+  "PRIVACY_TITLE",
+  "GETTING_STARTED",
+  "CONTACT_US_TITLE",
+  "PREGNANCY_TITLE",
+
   // team
   "ASHKAN",
   "ATABAK",
@@ -36,14 +42,6 @@ export const enum imagesKey {
   "SAHAR",
   "SANA",
   "YASER",
-  //
-  "PRIVACY_TITLE",
-  //
-  "GETTING_STARTED",
-  //
-  "CONTACT_US_TITLE",
-  //
-  "PREGNANCY_TITLE",
   //
   "PROFILE1",
   //

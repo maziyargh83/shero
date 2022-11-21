@@ -1,4 +1,3 @@
-import { v4 } from "uuid";
 import {
   Section,
   ContainerSection,
@@ -6,10 +5,39 @@ import {
   SectionTitle,
   DatePicker,
 } from "~/components";
-import { TrackingIcon } from "~/components/Icons/Home/TrackingIcon";
 import { imageBuilder, t } from "~/utils";
-
+import styles from "~/styles/calendar.css";
+import { useState } from "react";
+import moment from "moment-jalaali";
+import { getDateConfig } from "~/data";
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
+type resultType = {
+  week: number;
+  day: number;
+  endDate: string;
+  remainDays: number;
+};
 export default function PregnancyCalculator() {
+  const [date, changeData] = useState<Date>(new Date());
+  const [result, setResult] = useState<resultType>();
+  const calculate = () => {
+    const week = moment().diff(moment(date), "week");
+    const weekInDay = week * 7;
+    const days = moment().diff(moment(date), "day");
+    // end date
+    const finalDate = moment(date).add(40, "w");
+    const remainDays = finalDate.clone().diff(moment(), "d");
+
+    const endDate = finalDate.format(getDateConfig("monthNameWithYear"));
+    setResult({
+      week: week,
+      day: days - weekInDay,
+      endDate: endDate,
+      remainDays,
+    });
+  };
   return (
     <div>
       <Section>
@@ -34,10 +62,21 @@ export default function PregnancyCalculator() {
           <p className="text-gray-G1 font-normal text-xl">
             The first day of your last period
           </p>
-          <DatePicker />
-          <button className="period-button">Calculate</button>
+          <DatePicker value={date} onChange={changeData} />
+          <button onClick={calculate} className="period-button">
+            Calculate
+          </button>
         </div>
       </Section>
+      {!!result && (
+        <Section>
+          <p>congratulations !</p>
+
+          <p>
+            You are 8 weeks pregnant and You will meet your baby onJuly 29, 2023
+          </p>
+        </Section>
+      )}
     </div>
   );
 }

@@ -25,3 +25,4 @@ export * from "./Column";
 export * from "./CommentSlider";
 export * from "./Comment";
 export * from "./SectionGenerator";
+export * from "./Calendar";
