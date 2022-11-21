@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { FaAndroid, FaApple } from "react-icons/fa";
-import { TbWorld } from "react-icons/tb";
 import { v4 } from "uuid";
 import {
   Blob,
   Box,
+  BoxContent,
   ContainerSection,
   DownloadIcon,
   ImageBlob,
@@ -20,6 +19,13 @@ export default function GettingStarted() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [activeBox, setActiveBox] = useState<string>();
   const { width } = useWindowSize();
+  const scrollToEl = (id: string) => {
+    const el = document.getElementById(id);
+    if (el)
+      el?.scrollIntoView({
+        behavior: "smooth",
+      });
+  };
   return (
     <div>
       <Section>
@@ -54,45 +60,53 @@ export default function GettingStarted() {
         <div className="mb-16">
           <Tabs
             activeIndex={activeTabIndex}
-            data={[{ title: "Today" }, { title: "Today2" }, { title: "Logs" }]}
+            data={[
+              { title: "Download" },
+              { title: "Today" },
+              {
+                title: "Profile",
+              },
+              {
+                title: "Logs",
+              },
+              {
+                title: "Goals",
+              },
+              {
+                title: "Reminders",
+              },
+              {
+                title: "Edit period",
+              },
+              {
+                title: "Add partners",
+              },
+            ]}
             onChange={({ index, title }) => {
               setActiveTabIndex(index);
               width && width < 767 && setActiveBox(title);
+              width && width > 767 && scrollToEl(title + "_id");
             }}
             mobilePortal
             activePortal={!!activeBox}
           />
         </div>
-        <Box
-          title={"Today"}
-          activeBox={activeBox}
-          changeActiveBox={setActiveBox}
-          rightFrame="FRAME_MAIN_DARK_HALF"
-        >
-          <p className="text-gray-G6 text-lg font-normal">
-            Based on the information you entered in your profile, this circle
-            shows the stages you go through during your period. The length of
-            your period is 31 days, including: - Day 1 to 5 of the period: you
-            will have your period (bleeding) - Day 11 to 19 of the period: the
-            window of fertility and ovulation - Day 24 to 31 of the period:
-            Premenstrual syndrome (PMS)
-          </p>
-        </Box>
-        <Box
-          title={"Today2"}
-          activeBox={activeBox}
-          changeActiveBox={setActiveBox}
-          rightFrame="FRAME_MAIN_DARK_HALF"
-        >
-          <p className="text-gray-G6 text-lg font-normal">
-            2222222 Based on the information you entered in your profile, this
-            circle shows the stages you go through during your period. The
-            length of your period is 31 days, including: - Day 1 to 5 of the
-            period: you will have your period (bleeding) - Day 11 to 19 of the
-            period: the window of fertility and ovulation - Day 24 to 31 of the
-            period: Premenstrual syndrome (PMS)
-          </p>
-        </Box>
+        <div className="flex flex-wrap md:block">
+          <Box
+            title={"Download"}
+            activeBox={activeBox}
+            changeActiveBox={setActiveBox}
+          >
+            <BoxContent image="FRAME_MAIN_DARK_HALF" key={"Android"}>
+              <p>
+                You can download the Shero application through one of the
+                commands below.
+              </p>
+              <DownloadIcon image="GOOGLE_PLAY" />
+            </BoxContent>
+            <BoxContent image="FRAME_MAIN_DARK_HALF" key={"Ios"} />
+          </Box>
+        </div>
       </Section>
     </div>
   );

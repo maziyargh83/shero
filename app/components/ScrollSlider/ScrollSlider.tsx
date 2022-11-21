@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Blob } from "~/components";
 import { useWindowSize } from "~/hook";
@@ -10,7 +11,14 @@ export const ScrollSlider = () => {
   return (
     <div className="mt-32 hidden xl:flex h-screen  justify-center items-center scrollSlide">
       <div className="w-full h-[90%] bg-purple-P2 flex items-center rounded-3xl ">
-        <Swiper slidesPerView={1} height={height}>
+        <Swiper
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 5000,
+          }}
+          slidesPerView={1}
+          height={height}
+        >
           <SwiperSlide>
             <Slide />
           </SwiperSlide>

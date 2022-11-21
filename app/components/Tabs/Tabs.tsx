@@ -31,7 +31,7 @@ export const Tabs = ({
       className={classNames("", {
         "md:flex hidden": !activePortal && mobilePortal,
         flex: activePortal || !mobilePortal,
-        "z-10 h-20 items-center  bg-purple-P1 w-full pl-8 fixed top-20":
+        "z-10 h-20 items-center overflow-auto bg-purple-P1 w-full pl-8 fixed top-20":
           activePortal,
       })}
     >
