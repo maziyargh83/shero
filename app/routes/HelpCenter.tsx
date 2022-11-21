@@ -98,13 +98,19 @@ export default function GettingStarted() {
             changeActiveBox={setActiveBox}
           >
             <BoxContent image="FRAME_MAIN_DARK_HALF" key={"Android"}>
-              <p>
+              <p className="text-lg font-normal text-gray-G6">
                 You can download the Shero application through one of the
                 commands below.
               </p>
-              <DownloadIcon image="GOOGLE_PLAY" />
+              <DownloadIcon image="GOOGLE_PLAY" className="my-10" />
             </BoxContent>
-            <BoxContent image="FRAME_MAIN_DARK_HALF" key={"Ios"} />
+            <BoxContent image="FRAME_MAIN_DARK_HALF" key={"Ios"}>
+              <p className="text-lg font-normal text-gray-G6">
+                You can download the Shero application through one of the
+                commands below.
+              </p>
+              <DownloadIcon image="APP_STORE" className="my-10" />
+            </BoxContent>
           </Box>
         </div>
       </Section>

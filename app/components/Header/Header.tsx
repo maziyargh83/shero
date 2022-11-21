@@ -51,14 +51,18 @@ export const Header = () => {
           </a>
         </div>
         <div className="md:hidden w-1/3">
-          <img src={imageBuilder("LOGO_TYPO")} />
+          <a href="/">
+            <img src={imageBuilder("LOGO_TYPO")} />
+          </a>
         </div>
         <div className="md:flex items-center hidden">
-          <img
-            className="w-14 h-14 md:mr-8"
-            src={imageBuilder("LOGO")}
-            alt="logo"
-          />
+          <a href="/">
+            <img
+              className="w-14 h-14 md:mr-8"
+              src={imageBuilder("LOGO")}
+              alt="logo"
+            />
+          </a>
           <HeaderWrapper>
             {HeaderData.map((data) => {
               return <HeaderMenu key={data.title + "_menu_item"} {...data} />;

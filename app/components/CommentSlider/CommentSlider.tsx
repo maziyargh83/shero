@@ -13,7 +13,7 @@ export const CommentSlider = ({
   console.log(data);
   console.log("====================================");
   return (
-    <div className="comment-slider">
+    <div className="comment-slider mt-10">
       <Swiper
         modules={[Virtual, Pagination]}
         pagination={{ clickable: true }}

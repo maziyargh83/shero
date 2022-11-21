@@ -60,7 +60,7 @@ export const Box = ({
         className={classNames("bg-white w-full rounded-3xl h-[700px] ", {
           "hidden md:block  py-14  mb-6 px-20 overflow-hidden":
             !!hideMobile && !activePopUp(),
-          "block w-[90%] px-7 py-4  mx-auto h-[80%] ": activePopUp(),
+          "block w-[90%] px-7 pt-4 mx-auto h-[80%] ": activePopUp(),
         })}
         onClick={(e) => e.stopPropagation()}
       >
@@ -81,8 +81,15 @@ export const Box = ({
               />
             </div>
           )}
-          {tabsId.length == 0 && (
-            <div className="md:mb-7 flex justify-between items-center ">
+          {(tabsId.length == 0 || (width && width > 767)) && (
+            <div
+              className={classNames(
+                "md:mb-7 flex justify-between items-center ",
+                {
+                  "md:mt-10": tabsId.length > 0,
+                }
+              )}
+            >
               <p className="text-3xl font-medium text-purple-P1">{activeTab}</p>
               <FiX
                 className="md:hidden"

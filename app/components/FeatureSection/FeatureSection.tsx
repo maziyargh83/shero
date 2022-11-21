@@ -3,6 +3,7 @@ import { FiBook } from "react-icons/fi";
 import { v4 } from "uuid";
 import { Blob } from "~/components/Blob";
 import {
+  BookIcon,
   ChatIcon,
   Path1,
   Path2,
@@ -10,7 +11,10 @@ import {
   Path4,
   PregnancyIcon,
 } from "~/components/Icons";
-import { TrackingIcon } from "~/components/Icons/Home/TrackingIcon";
+import {
+  TrackingIcon,
+  TrackingLightIcon,
+} from "~/components/Icons/Home/TrackingIcon";
 import { ImageBlob } from "~/components/ImageBlob";
 import { imageBuilder, t } from "~/utils";
 interface SectionProps {
@@ -71,14 +75,14 @@ export const FeatureSection = () => {
   const data: SectionProps[] = [
     {
       title: t("FEATURE_SECTION_CONTENT"),
-      icon: <FiBook size={50} className="text-purple-P1" />,
+      icon: <BookIcon />,
       className: "top-4 left-0",
       pathClassName: "top-[100%] -translate-y-[50%] left-[50%]",
       path: <Path1 />,
     },
     {
       title: t("FEATURE_SECTION_CALENDAR"),
-      icon: <TrackingIcon color="#3E1F90" />,
+      icon: <TrackingLightIcon color="#3E1F90" />,
       className: "top-4 right-0",
       pathClassName: "top-[100%]  -translate-y-[50%] right-[50%]",
       path: <Path2 />,

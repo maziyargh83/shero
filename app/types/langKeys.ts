@@ -91,4 +91,10 @@ export enum languageKeys {
   // Pregnancy
   "PREGNANCY_TITLE",
   "PREGNANCY_DESCRIPTION",
+  // comment title
+  "COMMENT_TITLE",
+  "COMMENT_DESCRIPTION",
+  // log key
+  "LOG_KEY_TITLE",
+  "LOG_KEY_DESCRIPTION",
 }

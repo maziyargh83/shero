@@ -222,9 +222,9 @@ export default function Index() {
       <Section padding={false} className="mt-12 md:mt-24">
         <div className="md:hidden px-5 md:px-0 mb-12">
           <SectionTitle
-            subTitle={t("FEATURE_TITLE")}
+            subTitle={t("LOG_KEY_TITLE")}
             subTitleClass="text-gray-G1 font-bold text-4xl"
-            description={t("FEATURE_DESCRIPTION")}
+            description={t("LOG_KEY_DESCRIPTION")}
             descriptionClass="text-xl font-normal mt-2 text-gray-G2"
           />
         </div>
@@ -239,7 +239,13 @@ export default function Index() {
         />
         <FAQ />
       </Section>
-      <Section className="mt-16 md:mt-32">
+      <Section className="mt-16 md:mt-32 ">
+        <SectionTitle
+          subTitle={t("COMMENT_TITLE")}
+          subTitleClass="text-gray-G1 font-bold text-4xl"
+          description={t("COMMENT_DESCRIPTION")}
+          descriptionClass="text-xl font-normal mt-7 text-gray-G2"
+        />
         <CommentSlider />
       </Section>
     </Fragment>

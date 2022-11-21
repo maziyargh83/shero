@@ -101,5 +101,11 @@ const EN: Record<keyof typeof languageKeys, string> = {
   PREGNANCY_TITLE: "Pregnancy due date calculator",
   PREGNANCY_DESCRIPTION:
     "Positive pregnancy test? You’ll probably have lots of questions like how far along am I? And when is my due date? Or maybe you’re thinking about timings before you start trying? Our Pregnancy Due Date Calculator can help you work out your estimated due date or when your baby might arrive.",
+  //
+  COMMENT_TITLE: "Why people love Shero",
+  COMMENT_DESCRIPTION: "Some of your thoughts on Shero",
+  //
+  LOG_KEY_TITLE: "Log Key Cycle Symptoms",
+  LOG_KEY_DESCRIPTION: "Track all your fertility signs",
 };
 export default EN;

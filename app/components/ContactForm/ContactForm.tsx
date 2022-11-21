@@ -27,25 +27,30 @@ export const ContactForm = () => {
         </div>
       </Container>
       <Container>
-        <form action="">
+        <form action="mailto:support@Shero.info">
           <InputWrapper title="Name">
-            <input type={"text"} placeholder="Enter your name" />
+            <input
+              type={"text"}
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
           </InputWrapper>
           <InputWrapper
             title="Phone (optional)"
             placeHolderName="mobile number"
           >
-            <input type={"text"} />
+            <input type={"text"} name="phone" />
           </InputWrapper>
           <InputWrapper title="Email">
-            <input type={"text"} />
+            <input type={"email"} name="email" required />
           </InputWrapper>
           <InputWrapper
             title="Your message"
             placeHolder="Note..."
             className="rounded-2xl min-h-[120px] w-full  border border-color-[#F2F3F4] mt-3 px-6 text-xs font-medium p-3"
           >
-            <textarea />
+            <textarea name="subject" />
           </InputWrapper>
           <input
             className="mt-3 bg-purple-P2 text-white rounded-full w-full h-12"
