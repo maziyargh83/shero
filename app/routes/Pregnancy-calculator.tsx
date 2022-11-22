@@ -7,7 +7,7 @@ import {
 } from "~/components";
 import { imageBuilder, t } from "~/utils";
 import styles from "~/styles/calendar.css";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import moment from "moment-jalaali";
 import { getDateConfig } from "~/data";
 export function links() {
@@ -69,13 +69,43 @@ export default function PregnancyCalculator() {
         </div>
       </Section>
       {!!result && (
-        <Section>
-          <p>congratulations !</p>
+        <Fragment>
+          <Section className="mt-32">
+            <div className="justify-center flex flex-col items-center">
+              <p className="text-green-G1 text-2xl font-medium">
+                {t("PREGNANCY_CONGRATULATION")}
+              </p>
 
-          <p>
-            You are 8 weeks pregnant and You will meet your baby onJuly 29, 2023
-          </p>
-        </Section>
+              <p className="font-normal text-2xl">
+                {t("PREGNANCY_RESULT", {
+                  week: result.week,
+                  date: result.endDate,
+                })}
+              </p>
+            </div>
+          </Section>
+          <Section className="">
+            <div className="w-[80%] mx-auto mt-52">
+              <p className="font-normal text-base">
+                At 8 week pregnant, you’re actually not pregnant yet. As your
+                pregnancy is calculated from the first day of your last
+                menstruation, your baby does not yet exist, and your body is
+                preparing for the ovulation during which you’ll get pregnant.
+              </p>
+              <div className="flex justify-between items-center mt-10">
+                <p className="text-base font-normal text-gray-G4 ">
+                  {t("PREGNANCY_MORE_DETAIL")}
+                </p>
+                <a
+                  href="/Download"
+                  className="bg-purple-P2 py-4 px-5 rounded-full text-white"
+                >
+                  {t("PREGNANCY_DOWNLOAD")}
+                </a>
+              </div>
+            </div>
+          </Section>
+        </Fragment>
       )}
     </div>
   );

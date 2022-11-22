@@ -1,3 +1,4 @@
+export type LangConfigValueType = string | ((args: any) => string);
 export enum languageKeys {
   "HEADER_HOME",
   "HEADER_SUPPORT",
@@ -97,4 +98,9 @@ export enum languageKeys {
   // log key
   "LOG_KEY_TITLE",
   "LOG_KEY_DESCRIPTION",
+  // Pregnancy
+  "PREGNANCY_CONGRATULATION",
+  "PREGNANCY_RESULT",
+  "PREGNANCY_MORE_DETAIL",
+  "PREGNANCY_DOWNLOAD",
 }

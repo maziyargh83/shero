@@ -6,11 +6,13 @@ const getLang = () => {
   if (CONFIG.language == "en") return EN;
   return FA;
 };
-const translate = (key: keyof typeof languageKeys): string => {
+const translate = (key: keyof typeof languageKeys, args?: any): string => {
   const LANG = getLang();
-  const data = LANG[key];
+  let data = LANG[key];
+  if (typeof data == "string") return data;
 
-  return data;
+  const result = data(args);
+  return result;
 };
 
 export { translate as t };

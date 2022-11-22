@@ -1,6 +1,6 @@
-import type { languageKeys } from "~/types/langKeys";
+import type { LangConfigValueType, languageKeys } from "~/types/langKeys";
 
-const EN: Record<keyof typeof languageKeys, string> = {
+const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   HEADER_HOME: "home",
   HEADER_SUPPORT: "support",
   HEADER_PREGNANCY_TOOLS: "Pregnancy Tools",
@@ -107,5 +107,12 @@ const EN: Record<keyof typeof languageKeys, string> = {
   //
   LOG_KEY_TITLE: "Log Key Cycle Symptoms",
   LOG_KEY_DESCRIPTION: "Track all your fertility signs",
+  //
+  PREGNANCY_CONGRATULATION: "congratulations !",
+  PREGNANCY_RESULT: ({ date, week }) =>
+    `You are ${week} weeks pregnant and You will meet your baby on ${date}`,
+  PREGNANCY_MORE_DETAIL:
+    "For more details, you can download the Shero application",
+  PREGNANCY_DOWNLOAD: "Download app",
 };
 export default EN;

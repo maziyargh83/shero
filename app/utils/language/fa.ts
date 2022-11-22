@@ -1,6 +1,6 @@
-import type { languageKeys } from "~/types/langKeys";
+import type { LangConfigValueType, languageKeys } from "~/types/langKeys";
 
-const FA: Record<keyof typeof languageKeys, string> = {
+const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   HEADER_HOME: "خانه",
   HEADER_SUPPORT: "پشتیبانی",
   HEADER_PREGNANCY_TOOLS: "ابزار بارداری",
@@ -87,5 +87,11 @@ const FA: Record<keyof typeof languageKeys, string> = {
   PREGNANCY_TITLE: "",
   TERMS_DESCRIPTION: "",
   TERMS_TITLE: "",
+  COMMENT_DESCRIPTION: "",
+  COMMENT_TITLE: "",
+  LOG_KEY_DESCRIPTION: "",
+  LOG_KEY_TITLE: "",
+  PREGNANCY_CONGRATULATION: "",
+  PREGNANCY_RESULT: "",
 };
 export default FA;
