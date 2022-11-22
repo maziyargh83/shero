@@ -146,4 +146,7 @@ export const images: imageTypes = {
   PERIOD_TITLE: {
     url: "shero/imageTitle/period-title.png",
   },
+  MARKER: {
+    url: "shero/element/marker.png",
+  },
 };

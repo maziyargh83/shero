@@ -6,3 +6,4 @@ export * from "./teamType";
 export * from "./commentTypes";
 export * from "./SectionGeneratorTypes";
 export * from "./DateConfig";
+export * from "./PregnancyTypes";

@@ -26,3 +26,4 @@ export * from "./CommentSlider";
 export * from "./Comment";
 export * from "./SectionGenerator";
 export * from "./Calendar";
+export * from "./PregnancyProgress";

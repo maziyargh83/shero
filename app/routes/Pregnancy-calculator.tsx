@@ -4,24 +4,21 @@ import {
   RowSection,
   SectionTitle,
   DatePicker,
+  PregnancyProgress,
 } from "~/components";
 import { imageBuilder, t } from "~/utils";
 import styles from "~/styles/calendar.css";
 import { Fragment, useState } from "react";
 import moment from "moment-jalaali";
 import { getDateConfig } from "~/data";
+import type { PregnancyResultType } from "~/types";
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
-type resultType = {
-  week: number;
-  day: number;
-  endDate: string;
-  remainDays: number;
-};
+
 export default function PregnancyCalculator() {
   const [date, changeData] = useState<Date>(new Date());
-  const [result, setResult] = useState<resultType>();
+  const [result, setResult] = useState<PregnancyResultType>();
   const calculate = () => {
     const week = moment().diff(moment(date), "week");
     const weekInDay = week * 7;
@@ -86,19 +83,20 @@ export default function PregnancyCalculator() {
           </Section>
           <Section className="">
             <div className="w-[80%] mx-auto mt-52">
-              <p className="font-normal text-base">
+              <PregnancyProgress date={date} {...result} />
+              <p className="font-normal text-base mt-10">
                 At 8 week pregnant, you’re actually not pregnant yet. As your
                 pregnancy is calculated from the first day of your last
                 menstruation, your baby does not yet exist, and your body is
                 preparing for the ovulation during which you’ll get pregnant.
               </p>
-              <div className="flex justify-between items-center mt-10">
+              <div className="flex justify-between items-center mt-10 flex-wrap">
                 <p className="text-base font-normal text-gray-G4 ">
                   {t("PREGNANCY_MORE_DETAIL")}
                 </p>
                 <a
                   href="/Download"
-                  className="bg-purple-P2 py-4 px-5 rounded-full text-white"
+                  className="bg-purple-P2 mt-3 md:mt-0 py-4 px-5 rounded-full text-white"
                 >
                   {t("PREGNANCY_DOWNLOAD")}
                 </a>
