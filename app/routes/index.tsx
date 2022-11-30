@@ -153,7 +153,7 @@ export default function Index() {
           />
         </div>
       </Section>
-      <Section className="md:hidden">
+      <Section className="sm:hidden">
         <SectionTitle
           subTitle={t("FEATURE_TITLE")}
           subTitleClass="text-gray-G1 font-bold text-4xl"

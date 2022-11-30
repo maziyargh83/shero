@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { FiBook } from "react-icons/fi";
 import { v4 } from "uuid";
 import { Blob } from "~/components/Blob";
 import {
@@ -11,10 +10,7 @@ import {
   Path4,
   PregnancyIcon,
 } from "~/components/Icons";
-import {
-  TrackingIcon,
-  TrackingLightIcon,
-} from "~/components/Icons/Home/TrackingIcon";
+import { TrackingLightIcon } from "~/components/Icons/Home/TrackingIcon";
 import { ImageBlob } from "~/components/ImageBlob";
 import { imageBuilder, t } from "~/utils";
 interface SectionProps {

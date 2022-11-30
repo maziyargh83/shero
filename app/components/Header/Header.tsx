@@ -41,9 +41,10 @@ export const Header = () => {
           <a
             href="/Download"
             className={classNames(
-              "text-base md:hidden w-full inline-block font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 text-purple-P1 px-4 py-2 ",
+              "text-base md:hidden  font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 px-4 py-2 ",
               {
                 "bg-purple-P1 text-white": scrolled,
+                "text-purple-P1": !scrolled,
               }
             )}
           >
@@ -73,9 +74,10 @@ export const Header = () => {
           <a
             href="/Download"
             className={classNames(
-              "text-base hidden md:inline-block font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 text-purple-P1 px-8 py-2 ",
+              "text-base hidden md:inline-block font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1  px-8 py-2 ",
               {
-                "bg-purple-P1 text-white": scrolled,
+                "bg-purple-P1 text-white hover:shadow-xl": scrolled,
+                "text-purple-P1 hover:text-white hover:bg-purple-P1": !scrolled,
               }
             )}
           >

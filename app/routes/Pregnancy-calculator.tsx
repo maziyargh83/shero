@@ -7,11 +7,11 @@ import {
   PregnancyProgress,
 } from "~/components";
 import { imageBuilder, t } from "~/utils";
-import styles from "~/styles/calendar.css";
 import { Fragment, useState } from "react";
 import moment from "moment-jalaali";
 import { getDateConfig } from "~/data";
 import type { PregnancyResultType } from "~/types";
+import styles from "~/styles/calendar.css";
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }

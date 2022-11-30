@@ -4,10 +4,13 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import ReactCalendar from "react-calendar";
 
 interface CalendarProps {
-  onChange: (date: Date) => void;
+  onChange?: (date: Date) => void;
   value?: Date;
 }
-export const Calendar = ({ onChange = () => {}, value }: CalendarProps) => {
+export const Calendar = ({
+  onChange = () => {},
+  value = new Date(),
+}: CalendarProps) => {
   return (
     <ReactCalendar
       maxDetail="month"
