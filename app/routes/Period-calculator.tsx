@@ -55,7 +55,7 @@ export default function PeriodCalculator() {
         </button>
       </Section>
       <Section className="mt-10">
-        <div className="flex space-y-10 md:space-x-3 flex-wrap md:flex-nowrap">
+        <div className="flex space-y-10 md:space-y-0 md:space-x-3 flex-wrap md:flex-nowrap">
           <Calendar />
           <Calendar />
           <Calendar />

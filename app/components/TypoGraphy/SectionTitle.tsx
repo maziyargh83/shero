@@ -23,9 +23,11 @@ export const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <div className={containerClass}>
-      <div>
-        <h1 className={titleClass}>{title}</h1>
-      </div>
+      {(!!title || !!titleClass) && (
+        <div>
+          <h1 className={titleClass}>{title}</h1>
+        </div>
+      )}
       <div>
         <h2 className={subTitleClass}>{subTitle}</h2>
       </div>

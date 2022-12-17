@@ -10,12 +10,14 @@ export const FrameMobileHome = ({
 }) => {
   return (
     <div className="inline-flex flex-col md:flex-row self-center justify-center items-center md:mt-0 mt-24 relative ">
-      <div className="relative ">
-        <img
-          className="image shadow-mobile"
-          src={imageBuilder("FRAME_MAIN")}
-          alt="mobile framer"
-        />
+      <div className="relative">
+        <div className="relative shadow-mobile">
+          <img
+            className="image"
+            src={imageBuilder("FRAME_MAIN")}
+            alt="mobile framer"
+          />
+        </div>
 
         <Blob className="absolute -top-20 -z-10 -right-10 " />
         <Blob color="#FFEBEB" className="absolute -top-14 -z-20 -right-24 " />

@@ -138,7 +138,7 @@ const MobileButton = ({
   <div className="px-2 w-1/2">
     <div
       onClick={changeActiveBox}
-      className="flex text-base font-medium text-gray-G2 md:hidden   bg-white justify-center items-center h-14 shadow-sm rounded-2xl"
+      className="flex text-base font-medium text-gray-G2 md:hidden cursor-pointer  bg-white justify-center items-center h-14 shadow-sm rounded-2xl"
     >
       {title}
     </div>
