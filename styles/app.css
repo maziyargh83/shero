@@ -134,7 +134,12 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.phone::before {
+  content: "";
+  background-image: url(/images/shero/shadow/shadow.png);
+  display: block;
+  position: absolute;
+}
 @layer components {
   .blobs {
     @apply relative  -z-50 inline-block;

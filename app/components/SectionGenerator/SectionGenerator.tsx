@@ -20,13 +20,50 @@ export const SectionGenerator = ({
               {...items}
               generateType={items.generateType || generateType}
             />
+            <SectionChildren
+              {...items}
+              generateType={items.generateType || generateType}
+            />
           </div>
         );
       })}
     </div>
   );
 };
-const SectionText = ({ sectionData, generateType }: SectionGeneratorType) => {
+const SectionChildren = ({
+  child,
+  generateType,
+  level = 0,
+}: SectionGeneratorType & { level?: number }) => {
+  if (!child && !Array.isArray(child)) return <Fragment />;
+  return (
+    <Fragment>
+      {child?.map((childItem) => {
+        return (
+          <Fragment key={v4()}>
+            <SectionText
+              {...childItem}
+              generateType={childItem.generateType || generateType}
+              level={level}
+            />
+            {childItem.child && (
+              <SectionChildren
+                {...childItem}
+                generateType={childItem.generateType || generateType}
+                level={level + 1}
+              />
+            )}
+          </Fragment>
+        );
+      })}
+    </Fragment>
+  );
+};
+const SectionText = ({
+  sectionData,
+  generateType,
+  level = 0,
+}: SectionGeneratorType & { level?: number }) => {
   if (!sectionData) return <Fragment />;
   switch (generateType) {
     case "number":
@@ -41,6 +78,19 @@ const SectionText = ({ sectionData, generateType }: SectionGeneratorType) => {
           <p className="text-gray-G1 text-base font-normal">{sectionData}</p>
         </div>
       );
+    case "dashed":
+      return (
+        <div
+          className="mb-8 flex"
+          style={{
+            paddingLeft: level * 20 + "px",
+          }}
+        >
+          <span className="mr-2">-</span>
+          <p className="text-gray-G1 text-base font-normal">{sectionData}</p>
+        </div>
+      );
+
     default:
       return <Fragment />;
   }

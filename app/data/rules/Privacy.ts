@@ -4,44 +4,156 @@ export const privacyData: SectionGeneratorDataType = {
   generateType: "number",
   data: [
     {
-      title: "Shero's responsibility",
-      sectionData: `Based on the laws of computer crimes, Shero undertakes to use all its facilities and resources to preserve and protect users' personal information.
-      Before using the program, users are required to register. Registration in Shero is free. In the registration section, the user is asked for some personal information such as first and last name and phone number. Collecting this information allows Shero to have a more accurate view of its users in order to provide them with more convenient features in addition to easier interaction. Shero will not share this information with any third party without the user's permission.
-      This registration is only valid for one user and Shero prohibits giving the username and password to another person and will not allow multiple users with the same profile. The responsibility for maintaining the security of each user's information will be his own.
-      By registering the sign of acceptance of these conditions, from the date of registration, this contract between the parties will be valid and all previous contracts will be subject to these regulations.
-      The contract with Shero starts from the start of the minimum registration period in the application and will continue until the last time the user uses this application.
-      By confirming these regulations, users will be bound by them.
-      Shero takes necessary and appropriate hardware and software security measures to prevent unauthorized access and disclosure or destruction of user's personal information. Shero allows the company's employees access to users' personal information, but these people are bound by confidentiality obligations and will be prosecuted in case of violation of these obligations. Also, statistical studies on the community of Shero users are conducted without using their personal identity and completely anonymously.
-      Shero may partner with other companies, websites or applications. But Shero is not responsible for their privacy and user policies. If you wish to access other sites or applications through the Shero application, please refer to their websites for their privacy policies.
-      Shero users can change or delete their personal information such as username or password every time they log into the program.
-      The Shero application collects data related to your body's health in order to make more accurate predictions and provide better quality services. Using the app means accepting these rules.
-      Shero users can request to delete their account through their profile. After deleting the account, it will not be possible to recover user information.
-      Shero has the right to terminate users' access to Shero services for a limited period of time or permanently, at its own discretion and if necessary.
-      Shero can use any monitoring tool it wants to monitor intranet conversations (periodic) and if it considers the conversations to be contrary to the ethics or age norms of the users, delete that part of the conversation, and in case of repeated sending of unusual messages, the sender's account Blocked by delete.
-      Users can talk to the support group, and the support group will answer their questions if it detects a general issue, and if it is a specialized issue, it will guide the user to a specialist.
-      Shero will not be responsible for the site being down due to force majeure or due to site and application repairs.
-      If the doctor does not respond within the specified time frame, the amount paid by the user will be returned to the user within 72 hours.`,
+      title: "Personal information we collect",
+      sectionData: `Personal information you may provide to us through the Shero app and website or otherwise includes:`,
+      child: [
+        {
+          generateType: "dashed",
+
+          sectionData:
+            "Account and profile data that you provide to create an account on The Shero app including your name, email address, password, date of birth, mobile phone number, profile photo, location (e.g., city, state, country), gender.",
+        },
+        {
+          generateType: "dashed",
+          sectionData:
+            "Health Data such as information about your physical attributes, sexual orientation, fertility, pregnancy, sexual activity, menstrual activity, sleep activity, mood, health conditions, medications, and number of children.",
+        },
+        {
+          generateType: "dashed",
+          sectionData:
+            "Data about others such as the names and contact details of the spouses, partners or caregivers to whom you choose to grant access to information in your Shero app account or the email address of anyone you invite to use Shero through features in the app.",
+        },
+        {
+          generateType: "dashed",
+          sectionData:
+            "Communications that we exchange with you, including when you contact us with questions or feedback, through social media, or otherwise.",
+        },
+        {
+          generateType: "dashed",
+          sectionData:
+            "Payment and transactional data needed to complete your orders on or through the Service (including name, address, payment card information, billing information), and your transaction history.",
+        },
+        {
+          generateType: "dashed",
+          sectionData:
+            "User generated content that you upload, generate, transmit, or otherwise make available on the Service, such as profile pictures, photos, videos, images, music, videos, comments, questions, and messages.",
+        },
+        {
+          generateType: "dashed",
+          sectionData:
+            "Automatic data collection. We, our service providers, and our business partners may automatically log information about you, your device, and your interaction over time with the Shero app and website, such as:",
+          child: [
+            {
+              generateType: "dashed",
+              sectionData:
+                "Device data, such as your computer’s or mobile device’s operating system type and version, manufacturer and model, browser type, device type, language settings, mobile device carrier, radio/network information (e.g., WiFi, LTE, 3G).",
+            },
+            {
+              generateType: "dashed",
+              sectionData:
+                "Online activity data, such as pages or screens you viewed, how long you spent on a page or screen, the website you visited before browsing to the app, navigation paths between pages or screens, information about your activity on a page or screen, access times, and duration of access, and whether you have opened our marketing emails or clicked links within them.",
+            },
+            {
+              generateType: "dashed",
+              sectionData:
+                "Precise geolocation data when you authorize our mobile application to access your device’s location.",
+            },
+          ],
+        },
+      ],
     },
     {
-      title: "Responsibility of users",
-      sectionData: `The user is responsible for the maintenance of computer hardware, phones and other tools necessary to access and use this site and all costs related to it, and Shero is not responsible for damages caused by the user's tools.
-      Users are responsible for the content they post or share in any form and by any means.
-      Users confirm that they are at least 15 years old or use this space under the supervision of their parents in order to use the space for sharing and sending content (Dorhami).
-      Shero users undertake to refrain from posting and sharing the following:
-      Content or links that are unreal, annoying, harmful to people's health, threatening, confidential, revealing private information of others, and racist.
-      Content or links for which there is no license or certificate.
-      Spam content or links, unsolicited emails and unauthorized advertising content
-      Files or links that contain malware or viruses.
-      Content or links that in any way violate the property rights, copyrights, and trademarks of other natural and legal persons.
-      Users are committed to pay attention to the following points and not commit the following in any way:
-      Interfering in any way with other users' conversations.
-      Actions that cause inflammation among users or third parties.
-      Behavior that incites to commit a crime or a criminal act, or acts that will cause civil or criminal liability, or in any way violates the law or the rights of third parties in Iran or other countries.
-      impersonating Shero doctors, Shero support team and other people of Shero company or team as well as other legal and real persons and providing information that shows the user's affiliation with them.
-      Collecting and providing private information of other users.
-      Actions that technically cause damage, such as restriction removal, computer viruses, corrupted information or other malicious software, etc.
-      Abusing the Instagram application or page, such as hacking and...
-      If the user does not follow the rules of using Shero, Shero`,
+      title: "How we use personal information:",
+      child: [
+        {
+          generateType: "dashed",
+
+          sectionData: "Service delivery:",
+          child: [
+            {
+              generateType: "dashed",
+              sectionData:
+                "provide, operate and improve the Shero app and our business;",
+            },
+            {
+              generateType: "dashed",
+              sectionData:
+                "establish and maintain your user profile on the app;",
+            },
+            {
+              generateType: "dashed",
+              sectionData: "refer your contacts to join the Service;",
+            },
+            {
+              generateType: "dashed",
+              sectionData:
+                "communicate with you about the app, including by sending announcements, updates, security alerts, and support and administrative messages;",
+            },
+            {
+              generateType: "dashed",
+              sectionData:
+                "understand your needs and interests, and personalize your experience with the app and our communications;",
+            },
+            {
+              generateType: "dashed",
+              sectionData:
+                "provide support for the Service, and respond to your requests, questions and feedback.",
+            },
+          ],
+        },
+        {
+          generateType: "dashed",
+          sectionData:
+            "Marketing and advertising. We, our service providers and our third party advertising partners may collect and use your personal information for the following marketing and advertising purposes:",
+          child: [
+            {
+              generateType: "dashed",
+              sectionData:
+                "Direct marketing. We may send you Shero-related or other direct marketing communications.",
+            },
+            {
+              generateType: "dashed",
+              sectionData:
+                "Interest-based advertising. We may engage third-party advertisers or advertising companies to display ads on the Shero app and other online services. These companies may use cookies and similar technologies to collect information about your interaction over time across the app, our communications and other online services, and use that information to serve online ads that they think will interest you.",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Your Privacy Rights:",
+      child: [
+        {
+          generateType: "dashed",
+          sectionData:
+            "If you have registered for an account with Shero, you may review and update account information by logging into the account.",
+        },
+        {
+          generateType: "dashed",
+          sectionData:
+            "You can delete your account through your profile section on the app. Be aware that by deleting your account all your data and contents will be permanently removed.",
+        },
+      ],
+    },
+    {
+      title: "Security:",
+      child: [
+        {
+          generateType: "dashed",
+          sectionData:
+            "We employ a number of technical, organizational and physical safeguards designed to protect the personal information we collect. However, security risk is inherent in all internet and information technologies and we cannot guarantee the security of your personal information.",
+        },
+      ],
+    },
+    {
+      title: "Changes to this Privacy Policy:",
+      child: [
+        {
+          generateType: "dashed",
+          sectionData:
+            "We reserve the right to modify this Privacy Policy at any time. If we make material changes to this Privacy Policy, we will notify you.",
+        },
+      ],
     },
   ],
 };

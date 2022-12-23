@@ -969,6 +969,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .block {
   display: block;
 }
@@ -983,6 +987,10 @@ video {
 
 .inline-flex {
   display: inline-flex;
+}
+
+.contents {
+  display: contents;
 }
 
 .list-item {
@@ -1993,6 +2001,13 @@ html {
   left: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.phone::before {
+  content: "";
+  background-image: url(/images/shero/shadow/shadow.png);
+  display: block;
+  position: absolute;
 }
 
 .hover\:bg-purple-P1:hover {
