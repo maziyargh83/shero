@@ -68,13 +68,23 @@ const SectionText = ({
   switch (generateType) {
     case "number":
       return (
-        <p className="font-normal text-base text-gray-G1 whitespace-pre-line">
+        <p
+          className="font-normal text-base text-gray-G1 whitespace-pre-line"
+          style={{
+            paddingLeft: level * 20 + "px",
+          }}
+        >
           {sectionData}
         </p>
       );
     case "dots":
       return (
-        <div className="list-item mb-8">
+        <div
+          className="list-item mb-8"
+          style={{
+            paddingLeft: level * 20 + "px",
+          }}
+        >
           <p className="text-gray-G1 text-base font-normal">{sectionData}</p>
         </div>
       );
@@ -90,7 +100,17 @@ const SectionText = ({
           <p className="text-gray-G1 text-base font-normal">{sectionData}</p>
         </div>
       );
-
+    case "none":
+      return (
+        <div
+          className="mb-8 flex"
+          style={{
+            paddingLeft: level * 20 + "px",
+          }}
+        >
+          <p className="text-gray-G1 text-base font-normal">{sectionData}</p>
+        </div>
+      );
     default:
       return <Fragment />;
   }

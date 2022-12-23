@@ -1,31 +1,110 @@
 import type { SectionGeneratorDataType } from "~/types";
 
 export const termsData: SectionGeneratorDataType = {
-  generateType: "dots",
+  generateType: "number",
   data: [
     {
-      sectionData: `This Terms and Conditions for all products and services provided by Shero website and application. Shero is a period tracker application designed to raise awareness about women's health, predict menstruation and ovulation, and allow users to prevent possible disease by registering, entering their personal details, entering their symptoms, and following up on them in order to experience a healthier life.`,
+      generateType: "none",
+
+      sectionData:
+        "Please read this carefully. By creating an account or accessing or using the Shero app and website, you acknowledge that you accept and agree to be bound by these terms. If you do not agree to these terms, do not use the Shero app or website.",
     },
     {
-      sectionData: `Users are required to register before using the app. Signing up in Shero is free. In this section, some personal details such as first and last name, email, and date of the last period are asked from the user. Gathering this information allows Shero to have a more accurate view of users in order to provide better functions. Shero will not share any information with any third party.`,
+      generateType: "none",
+
+      sectionData:
+        "We reserve the right to modify these terms from time to time, and such modifications may be applicable to you if you continue to use the Shero app and website.",
     },
     {
-      sectionData: `The user is responsible for the maintenance of the computer hardware, telephones, and other tools necessary to access and use this site and all related costs, and Shero is not responsible for any damage caused by the user's tools.`,
+      generateType: "none",
+
+      sectionData:
+        "YOU SHOULD BE AWARE THAT SHERO IS NOT A PROVIDER OF MEDICAL ADVICE. BEFORE YOU TAKE ANY ACTION THAT MAY AFFECT YOUR HEALTH OR SAFETY OR THE HEALTH OR SAFETY OF YOUR FAMILY OR FETUS, PLEASE CONSULT WITH A PROFESSIONAL. IF YOU THINK YOU MAY HAVE A MEDICAL EMERGENCY, CALL YOUR HEALTHCARE PROVIDER IMMEDIATELY.",
     },
     {
-      sectionData: `Shero users can change or delete their personal information such as name and birthdate every time they log in to the app.`,
+      title: "Eligibility to use or service:",
+      sectionData:
+        "To use the Shero App, you may be required to create or update an account and will be asked to provide certain personal information, which may include your name, birth date, and e-mail address or phone number. You agree that you will supply accurate and complete information. To create an Account and access the Shero app, you must be at least 13 years old. If you are under 18, your parent or guardian must review and accept the terms of this Agreement, and by using the Shero app and website, you confirm that your parent or guardian has so reviewed and accepted this Agreement. We reserve the right to limit the availability to users under the age of 18 of certain content in the App, at our sole discretion.",
     },
     {
-      sectionData: `Personal information of Shero users including their name, telephone number is protected by Shero, and Shero will not transfer it to any other person or company.`,
+      title: "Medical Advice Disclaimer",
+      sectionData:
+        "The contents of the Shero app and website, including but not limited to text, graphics, images, tips and advices, recommendations, any information provided by our medical partners, sponsors, or business partners or any other information which you may obtain in connection with your use of the app and website, are provided for your information only. These Contents do not constitute professional medical advice, diagnoses, or treatment, and you should not rely on them as such. Your decision to rely on any information you obtain in connection with your use of the app and website is at your sole discretion and risk. In addition, you should be aware that all information from the third party source, while we believe the source of such information is reliable, we take no responsibility for its accuracy or applicability to your situation and you should review the underlying source (by clicking the hyperlink) before you make any material decisions based on it.",
     },
     {
-      sectionData: `Shero is a tool for managing and following the period and its symptoms and is not a substitute for consulting a specialist doctor.`,
+      title: "Prime Service",
+      sectionData:
+        "We may also offer you additional services in Prime Shero, which may include additional tools and features. You acknowledge that we may charge a fee for the use of any Prime Shero, provided that we notify you of any such fee before you incur it the first time. Subject to the foregoing, you agree to pay any fees incurred by you. We reserve the right to discontinue the services (including Prime Shero) or to change the content of the Services (including Prime Shero) in any way and at any time, with or without notice to you, without liability, except to the extent it terminates the offering of Prime Shero in its entirety.",
     },
     {
-      sectionData: `This app is intended for general information purposes and should not be used for prevention, diagnostic or therapeutic purposes. Medical information is provided in the app only as an educational resource and is not a substitute for professional counseling, diagnosis, and treatment of medical specialists. This company does not guarantee the accuracy, completeness, or usefulness of any of the content provided by us or by a third party.`,
-    },
-    {
-      sectionData: `All users can read terms and condition and privacy policy in the onboarding page before they login to the Shero app.`,
+      title: "Usage rules",
+      sectionData:
+        "You agree that your use of and conduct on the Shero app (including any forum, message board, chat or other communication feature), shall be lawful and will not:",
+      child: [
+        {
+          generateType: "dots",
+
+          sectionData:
+            "include any offensive comments that are connected to race, national origin, gender, sexual preference or physical handicap;",
+        },
+        {
+          generateType: "dots",
+
+          sectionData:
+            "include profanity or any obscene, indecent, pornographic, sexual or otherwise objectionable content or language;",
+        },
+        {
+          generateType: "dots",
+          sectionData:
+            "defame, libel, ridicule, mock, disparage, threaten, harass, intimidate or abuse anyone;",
+        },
+        {
+          generateType: "dots",
+          sectionData:
+            "promote violence, illegal drug use, or substance abuse or describe how to perform a violent act, use illegal drugs or abuse other substances;",
+        },
+        {
+          generateType: "dots",
+          sectionData:
+            "violate the contractual, personal, intellectual property or other rights of any party, or promote or constitute illegal activity;",
+        },
+
+        {
+          generateType: "dots",
+          sectionData:
+            "be in violation of these Terms, any local or international law, rule or regulation or the rules of conduct posted with respect to any individual feature of the app;",
+        },
+        {
+          generateType: "dots",
+          sectionData:
+            "reveal any personal information about another individual, including another person's address, phone number, e-mail address, credit card number or any information that may be used to track, contact or impersonate that individual;",
+        },
+        {
+          generateType: "dots",
+          sectionData: "attempt to impersonate any other party;",
+        },
+        {
+          generateType: "dots",
+          sectionData:
+            "create user accounts by automated means or under false pretenses or mislead others as to the origins of your communications;",
+        },
+        {
+          generateType: "dots",
+          sectionData:
+            "trick, defraud or mislead Shero or other users, especially in any attempt to learn sensitive account information such as passwords;",
+        },
+        {
+          generateType: "dots",
+          sectionData:
+            "make improper use of Shero's support services or submit false reports of abuse or misconduct;",
+        },
+
+        {
+          generateType: "dots",
+          sectionData:
+            "engage in any commercial activities, including, without limitation, any attempt to raise money for anyone or advertise or promote a product, service, website, pyramid scheme or other multi-tiered marketing scheme, without the prior written consent of us;",
+        },
+      ],
     },
   ],
 };

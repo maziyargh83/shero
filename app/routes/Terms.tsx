@@ -21,7 +21,7 @@ export default function Terms() {
               subTitle={t("TERMS_TITLE")}
               subTitleClass="text-gray-G1 font-bold text-4xl  mb-7 md:my-24"
               description={t("TERMS_DESCRIPTION")}
-              descriptionClass="list-item text-base font-normal text-gray-G2"
+              descriptionClass="text-base font-normal text-gray-G2"
             />
           </RowSection>
           <RowSection className="relative flex justify-end items-start  mt-20 md:mt-0">
