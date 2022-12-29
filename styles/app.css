@@ -146,11 +146,11 @@ html {
   }
   .blobs::after {
     content: "";
-    @apply w-64 h-64 bg-purple-P3 block absolute blur-[150px] top-[50%] left-[70%] -translate-y-[50%] rounded-full -z-40;
+    @apply w-44 h-44 bg-purple-P3 block absolute blur-[150px] top-[50%] left-[70%] -translate-y-[50%] rounded-full -z-40;
   }
   .blobs::before {
     content: "";
-    @apply w-64 h-64 bg-red-R3 block absolute blur-[150px] top-[50%] rounded-full  -translate-y-[50%] -z-50;
+    @apply w-44 h-44 bg-red-R3 block absolute blur-[150px] top-[50%] rounded-full  -translate-y-[50%] -z-50;
   }
   .period-button {
     @apply bg-red-R2 mt-10 px-16 py-5 rounded-full text-xl font-medium text-white;

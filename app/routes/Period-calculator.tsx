@@ -18,6 +18,10 @@ export function links() {
 export default function PeriodCalculator() {
   const [days, setDays] = useState(3);
   const [cycle, setCycle] = useState(28);
+  // const [periodLong, setPeriodLong] = useState(1);
+  // const [periodCycle, setPeriodCycle] = useState(25);
+  const [selectedDay, setSelectedDay] = useState(null);
+
   const [result, setResult] = useState<boolean>(false);
   return (
     <div className="">

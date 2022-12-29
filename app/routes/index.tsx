@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import { AiFillRightCircle } from "react-icons/ai";
 import {
   Blob,

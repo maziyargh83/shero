@@ -8,10 +8,10 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   HEADER_ABOUT_US: "About Us",
   HEADER_OVULATION_CALCULATOR: "Ovulation Calculator",
   HEADER_DOWNLOAD: "download",
-  APP_NAME: "Shero",
-  APP_SUBTITLE: "with health",
+  APP_NAME: "Shero, ",
+  APP_SUBTITLE: "be the hero of your health awareness",
   APP_DESCRIPTION:
-    "Shero is a smart and simple calendar for women's health tracking. Shero has different features such as tracking and predicting the exact calendar of menstruation and ovulation, and pregnancy tracking will be added to Shero's predictions soon.",
+    "Shero is a smart and simple calendar for tracking your menstrual cycle. Shero makes you a hero in tracking your symptoms with different features such as smart period tracking, ovulation tracking, pregnancy tracking, mood tracking and symptoms tracking. It predicts your upcoming cycle, and highlights the important events in your calendar to have it always on your palm. Being aware of your health situation makes you a hero in planning for your lifestyle.",
   GETTING_START: "Getting Started",
   FEATURE_TITLE: "Shero Feature",
   FEATURE_DESCRIPTION: "The facilities we have in Shero can help your health",
@@ -56,8 +56,9 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   DIARRHEA: "diarrhea",
   GAS: "gas",
   STOMACHACHE: "stomachache",
-  FREQUENCY_TITLE: "Frequancy Quastions",
-  FREQUENCY_DESCRIPTION: "Describe",
+  FREQUENCY_TITLE: "Frequently asked questions",
+  FREQUENCY_DESCRIPTION:
+    "Am I the only one? Read these FAQs to find out that you're not alone in your health journey.",
   // about us
   ABOUT_US_TITLE: "About US",
   ABOUT_US_DESCRIPTION:

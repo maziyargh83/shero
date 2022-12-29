@@ -28,6 +28,9 @@ export default function PregnancyCalculator() {
     const remainDays = finalDate.clone().diff(moment(), "d");
 
     const endDate = finalDate.format(getDateConfig("monthNameWithYear"));
+    console.log("====================================");
+    console.log(week);
+    console.log("====================================");
     setResult({
       week: week,
       day: days - weekInDay,
@@ -59,7 +62,7 @@ export default function PregnancyCalculator() {
           <p className="text-gray-G1 font-normal text-xl">
             The first day of your last period
           </p>
-          <DatePicker value={date} onChange={changeData} />
+          <DatePicker maxDate={new Date()} value={date} onChange={changeData} />
           <button onClick={calculate} className="period-button">
             Calculate
           </button>

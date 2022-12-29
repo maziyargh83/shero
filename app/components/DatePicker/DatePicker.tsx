@@ -7,8 +7,13 @@ import { useOutsideClick } from "~/hook";
 interface DatePickerProps {
   onChange: (date: Date) => void;
   value?: Date;
+  maxDate?: Date;
 }
-export const DatePicker = ({ onChange = () => {}, value }: DatePickerProps) => {
+export const DatePicker = ({
+  onChange = () => {},
+  value,
+  maxDate,
+}: DatePickerProps) => {
   const [openCalendar, setOpenCalendar] = useState(false);
   const firstRef = useRef(null);
 
@@ -16,7 +21,6 @@ export const DatePicker = ({ onChange = () => {}, value }: DatePickerProps) => {
   return (
     <div className="relative">
       <div
-        ref={firstRef}
         onClick={() => setOpenCalendar((prev) => !prev)}
         className="flex  cursor-pointer bg-white items-center p-8 rounded-3xl mt-8 "
       >
@@ -28,8 +32,11 @@ export const DatePicker = ({ onChange = () => {}, value }: DatePickerProps) => {
         </span>
       </div>
       {openCalendar && (
-        <div className="absolute z-50 top-[110%]  w-80 left-[50%]  -translate-x-[50%]">
-          <Calendar value={value} onChange={onChange} />
+        <div
+          ref={firstRef}
+          className="absolute z-50 top-[110%]  w-80 left-[50%]  -translate-x-[50%]"
+        >
+          <Calendar maxDate={maxDate} value={value} onChange={onChange} />
         </div>
       )}
     </div>
