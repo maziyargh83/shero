@@ -2,16 +2,19 @@ import moment from "moment-jalaali";
 import { getDateConfig } from "~/data";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import ReactCalendar from "react-calendar";
+import { CalendarTileProp } from "~/types";
 
 interface CalendarProps {
   onChange?: (date: Date) => void;
   value?: Date;
   maxDate?: Date;
+  CalendarTileProp?: CalendarTileProp;
 }
 export const Calendar = ({
   onChange = () => {},
   value = new Date(),
   maxDate = undefined,
+  CalendarTileProp = undefined,
 }: CalendarProps) => {
   return (
     <ReactCalendar
@@ -26,6 +29,7 @@ export const Calendar = ({
       }
       next2Label=""
       prev2Label=""
+      tileContent={CalendarTileProp}
       nextLabel={<FiChevronRight />}
       prevLabel={<FiChevronLeft />}
       onChange={onChange}

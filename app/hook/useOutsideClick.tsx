@@ -18,8 +18,6 @@ export const useOutsideClick = <T extends Array<MutableRefObject<any>>>(
 
     window.addEventListener("mousedown", handler);
 
-    return (): void => {
-      window.removeEventListener("mousedown", handler);
-    };
+    return (): void => window.removeEventListener("mousedown", handler);
   }, [ref, callback]);
 };

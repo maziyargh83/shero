@@ -93,5 +93,10 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   LOG_KEY_TITLE: "",
   PREGNANCY_CONGRATULATION: "",
   PREGNANCY_RESULT: "",
+  PREGNANCY_DOWNLOAD: "",
+  PREGNANCY_MORE_DETAIL: "",
+  PERIOD_CALCULATOR_NEXT: "",
+  PERIOD_CALCULATOR_CURRENT: "",
+  PERIOD_CALCULATOR_PREV: "",
 };
 export default FA;

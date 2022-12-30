@@ -85,3 +85,13 @@
   font-size: 12px;
   font-weight: 500;
 }
+.ovulation {
+  background-color: #9e81ec !important;
+  color: white !important;
+}
+.Calendar__day.-selected,
+.Calendar__day.-selectedStart,
+.Calendar__day.-selectedEnd {
+  background: #ff7878 !important;
+  color: white !important;
+}

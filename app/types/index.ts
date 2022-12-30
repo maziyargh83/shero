@@ -7,3 +7,4 @@ export * from "./commentTypes";
 export * from "./SectionGeneratorTypes";
 export * from "./DateConfig";
 export * from "./PregnancyTypes";
+export * from "./calendarTypes";
