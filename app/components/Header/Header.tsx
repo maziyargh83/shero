@@ -8,6 +8,7 @@ import { useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 import { TypoLogo } from "~/components/Icons/Logo";
 import { MobileMenu } from "~/components/Header/MobileMenu";
+import { Link } from "@remix-run/react";
 export const Header = () => {
   const { scrollY } = useScroll();
   const [scrolled, setScrolled] = useState(false);
@@ -38,8 +39,8 @@ export const Header = () => {
     >
       <div className="flex container px-8 md:px-0 mx-auto justify-between  h-20 md:h-32 items-center">
         <div className="w-1/3 md:hidden">
-          <a
-            href="/Download"
+          <Link
+            to="/Download"
             className={classNames(
               "text-base md:hidden  font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 px-4 py-2 ",
               {
@@ -49,21 +50,21 @@ export const Header = () => {
             )}
           >
             {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
-          </a>
+          </Link>
         </div>
         <div className="md:hidden w-1/3">
-          <a href="/">
+          <Link to="/">
             <img src={imageBuilder("LOGO_TYPO")} />
-          </a>
+          </Link>
         </div>
         <div className="md:flex items-center hidden">
-          <a href="/">
+          <Link to="/">
             <img
               className="w-14 h-14 md:mr-8"
               src={imageBuilder("LOGO")}
               alt="logo"
             />
-          </a>
+          </Link>
           <HeaderWrapper>
             {HeaderData.map((data) => {
               return <HeaderMenu key={data.title + "_menu_item"} {...data} />;
@@ -71,8 +72,8 @@ export const Header = () => {
           </HeaderWrapper>
         </div>
         <div>
-          <a
-            href="/Download"
+          <Link
+            to="/Download"
             className={classNames(
               "text-base hidden md:inline-block font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1  px-8 py-2 ",
               {
@@ -82,7 +83,7 @@ export const Header = () => {
             )}
           >
             {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
-          </a>
+          </Link>
         </div>
         <div
           className="md:hidden w-1/3 flex justify-center items-center"

@@ -19,6 +19,7 @@ import {
 import { imageBuilder, t } from "~/utils";
 import { v4 } from "uuid";
 import styles from "swiper/swiper-bundle.min.css";
+import { Link } from "@remix-run/react";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
@@ -65,14 +66,14 @@ export default function Index() {
                 image="APP_STORE"
               />
             </div>
-            <a href="HelpCenter ">
+            <Link to="HelpCenter ">
               <div className="mt-7 flex justify-center md:justify-start items-center space-x-2">
                 <span className="text-purple-P1 font-medium text-base">
                   {t("GETTING_START")}
                 </span>
                 <AiFillRightCircle className="text-purple-P3" />
               </div>
-            </a>
+            </Link>
           </RowSection>
           <RowSection className="justify-center flex items-center">
             <FrameMobileHome />

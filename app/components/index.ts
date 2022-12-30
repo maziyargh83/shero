@@ -28,3 +28,5 @@ export * from "./SectionGenerator";
 export * from "./Calendar";
 export * from "./PregnancyProgress";
 export * from "./NumberInput";
+export * from "./Notification";
+export * from "./TeamCircle";

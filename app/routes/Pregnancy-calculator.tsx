@@ -12,6 +12,7 @@ import moment from "moment-jalaali";
 import { getDateConfig } from "~/data";
 import type { PregnancyResultType } from "~/types";
 import styles from "~/styles/calendar.css";
+import { Link } from "@remix-run/react";
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
@@ -97,12 +98,12 @@ export default function PregnancyCalculator() {
                 <p className="text-base font-normal text-gray-G4 ">
                   {t("PREGNANCY_MORE_DETAIL")}
                 </p>
-                <a
-                  href="/Download"
+                <Link
+                  to="/Download"
                   className="bg-purple-P2 mt-3 md:mt-0 py-4 px-5 rounded-full text-white"
                 >
                   {t("PREGNANCY_DOWNLOAD")}
-                </a>
+                </Link>
               </div>
             </div>
           </Section>

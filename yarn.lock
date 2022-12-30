@@ -6984,6 +6984,11 @@ space-separated-tokens@^2.0.0:
   resolved "https://registry.yarnpkg.com/space-separated-tokens/-/space-separated-tokens-2.0.1.tgz#43193cec4fb858a2ce934b7f98b7f2c18107098b"
   integrity sha512-ekwEbFp5aqSPKaqeY1PGrlGQxPNaq+Cnx4+bE2D8sciBQrHpbwoBbawqTN2+6jPs9IdWxxiUcN0K2pkczD3zmw==
 
+spin-delay@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/spin-delay/-/spin-delay-1.2.0.tgz#b17ca116c86c7c42afd9df09de6cd64ca82844e0"
+  integrity sha512-PkZl5FHWOMrwQgoWejG1hBkIlVx4KbdL/37RPr5/pGq5+NWcGx7NNDukFct2yr8yRZuvwEompNR/in9nWj4sTw==
+
 split-string@^3.0.1, split-string@^3.0.2:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/split-string/-/split-string-3.1.0.tgz#7cb09dda3a86585705c64b39a6466038682e8fe2"
