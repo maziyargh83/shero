@@ -1,5 +1,5 @@
 import moment from "moment-jalaali";
-import { useCallback, useMemo } from "react";
+import { Fragment, useCallback, useMemo } from "react";
 import type { PregnancyResultType } from "~/types";
 import { imageBuilder } from "~/utils";
 export const PregnancyProgress = ({
@@ -7,18 +7,15 @@ export const PregnancyProgress = ({
 
   week,
 }: PregnancyResultType & { date: Date }) => {
-  const precent = useCallback(
-    (d = 1) => {
-      return (moment().diff(moment(date), "day") / (40 * 7)) * 100;
-    },
-    [date]
-  );
+  const precent = useMemo(() => {
+    return (moment().diff(moment(date), "day") / (40 * 7)) * 100;
+  }, [date]);
+  console.log(precent);
+
   return (
     <div className="relative">
-      <div className="flex space-x-3">
-        <Progress first week={week} percent={precent(3)} />
-        <Progress week={week} percent={precent(3) >= 98 ? precent(2) : 0} />
-        <Progress week={week} percent={precent(2) >= 98 ? precent(1) : 0} />
+      <div className="flex">
+        <Progress handleMarker first week={week} percent={precent} />
       </div>
     </div>
   );
@@ -27,15 +24,29 @@ const Progress = ({
   percent = 0,
   week,
   first = false,
+  handleMarker = false,
 }: {
   percent?: number;
   week: number;
   first?: boolean;
+  handleMarker?: boolean;
 }) => {
   return (
-    <div className="relative h-4 w-1/3">
+    <div className="relative h-4 w-full">
       {((percent > 0 && percent < 100) || (first && percent < 100)) && (
         <Marker week={week} position={percent} />
+      )}
+      {handleMarker && (
+        <Fragment>
+          <div
+            className="w-3 h-full absolute top-0 bullet-progress bg-background-light"
+            style={{ left: 100 / 3 + "%" }}
+          />
+          <div
+            className="w-3 h-full absolute top-0 bullet-progress bg-background-light"
+            style={{ left: (100 / 3) * 2 + "%" }}
+          />
+        </Fragment>
       )}
       <div className=" bg-white rounded-full  h-full w-full overflow-hidden">
         <div

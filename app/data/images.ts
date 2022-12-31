@@ -43,6 +43,12 @@ export const images: imageTypes = {
       shero: "shero/frames/frame-1.png",
     },
   },
+  FRAME_1_shadow: {
+    url: {
+      luna: "luna/frames/frame-1-shadow.png",
+      shero: "shero/frames/frame-1-shadow.png",
+    },
+  },
   FRAME_2: {
     url: {
       luna: "luna/frames/frame-2.png",

@@ -70,6 +70,7 @@ function PageLoadingMessage() {
     [transition]
   );
   useEffect(() => {
+    if (firstRender || !words || !pendingPath) return;
     setShow(true);
 
     const timeout = setTimeout(() => {
