@@ -1,10 +1,10 @@
 import {
   useMotionValue,
   useDragControls,
-  PanInfo,
   animate,
   motion,
 } from "framer-motion";
+import type { PanInfo } from "framer-motion";
 import { useWindowSize } from "~/hook";
 import { useState, useEffect } from "react";
 import { usePreventScroll } from "@react-aria/overlays";
@@ -12,11 +12,9 @@ import classNames from "classnames";
 import { FiX } from "react-icons/fi";
 import { Portal } from "~/components";
 import { HeaderData } from "~/data";
-import { v4 } from "uuid";
-import { t } from "~/utils";
-import { HeaderWrapper } from "~/components/Header/HeaderWrapper";
 import { HeaderMenu } from "~/components/Header/HeaderMenu";
 import { LogoHorizontal } from "~/components/Icons/Logo";
+import { imageBuilder } from "~/utils";
 interface MobileMenuProps {
   close: VoidFunction;
 }
@@ -124,7 +122,7 @@ export const MobileMenu = ({ close }: MobileMenuProps) => {
             </div>
           )}
           <div className="flex justify-center my-16 ">
-            <LogoHorizontal />
+            <img src={imageBuilder("LOGO")} />
           </div>
           <div
             draggable={false}

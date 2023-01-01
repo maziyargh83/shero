@@ -15,6 +15,7 @@ import {
   ScrollSlider,
   Section,
   SectionTitle,
+  ShadowFrame,
 } from "~/components";
 import { imageBuilder, t } from "~/utils";
 import { v4 } from "uuid";
@@ -162,7 +163,14 @@ export default function Index() {
           descriptionClass="text-xl font-normal mt-2 text-gray-G2"
         />
         <div className="flex w-full justify-center items-center">
-          <img src={imageBuilder("FRAME_2")} className="mt-24" />
+          <ShadowFrame
+            img="FRAME_2"
+            maxW={320}
+            maxH={700}
+            imgMaxW="initial"
+            // imgMinW={"170%"}
+            className="mt-24"
+          />
         </div>
         <FeatureSection />
       </Section>
@@ -176,10 +184,18 @@ export default function Index() {
           />
           <div className="flex mt-28 space-x-24 justify-between">
             <div className="w-1/3 flex flex-col">
-              <img src={imageBuilder("FRAME_1")} className="shadow-mobile " />
-              <img
-                src={imageBuilder("FRAME_2")}
-                className="mt-24 shadow-mobile "
+              <ShadowFrame
+                img="FRAME_1"
+                maxW={320}
+                maxH={700}
+                imgMinW={"170%"}
+              />
+              <ShadowFrame
+                img="FRAME_2"
+                maxW={320}
+                maxH={700}
+                imgMinW={"170%"}
+                className="mt-24"
               />
               <p className="mt-24 text-gray-G1 font-medium text-xl">
                 {t("FEATURE_SECTION_3")}
@@ -191,25 +207,37 @@ export default function Index() {
                 src={imageBuilder("ICON")}
                 className="self-end shadow-mobile "
               />
-              <img
-                src={imageBuilder("FRAME_3")}
+
+              <ShadowFrame
+                img="FRAME_3"
+                maxW={320}
+                maxH={700}
+                imgMinW={"170%"}
                 className="mt-11 shadow-mobile "
               />
               <p className="mt-24 text-gray-G1 font-medium text-xl">
                 {t("FEATURE_SECTION_2")}
               </p>
-              <img
+
+              <ShadowFrame
+                img="FRAME_4"
+                maxW={320}
+                maxH={700}
+                imgMinW={"170%"}
                 className="mt-24 shadow-mobile "
-                src={imageBuilder("FRAME_4")}
               />
             </div>
             <div className="w-1/3 flex flex-col items-center justify-center relative">
               <p className="text-gray-G1 font-medium text-xl">
                 {t("FEATURE_SECTION_3")}
               </p>
-              <img
+
+              <ShadowFrame
+                img="FRAME_5"
+                maxW={320}
+                maxH={700}
+                imgMinW={"170%"}
                 className="mt-24 shadow-mobile "
-                src={imageBuilder("FRAME_5")}
               />
               <Blob size={21} color="#9E81EC" className="absolute bottom-2" />
             </div>

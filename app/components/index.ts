@@ -30,3 +30,4 @@ export * from "./PregnancyProgress";
 export * from "./NumberInput";
 export * from "./Notification";
 export * from "./TeamCircle";
+export * from "./ShadowFrame";

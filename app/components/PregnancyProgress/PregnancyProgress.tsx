@@ -1,5 +1,5 @@
 import moment from "moment-jalaali";
-import { Fragment, useCallback, useMemo } from "react";
+import { Fragment, useMemo } from "react";
 import type { PregnancyResultType } from "~/types";
 import { imageBuilder } from "~/utils";
 export const PregnancyProgress = ({
