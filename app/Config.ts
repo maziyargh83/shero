@@ -5,5 +5,6 @@ export const CONFIG: configType = {
   imageUrlPrefix: "/images/",
   product: SHERO_PRODUCT,
   language: LANGUAGE_EN,
+  disableTheme: ["routes/diaries/$objectId"],
 };
 export default CONFIG;
