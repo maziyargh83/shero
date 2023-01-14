@@ -22,16 +22,18 @@ export const HeaderData: headerType = [
   //   title: "HEADER_ABOUT_US",
   //   link: "/AboutUs",
   // },
-  // {
-  //   title: "PRIVACY_TITLE",
-  //   link: "/Privacy",
-  // },
+  {
+    title: "PRIVACY_TITLE",
+    link: "/Privacy",
+    extra: true,
+  },
   {
     title: "CONTACT_US_TITLE",
     link: "/ContactUs",
   },
-  // {
-  //   title: "TERMS_TITLE",
-  //   link: "/Terms",
-  // },
+  {
+    title: "TERMS_TITLE",
+    link: "/Terms",
+    extra: true,
+  },
 ];

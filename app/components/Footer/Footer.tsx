@@ -1,3 +1,4 @@
+import moment from "moment-jalaali";
 import { Fragment } from "react";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { HeaderMenu } from "~/components/Header/HeaderMenu";
@@ -20,13 +21,19 @@ export const Footer = () => {
           <div>
             <HeaderWrapper>
               {HeaderData.map((data) => {
-                return <HeaderMenu key={data.title + "_menu_item"} {...data} />;
+                return (
+                  <HeaderMenu
+                    extra
+                    key={data.title + "_menu_item"}
+                    headerData={data}
+                  />
+                );
               })}
             </HeaderWrapper>
           </div>
         </div>
         <div className="flex justify-center md:justify-between items-center mt-9">
-          <div>All rights reserved. &copy; 2022</div>
+          <div>All rights reserved. &copy; {moment().year()}</div>
           {/* <div className="flex space-x-7">
             <FaInstagram />
             <FaTwitter />

@@ -131,9 +131,12 @@ export const MobileMenu = ({ close }: MobileMenuProps) => {
             {HeaderData.map((data) => {
               return (
                 <HeaderMenu
-                  className="text-center text-white text-xl font-bold "
                   key={data.title + "_menu_item"}
-                  {...data}
+                  extra
+                  headerData={{
+                    ...data,
+                    className: "text-center text-white text-xl font-bold ",
+                  }}
                 />
               );
             })}

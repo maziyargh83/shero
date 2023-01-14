@@ -38,7 +38,7 @@ export const Header = () => {
       )}
     >
       <div className="flex container px-8 md:px-0 mx-auto justify-between  h-20 md:h-32 items-center">
-        <div className="w-1/3 md:hidden">
+        {/* <div className="w-1/3 md:hidden">
           <Link
             to="/Download"
             className={classNames(
@@ -51,10 +51,10 @@ export const Header = () => {
           >
             {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
           </Link>
-        </div>
-        <div className="md:hidden w-1/3">
+        </div> */}
+        <div className="md:hidden w-1/2">
           <Link to="/">
-            <img src={imageBuilder("LOGO_TYPO")} />
+            <TypoLogo />
           </Link>
         </div>
         <div className="md:flex items-center hidden">
@@ -67,7 +67,9 @@ export const Header = () => {
           </Link>
           <HeaderWrapper>
             {HeaderData.map((data) => {
-              return <HeaderMenu key={data.title + "_menu_item"} {...data} />;
+              return (
+                <HeaderMenu key={data.title + "_menu_item"} headerData={data} />
+              );
             })}
           </HeaderWrapper>
         </div>
@@ -86,7 +88,7 @@ export const Header = () => {
           </Link>
         </div>
         <div
-          className="md:hidden w-1/3 flex justify-center items-center"
+          className="md:hidden w-1/2 flex justify-end items-center"
           onClick={() => setShowMobile(true)}
         >
           <FaBars />

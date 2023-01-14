@@ -1810,6 +1810,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1823,11 +1828,6 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .text-xs {
@@ -1880,6 +1880,11 @@ video {
   color: rgb(149 154 168 / var(--tw-text-opacity));
 }
 
+.text-purple-P1 {
+  --tw-text-opacity: 1;
+  color: rgb(62 31 144 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1897,11 +1902,6 @@ video {
 
 .text-transparent {
   color: transparent;
-}
-
-.text-purple-P1 {
-  --tw-text-opacity: 1;
-  color: rgb(62 31 144 / var(--tw-text-opacity));
 }
 
 .text-gray-G3 {
