@@ -15,7 +15,7 @@ export const Footer = () => {
       <footer className="xl:container xl:p-0 px-16 mx-auto mb-14">
         <div className="flex md:justify-between justify-center  flex-wrap items-center border-b-2 pb-4">
           <div className="mx-auto xl:mx-0">
-            <img src={imageBuilder("LOGO_TYPO")} />
+            <TypoLogo />
           </div>
 
           <div>
