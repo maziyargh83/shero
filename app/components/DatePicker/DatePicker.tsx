@@ -36,7 +36,14 @@ export const DatePicker = ({
           ref={firstRef}
           className="absolute z-50 top-[110%]  w-80 left-[50%]  -translate-x-[50%]"
         >
-          <Calendar maxDate={maxDate} value={value} onChange={onChange} />
+          <Calendar
+            maxDate={maxDate}
+            value={value}
+            onChange={(d) => {
+              onChange(d);
+              setOpenCalendar(false);
+            }}
+          />
         </div>
       )}
     </div>

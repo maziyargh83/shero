@@ -19,6 +19,7 @@ export function links() {
 
 export default function PregnancyCalculator() {
   const [date, changeData] = useState<Date>(new Date());
+  const [selectedDate, changeSelectedData] = useState<Date>(new Date());
   const [result, setResult] = useState<PregnancyResultType>();
   const calculate = () => {
     const week = moment().diff(moment(date), "week");
@@ -38,6 +39,7 @@ export default function PregnancyCalculator() {
       endDate: endDate,
       remainDays,
     });
+    changeSelectedData(date);
   };
   return (
     <div>
@@ -87,7 +89,7 @@ export default function PregnancyCalculator() {
           </Section>
           <Section className="">
             <div className="w-[80%] mx-auto mt-52">
-              <PregnancyProgress date={date} {...result} />
+              <PregnancyProgress date={selectedDate} {...result} />
               <p className="font-normal text-base mt-10">
                 At 8 week pregnant, you’re actually not pregnant yet. As your
                 pregnancy is calculated from the first day of your last

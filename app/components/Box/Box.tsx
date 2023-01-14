@@ -41,7 +41,8 @@ export const Box = ({
     return tabsId.findIndex((item) => item.title === activeTab);
   }, [activeTab]);
   const getActiveContent = useCallback(() => {
-    if (!children || !Array.isArray(children)) return <Fragment />;
+    if (!children || !Array.isArray(children))
+      return <Fragment>{children}</Fragment>;
     if (children.length > 1) {
       return children.find((item) => item.key === activeTab);
     }
