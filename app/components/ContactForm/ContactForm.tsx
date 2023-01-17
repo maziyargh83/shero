@@ -1,29 +1,28 @@
 import React, { cloneElement } from "react";
-import { FiInstagram, FiMail, FiPhoneCall } from "react-icons/fi";
-import { imageBuilder, t } from "~/utils";
-
+import { FiInstagram, FiMail } from "react-icons/fi";
+import CONFIG from "~/Config";
+import { LogoSvg } from "~/components/Icons/Logo";
+import { t } from "~/utils";
 export const ContactForm = () => {
   return (
     <div className="flex flex-wrap justify-center md:space-x-8">
       <Container>
-        <img src={imageBuilder("LOGO_TYPO")} />
+        <div className="flex w-full justify-center">
+          <LogoSvg size={104} />
+        </div>
 
         <p className="text-xl font-normal text-gray-G1 mt-10 border-b border-purple-P5 pb-6">
           {t("CONTACT_FORM_DESCRIPTION")}
         </p>
         <div className="mt-6 flex justify-start flex-col w-full">
-          <div className="flex mt-1 items-center space-x-2">
-            <FiMail />
-            <p>support@Shero.info</p>
+          <div className="flex mt-4 items-center space-x-2">
+            <FiMail className="text-purple-P2" />
+            <p>{CONFIG.email}</p>
           </div>
-          <div className="flex mt-1 items-center space-x-2">
-            <FiPhoneCall />
-            <p>+1 - 121212121</p>
+          <div className="flex mt-4 items-center space-x-2">
+            <FiInstagram className="text-purple-P2" />
+            <p>{CONFIG.instagram}</p>
           </div>
-          {/* <div className="flex mt-1 items-center space-x-2">
-            <FiInstagram />
-            <p>@Shero.application</p>
-          </div> */}
         </div>
       </Container>
       <Container>

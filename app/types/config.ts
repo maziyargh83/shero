@@ -3,4 +3,6 @@ export interface configType {
   product: "shero" | "luna";
   language: "en" | "fa";
   disableTheme: string[];
+  email: string;
+  instagram: string;
 }

@@ -1,3 +1,3 @@
 export * from "./TypoLogo";
-export * from "./LogoHorizontal";
+export * from "./LogoSvg";
 export * from "./LargeLogo";

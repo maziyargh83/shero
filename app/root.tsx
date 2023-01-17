@@ -12,6 +12,7 @@ import styles from "./styles/app.css";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useMemo, useState } from "react";
 import { useSpinDelay } from "spin-delay";
+import { imageBuilder } from "~/utils";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -20,7 +21,26 @@ export const meta: MetaFunction = () => ({
 });
 
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      href: imageBuilder("LOGO"),
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      href: imageBuilder("LOGO"),
+    },
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "16x16",
+      href: imageBuilder("LOGO"),
+    },
+  ];
 }
 export default function App() {
   return (

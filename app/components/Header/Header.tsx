@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 import classNames from "classnames";
 import { useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
-import { TypoLogo } from "~/components/Icons/Logo";
+import { LogoSvg, TypoLogo } from "~/components/Icons/Logo";
 import { MobileMenu } from "~/components/Header/MobileMenu";
 import { Link } from "@remix-run/react";
 export const Header = () => {
@@ -58,12 +58,8 @@ export const Header = () => {
           </Link>
         </div>
         <div className="md:flex items-center hidden">
-          <Link to="/">
-            <img
-              className="w-14 h-14 md:mr-8"
-              src={imageBuilder("LOGO")}
-              alt="logo"
-            />
+          <Link to="/" className="md:mr-8">
+            <LogoSvg />
           </Link>
           <HeaderWrapper>
             {HeaderData.map((data) => {

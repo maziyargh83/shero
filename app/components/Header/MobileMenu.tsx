@@ -13,8 +13,8 @@ import { FiX } from "react-icons/fi";
 import { Portal } from "~/components";
 import { HeaderData } from "~/data";
 import { HeaderMenu } from "~/components/Header/HeaderMenu";
-import { LogoHorizontal } from "~/components/Icons/Logo";
 import { imageBuilder } from "~/utils";
+import { LogoSvg } from "~/components/Icons/Logo";
 interface MobileMenuProps {
   close: VoidFunction;
 }
@@ -122,7 +122,7 @@ export const MobileMenu = ({ close }: MobileMenuProps) => {
             </div>
           )}
           <div className="flex justify-center my-16 ">
-            <img src={imageBuilder("LOGO")} />
+            <LogoSvg />
           </div>
           <div
             draggable={false}
