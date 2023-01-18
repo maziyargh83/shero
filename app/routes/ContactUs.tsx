@@ -27,6 +27,7 @@ export default function ContactUs() {
             <div className="relative">
               <ImageBlob
                 img="CONTACT_US_TITLE"
+                className="w-80"
                 blobs={[
                   <Blob
                     type={3}

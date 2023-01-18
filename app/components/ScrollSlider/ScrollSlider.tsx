@@ -54,7 +54,7 @@ const Slide = ({ title, description, img, color, color2 }: SliderDataType) => {
           <div className="relative inline-flex w-full h-full justify-center items-center">
             <img
               src={imageBuilder(img)}
-              className="z-40   absolute top-[50%]  -translate-y-[50%] "
+              className="z-40 w-[60%] xl:w-[70%]  absolute top-[50%]  -translate-y-[50%] "
               alt=""
             />
             <Blob

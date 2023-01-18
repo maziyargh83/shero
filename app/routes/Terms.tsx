@@ -28,6 +28,7 @@ export default function Terms() {
             <div className="relative">
               <ImageBlob
                 img="TERM_TITLE"
+                className="w-80"
                 blobs={[
                   <Blob
                     type={3}

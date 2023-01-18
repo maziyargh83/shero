@@ -42,6 +42,7 @@ export default function GettingStarted() {
             <div className="relative">
               <ImageBlob
                 img="GETTING_STARTED"
+                className="w-80"
                 blobs={[
                   <Blob
                     type={3}

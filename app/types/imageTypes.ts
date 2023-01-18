@@ -20,6 +20,10 @@ export const enum imagesKey {
   "FRAME_5",
   //
   "SLIDER_1",
+  "SLIDER_2",
+  "SLIDER_3",
+
+  //
   "ABOUT_TITLE",
   "TERM_TITLE",
   "PERIOD_TITLE",
@@ -44,6 +48,9 @@ export const enum imagesKey {
   "YASER",
   //
   "PROFILE1",
+  "PROFILE2",
+  "PROFILE3",
+  "PROFILE4",
   //
   "SHADOW",
   //

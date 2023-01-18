@@ -28,6 +28,7 @@ export default function Privacy() {
             <div className="relative">
               <ImageBlob
                 img="PRIVACY_TITLE"
+                className="w-80"
                 blobs={[
                   <Blob
                     type={3}

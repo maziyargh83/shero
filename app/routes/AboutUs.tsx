@@ -27,6 +27,7 @@ export default function AboutUs() {
             <div className="relative">
               <ImageBlob
                 img="ABOUT_TITLE"
+                className="w-80"
                 blobs={[
                   <Blob
                     type={3}

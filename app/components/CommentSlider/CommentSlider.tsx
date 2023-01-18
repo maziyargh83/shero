@@ -3,15 +3,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Comment } from "~/components/Comment/Comment";
 import type { commentType } from "~/types";
 import { v4 } from "uuid";
+import { CommentData } from "~/data/CommentData";
 
-export const CommentSlider = ({
-  data = [1, 2, 3, 4],
-}: {
-  data: commentType[];
-}) => {
-  console.log("====================================");
-  console.log(data);
-  console.log("====================================");
+export const CommentSlider = () => {
   return (
     <div className="comment-slider mt-10">
       <Swiper
@@ -27,7 +21,7 @@ export const CommentSlider = ({
         height={300}
         virtual
       >
-        {data.map((slideContent, index) => (
+        {CommentData.map((slideContent, index) => (
           <SwiperSlide key={v4()} virtualIndex={index}>
             <Comment {...slideContent} />
           </SwiperSlide>

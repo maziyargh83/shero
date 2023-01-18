@@ -17,12 +17,13 @@ export const FrameMobileHome = ({
     <div className="inline-flex  flex-col md:flex-row self-center justify-center items-center md:mt-0 mt-24 relative ">
       <div className="relative">
         <div className="relative phone">
-          {/* <img
-            className="image "
-            src={imageBuilder("FRAME_MAIN")}
-            alt="mobile framer"
-          /> */}
-          <ShadowFrame img="FRAME_MAIN" imgMaxW="initial" />
+          <ShadowFrame
+            img="FRAME_MAIN"
+            maxW={340}
+            maxH={670}
+            imgWidth={478}
+            imgMaxW="initial"
+          />
         </div>
 
         <Blob className="absolute -top-20 -z-10 -right-10 " />

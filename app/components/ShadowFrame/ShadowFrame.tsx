@@ -6,12 +6,14 @@ export const ShadowFrame = ({
   img,
   maxW = 250,
   maxH = 500,
+  imgWidth,
   imgMinW,
   imgMaxW,
   className,
 }: {
   img: keyof typeof imagesKey;
   maxW?: number;
+  imgWidth?: number;
   maxH?: number;
   imgMinW?: string;
   imgMaxW?: string;
@@ -31,6 +33,7 @@ export const ShadowFrame = ({
         style={{
           minWidth: imgMinW,
           maxWidth: imgMaxW,
+          width: imgWidth,
         }}
         alt=""
       />

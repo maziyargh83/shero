@@ -72,6 +72,12 @@ export const images: imageTypes = {
   SLIDER_1: {
     url: "shero/slider/slider1.png",
   },
+  SLIDER_2: {
+    url: "shero/slider/slider2.png",
+  },
+  SLIDER_3: {
+    url: "shero/slider/slider3.png",
+  },
   ABOUT_TITLE: {
     url: "shero/imageTitle/team-title.png",
   },
@@ -137,6 +143,15 @@ export const images: imageTypes = {
   },
   PROFILE1: {
     url: "shero/profile/profile1.png",
+  },
+  PROFILE2: {
+    url: "shero/profile/profile2.png",
+  },
+  PROFILE3: {
+    url: "shero/profile/profile3.png",
+  },
+  PROFILE4: {
+    url: "shero/profile/profile4.png",
   },
   SHADOW: {
     url: "shero/shadow/shadow.png",

@@ -41,6 +41,22 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
 
   SLIDER_3_TITLE: "Community 💬",
   SLIDER_3_DESCRIPTION: "Share your experiences",
+  // COMMENT
+  COMMENT_1_TITLE:
+    "Isn’t it awesome that I can share my Period calendar with my partner with shero?😍 This feature can definitely reduce the level of our argument in the certain times of the month, if you know what I mean. 😎😉",
+  COMMENT_1_NAME: "Mi****se",
+
+  COMMENT_2_TITLE:
+    "Here I can track my girlfriend's period situation and her moods whenever I want so I can take care of her. This application helped me a lot 😁",
+  COMMENT_2_NAME: "sa****wr",
+
+  COMMENT_3_TITLE:
+    "Its very easy to work.  Its a practical and essential app , especially   For women.",
+  COMMENT_3_NAME: "nio****ar",
+
+  COMMENT_4_TITLE:
+    "I'm so happy that I can track and follow up my partner's period cycle",
+  COMMENT_4_NAME: "ki****aa",
 
   // FAQ
   FAQ_1_TITLE: "Do I have to pay to use Shero?",

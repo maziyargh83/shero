@@ -18,14 +18,14 @@ export const SliderData: SliderDataType[] = [
   {
     title: "SLIDER_2_TITLE",
     description: "SLIDER_2_DESCRIPTION",
-    img: "SLIDER_1",
+    img: "SLIDER_2",
     color: "#DBFAE4",
     color2: "#FFFFFF",
   },
   {
     title: "SLIDER_3_TITLE",
     description: "SLIDER_3_DESCRIPTION",
-    img: "SLIDER_1",
+    img: "SLIDER_3",
     color: "#EAEBEE",
     color2: "#FFFFFF",
   },

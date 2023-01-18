@@ -1,25 +1,23 @@
 import { FiStar } from "react-icons/fi";
 import type { commentType } from "~/types";
 import { imageBuilder } from "~/utils";
-
-export const Comment = ({}: commentType) => {
+import { t } from "~/utils";
+export const Comment = ({ message, name, img }: commentType) => {
   return (
-    <div className="p-6 bg-white rounded-3xl">
+    <div className="p-6 bg-white rounded-3xl h-56">
       <div className="flex items-center">
         <div className="w-1/4 mr-2">
-          <img src={imageBuilder("PROFILE1")} />
+          <img className="w-20 h-20" src={imageBuilder(img)} alt="" />
         </div>
         <div className="flex-1">
           <p className="text-xs md:text-base font-medium text-gray-G1">
-            It's a very good application 👌🏻 every woman really needs this
-            software, I'm the one who is very satisfied 😍 I suggest you to
-            install it 🙂 give it five stars 🔥
+            {t(message)}
           </p>
         </div>
       </div>
       <div className="flex  flex-wrap justify-between mt-9 items-center">
         <div className="text-gray-G5 text-xs md:text-xl  font-medium">
-          Fa****mi
+          {t(name)}
         </div>
         <div className="flex">
           <FiStar fill="#F1BD37" size={30} stroke="0" />
