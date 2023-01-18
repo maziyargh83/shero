@@ -1,10 +1,13 @@
 import { Fragment } from "react";
 import { Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { v4 } from "uuid";
 import { Blob } from "~/components";
+import { SliderData } from "~/data/SliderData";
 import { useWindowSize } from "~/hook";
 import { imageBuilder } from "~/utils";
-
+import type { SliderDataType } from "~/data/SliderData";
+import { t } from "~/utils";
 export const ScrollSlider = () => {
   const { height } = useWindowSize();
   if (!height) return <Fragment />;
@@ -19,15 +22,13 @@ export const ScrollSlider = () => {
           slidesPerView={1}
           height={height}
         >
-          <SwiperSlide>
-            <Slide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Slide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Slide />
-          </SwiperSlide>
+          {SliderData.map((data) => {
+            return (
+              <SwiperSlide key={v4()}>
+                <Slide {...data} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </div>
@@ -37,16 +38,14 @@ export const ScrollSlider = () => {
 /*
 
 */
-const Slide = () => {
+const Slide = ({ title, description, img, color, color2 }: SliderDataType) => {
   return (
     <div className="w-full h-full flex px-16">
       <div className="w-5/12 flex justify-center items-center">
         <div>
-          <h3 className="text-white text-4xl font-bold">
-            Menstrual calendar 🗓
-          </h3>
+          <h3 className="text-white text-4xl font-bold">{t(title)}</h3>
           <p className="text-white text-2xl font-medium mt-6">
-            Record period information and predict ovulation time
+            {t(description)}
           </p>
         </div>
       </div>
@@ -54,20 +53,20 @@ const Slide = () => {
         <div className="flex justify-center items-center w-full h-full">
           <div className="relative inline-flex w-full h-full justify-center items-center">
             <img
-              src={imageBuilder("SLIDER_1")}
+              src={imageBuilder(img)}
               className="z-40   absolute top-[50%]  -translate-y-[50%] "
               alt=""
             />
             <Blob
               size={"100%"}
               className="absolute z-10 top-[50%] opacity-60 -translate-y-[50%] rotate-45 w-full h-full"
-              color="#FFFFFF"
+              color={color}
             />
             <Blob
               type={2}
               size={"100%"}
+              color={color2}
               className="absolute -translate-y-[50%] z-20 top-[50%]  w-full h-full"
-              color="#FFEBEB"
             />
           </div>
         </div>

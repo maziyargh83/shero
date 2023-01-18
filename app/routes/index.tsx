@@ -197,8 +197,11 @@ export default function Index() {
                 imgMinW={"170%"}
                 className="mt-24"
               />
-              <p className="mt-24 text-gray-G1 font-medium text-xl">
-                {t("FEATURE_SECTION_3")}
+              <p className="mt-24 text-gray-G1 font-bold text-xl">
+                {t("FEATURE_SECTION_1_TITLE")}
+              </p>
+              <p className="mt-2 text-gray-G1 font-medium text-lg">
+                {t("FEATURE_SECTION_1")}
               </p>
               <Blob size={46} color="#FBCBC5" className="self-center mt-10" />
             </div>
@@ -215,10 +218,18 @@ export default function Index() {
                 imgMinW={"170%"}
                 className="mt-11 shadow-mobile "
               />
-              <p className="mt-24 text-gray-G1 font-medium text-xl">
+              <p className="mt-24 text-gray-G1 font-bold text-xl">
+                {t("FEATURE_SECTION_2_TITLE")}
+              </p>
+              <p className="mt-2 text-gray-G1 font-medium text-lg">
                 {t("FEATURE_SECTION_2")}
               </p>
-
+              <p className="mt-24 text-gray-G1 font-bold text-xl">
+                {t("FEATURE_SECTION_3_TITLE")}
+              </p>
+              <p className="mt-2 text-gray-G1 font-medium text-lg">
+                {t("FEATURE_SECTION_3")}
+              </p>
               <ShadowFrame
                 img="FRAME_4"
                 maxW={320}
@@ -227,11 +238,19 @@ export default function Index() {
                 className="mt-24 shadow-mobile "
               />
             </div>
-            <div className="w-1/3 flex flex-col items-center justify-center relative">
-              <p className="text-gray-G1 font-medium text-xl">
-                {t("FEATURE_SECTION_3")}
+            <div className="w-1/3 flex flex-col justify-center relative">
+              <p className="mt-24 text-gray-G1 font-bold text-xl">
+                {t("FEATURE_SECTION_4_TITLE")}
               </p>
-
+              <p className="mt-2 text-gray-G1 font-medium text-lg">
+                {t("FEATURE_SECTION_4")}
+              </p>
+              <p className="mt-24 text-gray-G1 font-bold text-xl">
+                {t("FEATURE_SECTION_5_TITLE")}
+              </p>
+              <p className="mt-2 text-gray-G1 font-medium text-lg">
+                {t("FEATURE_SECTION_5")}
+              </p>
               <ShadowFrame
                 img="FRAME_5"
                 maxW={320}

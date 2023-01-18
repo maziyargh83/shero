@@ -15,12 +15,64 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   GETTING_START: "Getting Started",
   FEATURE_TITLE: "Shero Feature",
   FEATURE_DESCRIPTION: "The facilities we have in Shero can help your health",
+  FEATURE_SECTION_1_TITLE: "Partnership (Prime)",
   FEATURE_SECTION_1:
-    "Record and track the period period Record daily mode Announcement of ovulation time Registration of fetal and maternal changes Announcing the time of the PMS phase",
+    "Want support from others or be supportive? Choose your partner or be another partner in tracking health statutes and showing care for others. Feel safe by defining your desired access level for the partners.",
+  FEATURE_SECTION_2_TITLE: "Calendar",
   FEATURE_SECTION_2:
-    "Record and track the period period Record daily mode Announcement of ovulation time Registration of fetal and maternal changes Announcing the time of the PMS phase",
+    "Customize your smart calendar by updating your daily symptoms and get an insight into upcoming health events to be prepared for in advance.",
+  FEATURE_SECTION_3_TITLE: "Mood Log",
   FEATURE_SECTION_3:
-    "Do you have questions about your health? The doctors at Shero Clinic are ready for you to get expert advice and feel at ease!",
+    "Even record your mood to find the unique relationship between your body and your feelings.",
+
+  FEATURE_SECTION_4_TITLE: "Dashboard",
+  FEATURE_SECTION_4:
+    "Tell Shero about the exact date of your last period, sit back and see the exact predictions of your future cycle on the dashboard.",
+
+  FEATURE_SECTION_5_TITLE: "Community",
+  FEATURE_SECTION_5:
+    "Need to hear others’ experiences about their cycles or share yours to help others, join the Shero community.",
+  // slider
+  SLIDER_1_TITLE: "Menstrual calendar 🗓",
+  SLIDER_1_DESCRIPTION: "Record period information and predict ovulation time",
+
+  SLIDER_2_TITLE: "Pregnancy calendar 🤰",
+  SLIDER_2_DESCRIPTION: "Show Pregnancy weeks",
+
+  SLIDER_3_TITLE: "Community 💬",
+  SLIDER_3_DESCRIPTION: "Share your experiences",
+
+  // FAQ
+  FAQ_1_TITLE: "Do I have to pay to use Shero?",
+  FAQ_1_DESCRIPTION:
+    "No, not at all. Shero is a free app and all features of tracking and connecting with other users are free to use for everyone. You may opt for Sheo Prime which is totally optional and a way of enhancing experience.",
+  FAQ_2_TITLE: "What is Shero Prime?",
+  FAQ_2_DESCRIPTION:
+    "Prime gives you a collection of premium features which are available on a monthly basis. The features are:",
+  FAQ_3_TITLE: "I am pregnant. How can Shero help me ?",
+  FAQ_2_DETAIL_1:
+    "Sharing with a partner: you can easily invite your beloved one to get to know more about your body condition and health journey.  ",
+  FAQ_2_DETAIL_2:
+    "Diary: You can keep your daily record of experiences via text, voices, and pictures.",
+  FAQ_2_DETAIL_3:
+    "No Ads: There are ads displayed in some places within the app which can be removed by going prime.",
+  FAQ_2_DETAIL_4:
+    "Cycle report: You can export historical reports of your logs and cycle events in pdf format for your own information or share with your health practitioner.",
+  FAQ_3_DESCRIPTION:
+    "You are in the right place! Change your purpose of using the app through the profile page to pregnancy and enjoy Shero pregnancy tips and tracking tools.",
+  FAQ_4_TITLE: "I am trying to conceive. How can Shero help me?",
+  FAQ_4_DESCRIPTION:
+    "Shero gives you a precise prediction of the ovulation day and also provides well designed tips to help through this joyful journey!",
+  FAQ_5_TITLE: "What does Shero do?",
+  FAQ_5_DESCRIPTION:
+    "Shero works as a companion who is there for you 24/7! With small bites of information you provide, Shero tells you when the period happens or on which days the possibility of the conception rises or what to do in the 15th week of pregnancy. Shero has a community of users where people share their experiences of pregnancy or first period or even how to take care of a plant.",
+  FAQ_6_TITLE: "How do I edit a period log?",
+  FAQ_6_DESCRIPTION:
+    "You can reach out to an old period log (or any other logs) by clicking into the calendar icon and find the day you would like to edit the period log. You’ll see the list of the logs down there and easily delete or edit.",
+  FAQ_7_TITLE: "How do I invite my partner?",
+  FAQ_7_DESCRIPTION:
+    "You must first go Prime. If you’ve done so already, go to Profile> My partner. Find your unique referral code there and hand it out to your partner to join you in Shero. ",
+  FAQ_MORE: "More...",
   //logs
   COLD: "cold",
   FEVER: "fever",

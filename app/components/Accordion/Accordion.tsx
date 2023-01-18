@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import classNames from "classnames";
 interface AccordionProps {
   title: string;
-  children: JSX.Element;
+  children: React.ReactNode;
   opened?: boolean;
 }
 export const Accordion = ({ title, children, opened }: AccordionProps) => {
@@ -17,7 +17,6 @@ export const Accordion = ({ title, children, opened }: AccordionProps) => {
     >
       <div className="flex justify-between items-center p-3 md:py-7 md:px-12">
         <h3 className="text-purple-P1 text-sm md:text-2xl font-medium  flex-1">
-          {" "}
           {title}
         </h3>
         <motion.div
