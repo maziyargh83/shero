@@ -5,7 +5,8 @@
     "build": "remix build",
     "dev": "remix dev",
     "start": "remix-serve build",
-    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css"
+    "dev:css": "tailwindcss -w -i ./styles/app.css -o app/styles/app.css",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@react-aria/overlays": "^3.11.0",
@@ -36,6 +37,7 @@
     "@types/uuid": "^8.3.4",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.23.1",
+    "patch-package": "^6.5.1",
     "postcss": "^8.4.18",
     "tailwindcss": "^3.2.1",
     "typescript": "^4.7.4"

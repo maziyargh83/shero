@@ -14,6 +14,7 @@ import moment from "moment-jalaali";
 // import { CalendarTileProp } from "~/types";
 import { Calendar } from "react-modern-calendar-datepicker";
 import styles2 from "react-modern-calendar-datepicker/lib/DatePicker.css";
+import { v4 } from "uuid";
 
 type dateType = {
   day: number;
@@ -419,9 +420,10 @@ export default function PeriodCalculator() {
       </Section>
       {openCalendars && (
         <Section className="mt-10">
-          <div className="flex space-y-10 md:space-y-0 md:space-x-3 flex-wrap md:flex-nowrap">
+          <div className="flex space-y-10 justify-center items-center md:space-y-0 md:space-x-3 flex-wrap md:flex-nowrap">
             {calendars.map((item, index) => (
               <Calendar
+                key={v4()}
                 colorPrimary="#4ed6fd"
                 colorPrimaryLight="whitesmoke"
                 value={calendars[index]}

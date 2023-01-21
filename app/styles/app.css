@@ -1095,16 +1095,20 @@ video {
   height: 2rem;
 }
 
+.h-56 {
+  height: 14rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
 .h-12 {
   height: 3rem;
 }
 
 .h-\[500px\] {
   height: 500px;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .h-4 {
@@ -1131,16 +1135,16 @@ video {
   height: 0.25rem;
 }
 
-.h-56 {
-  height: 14rem;
-}
-
 .min-h-\[120px\] {
   min-height: 120px;
 }
 
 .w-64 {
   width: 16rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-full {
@@ -1185,10 +1189,6 @@ video {
 
 .w-1\/4 {
   width: 25%;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .w-20 {
