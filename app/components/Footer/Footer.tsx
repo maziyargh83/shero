@@ -1,6 +1,7 @@
 import moment from "moment-jalaali";
 import { Fragment } from "react";
 import { FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import CONFIG from "~/Config";
 import { HeaderMenu } from "~/components/Header/HeaderMenu";
 import { HeaderWrapper } from "~/components/Header/HeaderWrapper";
 import { FooterWave } from "~/components/Icons";
@@ -34,11 +35,13 @@ export const Footer = () => {
         </div>
         <div className="flex justify-center md:justify-between items-center mt-9">
           <div>All rights reserved. &copy; {moment().year()}</div>
-          {/* <div className="flex space-x-7">
-            <FaInstagram />
-            <FaTwitter />
-            <FaLinkedin />
-          </div> */}
+          <div className="flex space-x-7">
+            <a href={CONFIG.instagramUrl} target={"_blank"} rel="noreferrer">
+              <FaInstagram />
+            </a>
+            {/* <FaTwitter /> */}
+            {/* <FaLinkedin /> */}
+          </div>
         </div>
       </footer>
     </Fragment>

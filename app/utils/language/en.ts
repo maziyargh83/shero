@@ -57,7 +57,10 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   COMMENT_4_TITLE:
     "I'm so happy that I can track and follow up my partner's period cycle",
   COMMENT_4_NAME: "ki****aa",
-
+  //
+  TRIMESTER_1: "1st trimester",
+  TRIMESTER_2: "2nd trimester",
+  TRIMESTER_3: "3rd trimester",
   // FAQ
   FAQ_1_TITLE: "Do I have to pay to use Shero?",
   FAQ_1_DESCRIPTION:

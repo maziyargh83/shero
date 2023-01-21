@@ -33,6 +33,10 @@ export enum languageKeys {
   "SLIDER_2_DESCRIPTION",
   "SLIDER_3_TITLE",
   "SLIDER_3_DESCRIPTION",
+  // trimester
+  "TRIMESTER_1",
+  "TRIMESTER_2",
+  "TRIMESTER_3",
   // Comments
   "COMMENT_1_TITLE",
   "COMMENT_1_NAME",

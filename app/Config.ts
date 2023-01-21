@@ -8,5 +8,6 @@ export const CONFIG: configType = {
   disableTheme: ["routes/diaries/$objectId"],
   email: "support@Shero.info",
   instagram: "@Shero.application",
+  instagramUrl: "https://www.instagram.com/sheroapp/",
 };
 export default CONFIG;

@@ -5,4 +5,5 @@ export interface configType {
   disableTheme: string[];
   email: string;
   instagram: string;
+  instagramUrl: string;
 }
