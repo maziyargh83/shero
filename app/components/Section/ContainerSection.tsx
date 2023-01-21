@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { isShero } from "~/utils";
 
 export const ContainerSection = ({
   children,

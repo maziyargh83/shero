@@ -9,7 +9,7 @@ export const images: imageTypes = {
 
   ICON: {
     url: {
-      luna: "",
+      luna: "luna/Logo/lunaIcon.png",
       shero: "shero/Logo/sheroIcon.png",
     },
   },

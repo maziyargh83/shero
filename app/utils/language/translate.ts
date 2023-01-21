@@ -9,6 +9,7 @@ const getLang = () => {
 const translate = (key: keyof typeof languageKeys, args?: any): string => {
   const LANG = getLang();
   let data = LANG[key];
+  if (!data || data.length == 0) return key;
   if (typeof data == "string") return data;
 
   const result = data(args);

@@ -17,7 +17,7 @@ import {
   SectionTitle,
   ShadowFrame,
 } from "~/components";
-import { imageBuilder, t } from "~/utils";
+import { imageBuilder, isShero, t } from "~/utils";
 import { v4 } from "uuid";
 import styles from "swiper/swiper-bundle.min.css";
 import { Link } from "@remix-run/react";
@@ -47,7 +47,7 @@ export default function Index() {
             <SectionTitle
               title={t("APP_NAME")}
               titleClass="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-purple-P2 to-[#FEAAA8] inline-block font-black"
-              subTitle={t("APP_SUBTITLE")}
+              subTitle={isShero() ? t("APP_SUBTITLE") : undefined}
               subTitleClass="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#8A919F] to-gray-G1 inline-block  font-bold"
               description={t("APP_DESCRIPTION")}
               descriptionClass="text-xl font-normal mt-7 text-gray-G2"

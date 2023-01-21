@@ -1,7 +1,7 @@
 import { HeaderMenu } from "~/components/Header/HeaderMenu";
 import { HeaderWrapper } from "~/components/Header/HeaderWrapper";
 import { HeaderData } from "~/data";
-import { capitalizeFirstChar, imageBuilder, t } from "~/utils";
+import { capitalizeFirstChar, imageBuilder, isShero, t } from "~/utils";
 import { FaBars } from "react-icons/fa";
 import classNames from "classnames";
 import { useScroll } from "framer-motion";
@@ -37,7 +37,11 @@ export const Header = () => {
         }
       )}
     >
-      <div className="flex container px-8 md:px-0 mx-auto justify-between  h-20 md:h-32 items-center">
+      <div
+        className={classNames(
+          "flex container px-8 md:px-0 mx-auto justify-between  h-20 md:h-32 items-center"
+        )}
+      >
         {/* <div className="w-1/3 md:hidden">
           <Link
             to="/Download"
@@ -57,7 +61,7 @@ export const Header = () => {
             <TypoLogo />
           </Link>
         </div>
-        <div className="md:flex items-center hidden">
+        <div className={classNames("md:flex items-center hidden", {})}>
           <Link to="/" className="md:mr-8">
             <LogoSvg />
           </Link>

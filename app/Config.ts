@@ -1,10 +1,15 @@
-import { SHERO_PRODUCT, LANGUAGE_EN } from "~/data/constants";
+import {
+  SHERO_PRODUCT,
+  LANGUAGE_EN,
+  LANGUAGE_FA,
+  LUNA_PRODUCT,
+} from "~/data/constants";
 import type { configType } from "~/types";
 
 export const CONFIG: configType = {
   imageUrlPrefix: "/images/",
-  product: SHERO_PRODUCT,
-  language: LANGUAGE_EN,
+  product: LUNA_PRODUCT,
+  language: LANGUAGE_FA,
   disableTheme: ["routes/diaries/$objectId"],
   email: "support@Shero.info",
   instagram: "@Shero.application",

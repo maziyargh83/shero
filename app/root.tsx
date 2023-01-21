@@ -12,7 +12,9 @@ import styles from "./styles/app.css";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useMemo, useState } from "react";
 import { useSpinDelay } from "spin-delay";
-import { imageBuilder } from "~/utils";
+import { imageBuilder, isShero } from "~/utils";
+import classNames from "classnames";
+import CONFIG from "~/Config";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -49,7 +51,15 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="bg-background-light max-w-[100vw] overflow-x-hidden">
+      <body
+        className={classNames(
+          "bg-background-light max-w-[100vw] overflow-x-hidden",
+          {
+            rtl: !isShero(),
+          }
+        )}
+        dir={isShero() ? "ltr" : "rtl"}
+      >
         <Layout />
         <PageLoadingMessage />
         <ScrollRestoration />
