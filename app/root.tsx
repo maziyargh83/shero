@@ -9,12 +9,11 @@ import {
 } from "@remix-run/react";
 import { Layout, NotificationMessage, TeamCircle } from "~/components";
 import styles from "./styles/app.css";
+import fonts from "./styles/fonts.css";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useMemo, useState } from "react";
-import { useSpinDelay } from "spin-delay";
 import { imageBuilder, isShero } from "~/utils";
 import classNames from "classnames";
-import CONFIG from "~/Config";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
@@ -25,6 +24,7 @@ export const meta: MetaFunction = () => ({
 export function links() {
   return [
     { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: fonts },
     {
       rel: "apple-touch-icon",
       sizes: "180x180",

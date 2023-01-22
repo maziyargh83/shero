@@ -29,7 +29,7 @@ export const ShadowFrame = ({
     >
       <img
         src={imageBuilder(img)}
-        className="relative top-0 left-0"
+        className="relative top-0 left-0 rtl:translate-x-[140px]"
         style={{
           minWidth: imgMinW,
           maxWidth: imgMaxW,

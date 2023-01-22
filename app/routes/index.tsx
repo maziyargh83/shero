@@ -182,8 +182,8 @@ export default function Index() {
             description={t("FEATURE_DESCRIPTION")}
             descriptionClass="text-xl font-normal mt-2 text-gray-G2"
           />
-          <div className="flex mt-28 space-x-24 justify-between">
-            <div className="w-1/3 flex flex-col">
+          <div className="flex mt-28 ltr:space-x-24  justify-between">
+            <div className="w-1/3 flex rtl:mx-9 flex-col">
               <ShadowFrame
                 img="FRAME_1"
                 maxW={320}
@@ -205,7 +205,7 @@ export default function Index() {
               </p>
               <Blob size={46} color="#FBCBC5" className="self-center mt-10" />
             </div>
-            <div className="w-1/3 flex flex-col">
+            <div className="w-1/3 flex rtl:mx-9 flex-col">
               <img
                 src={imageBuilder("ICON")}
                 className="self-end shadow-mobile "
@@ -238,7 +238,7 @@ export default function Index() {
                 className="mt-24 shadow-mobile "
               />
             </div>
-            <div className="w-1/3 flex flex-col justify-center relative">
+            <div className="w-1/3 flex rtl:mx-9 flex-col justify-center relative">
               <p className="mt-24 text-gray-G1 font-bold text-xl">
                 {t("FEATURE_SECTION_4_TITLE")}
               </p>

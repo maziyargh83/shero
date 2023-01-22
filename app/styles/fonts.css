@@ -1,0 +1,94 @@
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+/** Ultra Light */
+@font-face {
+  font-family: "SansX";
+  font-weight: 100;
+  src: url("/font/IRANSansXUltraLight.ttf");
+}
+
+/** Thin */
+@font-face {
+  font-family: "SansX";
+  font-weight: 200;
+  src: url("/font/IRANSansXThin.ttf");
+}
+
+/** Regular */
+@font-face {
+  font-family: "SansX";
+  font-weight: 400;
+  src: url("/font/IRANSansXRegular.ttf");
+}
+
+/** Medium */
+@font-face {
+  font-family: "SansX";
+  font-weight: 500;
+  src: url("/font/IRANSansXMedium.ttf");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "SansX";
+  font-weight: 600;
+  src: url("/font/IRANSansXDemiBold.ttf");
+}
+
+/** Bold */
+@font-face {
+  font-family: "SansX";
+  font-weight: 700;
+  src: url("/font/IRANSansXBold.ttf");
+}
+
+.ltr *,
+.ltr *::after,
+.ltr *::before {
+  font-family: "San Francisco";
+}
+.rtl *,
+.rtl *::after,
+.rtl *::before {
+  font-family: "SansX";
+}
