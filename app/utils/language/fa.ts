@@ -34,34 +34,42 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   FEATURE_SECTION_5:
     "Need to hear others’ experiences about their cycles or share yours to help others, join the Shero community.",
   // slider
-  SLIDER_1_TITLE: "Menstrual calendar 🗓",
-  SLIDER_1_DESCRIPTION: "Record period information and predict ovulation time",
+  SLIDER_1_TITLE: "تقویم قاعدگی 🗓",
+  SLIDER_1_DESCRIPTION: "ثبت اطلاعات پریود و پیش بینی زمان تخمک گذاری",
 
-  SLIDER_2_TITLE: "Pregnancy calendar 🤰",
-  SLIDER_2_DESCRIPTION: "Show Pregnancy weeks",
+  SLIDER_2_TITLE: "تقویم بارداری  🤰",
+  SLIDER_2_DESCRIPTION:
+    "ثبت اطلاعات پریود و پیش بینی زمان هفته به هفته از تغییرات باخبر بشوتخمک گذاری",
 
-  SLIDER_3_TITLE: "Community 💬",
-  SLIDER_3_DESCRIPTION: "Share your experiences",
+  SLIDER_3_TITLE: "مشاوره با متخصص 🩺️️",
+  SLIDER_3_DESCRIPTION: "سوالاتتو از پزشک ها کلینیک لونا بپرس",
   // COMMENT
   COMMENT_1_TITLE:
-    "Isn’t it awesome that I can share my Period calendar with my partner with shero?😍 This feature can definitely reduce the level of our argument in the certain times of the month, if you know what I mean. 😎😉",
-  COMMENT_1_NAME: "Mi****se",
+    "خیلی نرم افزار خوبیه، تقویم داره و روز تخمک گذاری رو بهت نشون میده و نزدیکی محافظت نشده را میتونی علامت گذاری کنی و اگه پریودیت عقب جلو بیفته خودت میتونی عوض کنی",
+  COMMENT_1_NAME: "عطرین",
 
   COMMENT_2_TITLE:
-    "Here I can track my girlfriend's period situation and her moods whenever I want so I can take care of her. This application helped me a lot 😁",
-  COMMENT_2_NAME: "sa****wr",
+    "واقعا عالیه🧡 دیگه لازم نیست تاریخ پری.ود شدنمو تو کاغذ بنویسم خود این برنامه برام ثبت میکنه",
+  COMMENT_2_NAME: "فاطمه",
 
   COMMENT_3_TITLE:
-    "Its very easy to work.  Its a practical and essential app , especially   For women.",
-  COMMENT_3_NAME: "nio****ar",
+    "رابط کاربری چشم نوازی داره امکانات خوب مخصوصا بخش همراه خیلی خوبه، مثل بقیه اپلیکیشن‌های کرفس عالیه.",
+  COMMENT_3_NAME: "ش.حنفی",
 
   COMMENT_4_TITLE:
-    "I'm so happy that I can track and follow up my partner's period cycle",
-  COMMENT_4_NAME: "ki****aa",
+    "اپلیکیشن بسیار خوبیه👌🏻واقعا هر خانومی به این نرم افزار نیاز داره، من یکی که خیلی راضیم😍 به شماها هم پیشنهاد میدم نصبش کنین🙂پنج ستاره هم براش کنه🔥",
+  COMMENT_4_NAME: "imaneh_81",
   //
   TRIMESTER_1: "سه ماهه اول",
   TRIMESTER_2: "سه ماهه دوم",
   TRIMESTER_3: "سه ماهه سوم",
+  // PERIOD_CALC
+  PERIOD_COL_1: "تاریخ شروع پریود قبلیت رو انتخاب کن",
+  PERIOD_COL_2: "آخرین پریودت چند روز طول کشید؟",
+  PERIOD_COL_3: "کل طول دوره پریودت چند روزه؟",
+  PERIOD_NOTE:
+    "دقت کنید که این محاسبه تقریبی است و نباید برای درمان یا پیشگیری از بارداری از آن استفاده کرد.",
+  CHOICE: "تاریخ رو انتخاب کنید",
   // FAQ
   FAQ_1_TITLE: "Do I have to pay to use Shero?",
   FAQ_1_DESCRIPTION:
@@ -92,7 +100,7 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   FAQ_7_TITLE: "How do I invite my partner?",
   FAQ_7_DESCRIPTION:
     "You must first go Prime. If you’ve done so already, go to Profile> My partner. Find your unique referral code there and hand it out to your partner to join you in Shero. ",
-  FAQ_MORE: "More...",
+  FAQ_MORE: "سوالات بیشتر",
   //logs
   COLD: "سرماخوردگی",
   FEVER: "تب",
@@ -129,9 +137,8 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   DIARRHEA: "اسهال",
   GAS: "گاز معده",
   STOMACHACHE: "دل درد",
-  FREQUENCY_TITLE: "Frequently asked questions",
-  FREQUENCY_DESCRIPTION:
-    "Am I the only one? Read these FAQs to find out that you're not alone in your health journey.",
+  FREQUENCY_TITLE: "سوالات شما درباره لونا",
+  FREQUENCY_DESCRIPTION: " ",
   // about us
   ABOUT_US_TITLE: "درباره‌ لونا",
   ABOUT_US_DESCRIPTION:
@@ -152,8 +159,8 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   GETTING_STARTED_DOWNLOAD_IOS: "iOS",
   GETTING_STARTED_DOWNLOAD_PWA: "PWA",
   //
-  HELP_CENTER_DESCRIPTION: `Using scientifically researched data for the betterment of women's health, worldwide.`,
-  HELP_CENTER_TITLE: "Help center ",
+  HELP_CENTER_DESCRIPTION: `ما در یک محیط دوستانه دور هم جمع شدیم تا به همدیگه برای سالم‌تر زندگی کردن، کمک کنیم. ما تلاش می‌کنیم برای هر مشکلی که در زمینه‌ی سلامتی و سبک زندگی سالم وجود داره، راهکار هوشمندی ارائه کنیم. تا الان با اپلیکیشن‌های کرفس، بنتو، `,
+  HELP_CENTER_TITLE: "راهنمای لونا",
   //
   FEATURE_SECTION_CALENDAR: "Menstrual calendar",
   FEATURE_SECTION_COMMUNITY: "Community",
@@ -161,10 +168,9 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   FEATURE_SECTION_PREGNANCY: "Pregnancy calendar",
   //
   TERMS_DESCRIPTION:
-    "This Terms and Conditions for all products and services provided by Shero website and application. Shero is a period tracker application designed to raise awareness about women's health, predict menstruation and ovulation, and allow users to prevent possible disease by registering, entering their personal details, entering their symptoms, and following up on them in order to experience a healthier life.",
+    "لونا مجموعه‌ای از خدمات نرم‌افزاری شامل محتوا، اطلاعات و محصولات در حوزه پیش‌بینی پریود، تخمک‌گذاری و بارداری است که توسط شرکت کاوشگران رادین فناور سلامت ارائه می‌شود.  کاربران با ثبت‌نام در لونا، همچنین با هر بار استفاده از خدمات آن، می‌پذیرند که شرایط و قوانین حاضر را به صورت کامل مطالعه کرده و آن را با اطلاع کامل از شرایط و معانی‌اش پذیرفته‌اند. این شرایط و قوانین ممکن است در طول زمان تغییر کند. استفادۀ کاربران از لونا پس از هر بار تغییر در شرایط و قوانین، به معنی پذیرش تغییرات مذکور است. این قوانین برای مطالعه کاربران در سایت و اپلیکیشن لونا در دسترس است.",
   TERMS_TITLE: "قوانین",
-  CONTACT_US_DESCRIPTION:
-    "We help women put themselves first.Shero exists to empower women by giving them a space they can access the knowledge and support they need to prioritise their health and wellbeing.",
+  CONTACT_US_DESCRIPTION: " ",
   CONTACT_US_TITLE: "تماس با ما",
   CONTACT_US_SUBMIT_TITLE: "ارتباط با لونا",
   CONTACT_US_SUBMIT_DESCRIPTION:
@@ -178,8 +184,8 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   week: "هفته",
 
   //
-  COMMENT_TITLE: "Why people love Shero",
-  COMMENT_DESCRIPTION: "Some of your thoughts on Shero",
+  COMMENT_TITLE: "نظرات شما",
+  COMMENT_DESCRIPTION: "بعضی از نظرات شما در مورد لونا",
   //
   LOG_KEY_TITLE: "Log Key Cycle Symptoms",
   LOG_KEY_DESCRIPTION: "Track all your fertility signs",

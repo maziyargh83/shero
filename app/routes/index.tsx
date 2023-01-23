@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { Fragment, useEffect } from "react";
-import { AiFillRightCircle } from "react-icons/ai";
+import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
 import {
   Blob,
   CommentSlider,
@@ -72,7 +72,11 @@ export default function Index() {
                 <span className="text-purple-P1 font-medium text-base">
                   {t("GETTING_START")}
                 </span>
-                <AiFillRightCircle className="text-purple-P3" />
+                {isShero() ? (
+                  <AiFillRightCircle className="text-purple-P3" />
+                ) : (
+                  <AiFillLeftCircle className="text-purple-P3" />
+                )}
               </div>
             </Link>
           </RowSection>

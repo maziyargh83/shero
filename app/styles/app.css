@@ -2158,6 +2158,14 @@ html {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+[dir="ltr"] .ltr\:mr-2 {
+  margin-right: 0.5rem;
+}
+
+[dir="ltr"] .ltr\:ml-4 {
+  margin-left: 1rem;
+}
+
 [dir="ltr"] .ltr\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(6rem * var(--tw-space-x-reverse));
@@ -2191,6 +2199,10 @@ html {
 
 [dir="rtl"] .rtl\:ml-2 {
   margin-left: 0.5rem;
+}
+
+[dir="rtl"] .rtl\:mr-4 {
+  margin-right: 1rem;
 }
 
 [dir="rtl"] .rtl\:translate-x-\[140px\] {

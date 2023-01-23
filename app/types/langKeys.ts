@@ -69,7 +69,12 @@ export enum languageKeys {
   "FAQ_7_TITLE",
   "FAQ_7_DESCRIPTION",
   "FAQ_MORE",
-
+  //
+  "PERIOD_COL_1",
+  "PERIOD_COL_2",
+  "PERIOD_COL_3",
+  "PERIOD_NOTE",
+  "CHOICE",
   // logs
 
   "COLD",

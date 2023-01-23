@@ -3,6 +3,8 @@ import { getDateConfig } from "~/data";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import ReactCalendar from "react-calendar";
 import { CalendarTileProp } from "~/types";
+import { isShero } from "~/utils";
+if (!isShero()) moment.loadPersian({ dialect: "persian-modern" });
 
 interface CalendarProps {
   onChange?: (date: Date) => void;
@@ -29,9 +31,10 @@ export const Calendar = ({
       }
       next2Label=""
       prev2Label=""
+      locale="fa"
       tileContent={CalendarTileProp}
-      nextLabel={<FiChevronRight />}
-      prevLabel={<FiChevronLeft />}
+      nextLabel={isShero() ? <FiChevronRight /> : <FiChevronLeft />}
+      prevLabel={isShero() ? <FiChevronLeft /> : <FiChevronRight />}
       onChange={onChange}
       value={value}
     />

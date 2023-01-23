@@ -63,6 +63,13 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   TRIMESTER_1: "1st trimester",
   TRIMESTER_2: "2nd trimester",
   TRIMESTER_3: "3rd trimester",
+  //
+  PERIOD_COL_1: "When did your last period start?",
+  PERIOD_COL_2: "How many periodLong did it last?",
+  PERIOD_COL_3: "Average cycle length (periodLong)",
+  PERIOD_NOTE:
+    "Note that this calculation is approximate and should not be used to treat or prevent pregnancy.",
+  CHOICE: "Choose date",
   // FAQ
   FAQ_1_TITLE: "Do I have to pay to use Shero?",
   FAQ_1_DESCRIPTION:

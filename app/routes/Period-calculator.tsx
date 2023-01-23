@@ -7,7 +7,7 @@ import {
   Column,
   NumberInput,
 } from "~/components";
-import { t, imageBuilder } from "~/utils";
+import { t, imageBuilder, isShero } from "~/utils";
 import styles1 from "~/styles/calendar.css";
 import { useEffect, useState } from "react";
 import moment from "moment-jalaali";
@@ -389,7 +389,7 @@ export default function PeriodCalculator() {
       </Section>
       <Section className="text-center mt-32">
         <div className="flex justify-center md:justify-between flex-wrap space-y-10 md:space-y-0">
-          <Column title="When did your last period start?" number={1}>
+          <Column title={t("PERIOD_COL_1")} number={1}>
             <DatePicker
               onChange={(date) => {
                 setSelectedDay(migrateDate(date));
@@ -399,10 +399,10 @@ export default function PeriodCalculator() {
               value={date}
             />
           </Column>
-          <Column title="How many periodLong did it last?" number={2}>
+          <Column title={t("PERIOD_COL_2")} number={2}>
             <NumberInput amount={periodLong} setAmount={setPeriodLong} />
           </Column>
-          <Column title="Average cycle length (periodLong)" number={3}>
+          <Column title={t("PERIOD_COL_3")} number={3}>
             <NumberInput amount={periodCycle} setAmount={setPeriodCycle} />
           </Column>
         </div>
@@ -415,7 +415,7 @@ export default function PeriodCalculator() {
           }}
           className="period-button"
         >
-          Calculate
+          {t("PREGNANCY_CALCULATE")}
         </button>
       </Section>
       {openCalendars && (
@@ -429,7 +429,7 @@ export default function PeriodCalculator() {
                 value={calendars[index]}
                 customDaysClassName={ovulations[index]}
                 shouldHighlightWeekends
-                // locale="fa"
+                locale={isShero() ? undefined : "fa"}
               />
             ))}
           </div>
@@ -455,8 +455,7 @@ export default function PeriodCalculator() {
             <Pallete color="#9E81EC" text="Anticipated ovulation" />
           </div>
           <p className="mt-5 text-center text-purple-P3 text-lg ">
-            Note that this calculation is approximate and should not be used to
-            treat or prevent pregnancy.
+            {t("PERIOD_NOTE")}
           </p>
         </Section>
       )}

@@ -8,7 +8,7 @@ export const DateConfig: Record<
 > = {
   fa: {
     monthName: "jMMM",
-    dayName: "jdddd",
+    dayName: "dddd",
     defaultDate: "jYYYY/jMM/jDD",
     monthNameWithYear: "jDD jMMMM  jYYYY",
   },
