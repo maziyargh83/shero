@@ -15,7 +15,7 @@ export const Footer = () => {
 
       <footer className="xl:container xl:p-0 px-16 mx-auto mb-14">
         <div className="flex md:justify-between justify-center  flex-wrap items-center border-b-2 pb-4">
-          <div className="mx-auto xl:mx-0">
+          <div className="mx-auto my-4 md:my-0 xl:mx-0">
             <TypoLogo color="black" />
           </div>
 
@@ -33,13 +33,13 @@ export const Footer = () => {
             </HeaderWrapper>
           </div>
         </div>
-        <div className="flex justify-center md:justify-between items-center mt-9">
-          <div className="text-base font-normal text-gray-G1">
+        <div className="flex justify-center md:justify-between flex-col md:flex-row  items-center mt-9">
+          <div className="text-base text-justify font-normal text-gray-G1">
             {isShero()
               ? ` All rights reserved. &copy; ${moment().year()}}`
               : "این وبسایت متعلق به شرکت کاوشگران رادین فناور سلامت © به شماره ثبت 536101 است."}
           </div>
-          <div className="flex space-x-7">
+          <div className="flex space-x-7 mt-4 md:mt-0">
             <a href={CONFIG.instagramUrl} target={"_blank"} rel="noreferrer">
               <FaInstagram />
             </a>

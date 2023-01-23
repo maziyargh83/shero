@@ -13,7 +13,7 @@ export const Column = ({
 }) => {
   return (
     <div className="flex justify-center items-center flex-col w-full md:w-auto">
-      <div className="flex items-center space-x-4 flex-row md:flex-col  w-full md:w-auto">
+      <div className="flex items-center ltr:space-x-4 flex-row md:flex-col  w-full md:w-auto">
         <ImageBlob
           containerClassName="flex justify-center items-center  w-8  h-8 md:w-16 md:h-16"
           textComponent={
@@ -36,7 +36,9 @@ export const Column = ({
             />,
           ]}
         />
-        <p className="text-sm md:text-xl font-normal md:mt-5">{title}</p>
+        <p className="text-sm md:text-xl font-normal md:mt-5 rtl:mx-4">
+          {title}
+        </p>
       </div>
       <div className="px-6 w-full md:w-auto">{children}</div>
     </div>

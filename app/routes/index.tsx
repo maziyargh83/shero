@@ -70,7 +70,7 @@ export default function Index() {
             </div>
             <Link to="HelpCenter ">
               <div className="mt-7 flex justify-center md:justify-start items-center space-x-2">
-                <span className="text-purple-P1 font-medium text-base">
+                <span className="text-purple-P1 font-medium text-base rtl:ml-2">
                   {t("GETTING_START")}
                 </span>
                 {isShero() ? (

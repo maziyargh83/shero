@@ -185,8 +185,8 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   COMMENT_TITLE: "نظرات شما",
   COMMENT_DESCRIPTION: "بعضی از نظرات شما در مورد لونا",
   //
-  LOG_KEY_TITLE: "Log Key Cycle Symptoms",
-  LOG_KEY_DESCRIPTION: "Track all your fertility signs",
+  LOG_KEY_TITLE: "ثبت وضعیت",
+  LOG_KEY_DESCRIPTION: "میتونی وضعیتت و توی لونا ثبت کنی تا ..",
   //
   PREGNANCY_CONGRATULATION: "congratulations !",
   PREGNANCY_RESULT: ({ date, week }) =>

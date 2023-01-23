@@ -26,9 +26,9 @@ export const DatePicker = ({
         className="flex  cursor-pointer bg-white items-center p-8 rounded-3xl mt-8 "
       >
         <TrackingIcon color="#FF6B4F" size={27} />
-        <span className="rtl:mr-4 ltr:ml-4 text-2xl font-bold text-purple-P1">
+        <span className="rtl:mr-4 ltr:ml-4 text-xl md:text-2xl font-bold text-purple-P1">
           {value
-            ? moment(value).format(getDateConfig("defaultDate"))
+            ? moment(value).format(getDateConfig("monthNameWithYear"))
             : t("CHOICE")}
         </span>
       </div>

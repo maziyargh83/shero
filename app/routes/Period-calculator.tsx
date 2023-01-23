@@ -7,7 +7,7 @@ import {
   Column,
   NumberInput,
 } from "~/components";
-import { t, imageBuilder, isShero } from "~/utils";
+import { t, imageBuilder, isShero, getDay, getMonth, getYear } from "~/utils";
 import styles1 from "~/styles/calendar.css";
 import { useEffect, useState } from "react";
 import moment from "moment-jalaali";
@@ -324,9 +324,9 @@ export default function PeriodCalculator() {
   const migrateDate = (date: Date): dateType => {
     const _date = moment(date);
     return {
-      day: _date.date(),
-      month: _date.month(),
-      year: _date.year(),
+      day: getDay(_date),
+      month: getMonth(_date),
+      year: getYear(_date),
     };
   };
   function periodLongPlus() {
@@ -418,21 +418,24 @@ export default function PeriodCalculator() {
           {t("PREGNANCY_CALCULATE")}
         </button>
       </Section>
-      {openCalendars && (
+
+      {!!openCalendars ? (
         <Section className="mt-10">
-          <div className="flex space-y-10 justify-center items-center md:space-y-0 md:space-x-3 flex-wrap md:flex-nowrap">
+          <div className="flex space-y-10 justify-center items-center md:space-y-0 ltr:md:space-x-3 flex-wrap md:flex-nowrap">
             {calendars.map((item, index) => (
-              <Calendar
-                key={v4()}
-                colorPrimary="#4ed6fd"
-                colorPrimaryLight="whitesmoke"
-                value={calendars[index]}
-                customDaysClassName={ovulations[index]}
-                shouldHighlightWeekends
-                locale={isShero() ? undefined : "fa"}
-              />
+              <div className="rtl:mx-3" key={v4()}>
+                <Calendar
+                  colorPrimary="#4ed6fd"
+                  colorPrimaryLight="whitesmoke"
+                  value={calendars[index]}
+                  customDaysClassName={ovulations[index]}
+                  shouldHighlightWeekends
+                  locale={isShero() ? "en" : "fa"}
+                />
+              </div>
             ))}
           </div>
+
           <div className="flex flex-wrap justify-center mt-14 space-y-2 md:space-y-0">
             <button
               onClick={nextMonth}
@@ -458,7 +461,7 @@ export default function PeriodCalculator() {
             {t("PERIOD_NOTE")}
           </p>
         </Section>
-      )}
+      ) : null}
     </div>
   );
 }
