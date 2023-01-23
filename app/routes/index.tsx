@@ -42,12 +42,12 @@ export default function Index() {
             <Blob
               size={29}
               color={"#FFACA7"}
-              className="absolute  hidden md:block right-0 top-14"
+              className="absolute  hidden md:block ltr:right-0 rtl:left-0 top-14"
             />
 
             <SectionTitle
               title={t("APP_NAME")}
-              titleClass="text-7xl text-transparent bg-clip-text bg-gradient-to-r from-purple-P2 to-[#FEAAA8] inline-block font-black"
+              titleClass="text-7xl rtl:text-black ltr:text-transparent ltr:bg-clip-text ltr:bg-gradient-to-r ltr:from-purple-P2 to-[#FEAAA8] inline-block font-black"
               subTitle={isShero() ? t("APP_SUBTITLE") : undefined}
               subTitleClass="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#8A919F] to-gray-G1 inline-block  font-bold"
               description={t("APP_DESCRIPTION")}
@@ -56,14 +56,14 @@ export default function Index() {
             />
             <div className="blobs md:hidden" />
 
-            <div className="flex md:space-x-12 mt-5 flex-col  md:flex-row">
+            <div className="flex  ltr:md:space-x-12 mt-5 flex-col  md:flex-row">
               <DownloadIcon
                 className="self-center"
                 rate="4.9"
                 image="GOOGLE_PLAY"
               />
               <DownloadIcon
-                className="self-center mt-8 md:mt-0"
+                className="self-center mt-8 md:mt-0 rtl:md:mr-12"
                 rate="4.5"
                 image="APP_STORE"
               />
