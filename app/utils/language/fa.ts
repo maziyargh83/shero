@@ -19,20 +19,18 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   FEATURE_SECTION_1_TITLE: "Partnership (Prime)",
   FEATURE_SECTION_1:
     "Want support from others or be supportive? Choose your partner or be another partner in tracking health statutes and showing care for others. Feel safe by defining your desired access level for the partners.",
-  FEATURE_SECTION_2_TITLE: "Calendar",
-  FEATURE_SECTION_2:
-    "Customize your smart calendar by updating your daily symptoms and get an insight into upcoming health events to be prepared for in advance.",
+  FEATURE_SECTION_2_TITLE: " ",
+  FEATURE_SECTION_2: " ",
   FEATURE_SECTION_3_TITLE: "Mood Log",
   FEATURE_SECTION_3:
     "Even record your mood to find the unique relationship between your body and your feelings.",
 
-  FEATURE_SECTION_4_TITLE: "Dashboard",
+  FEATURE_SECTION_4_TITLE: "در مورد سلامتی‌ات سؤال داری؟",
   FEATURE_SECTION_4:
-    "Tell Shero about the exact date of your last period, sit back and see the exact predictions of your future cycle on the dashboard.",
+    " پزشک‌ها تو کلینیک لونا ‌آماده‌اند تا ازشون مشورت تخصصی بگیری و خیالت راحت بشه!",
 
-  FEATURE_SECTION_5_TITLE: "Community",
-  FEATURE_SECTION_5:
-    "Need to hear others’ experiences about their cycles or share yours to help others, join the Shero community.",
+  FEATURE_SECTION_5_TITLE: " ",
+  FEATURE_SECTION_5: ``,
   // slider
   SLIDER_1_TITLE: "تقویم قاعدگی 🗓",
   SLIDER_1_DESCRIPTION: "ثبت اطلاعات پریود و پیش بینی زمان تخمک گذاری",

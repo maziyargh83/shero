@@ -7,7 +7,7 @@ import { HeaderWrapper } from "~/components/Header/HeaderWrapper";
 import { FooterWave } from "~/components/Icons";
 import { TypoLogo } from "~/components/Icons/Logo";
 import { HeaderData } from "~/data";
-import { imageBuilder } from "~/utils";
+import { imageBuilder, isShero } from "~/utils";
 export const Footer = () => {
   return (
     <Fragment>
@@ -34,7 +34,11 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center md:justify-between items-center mt-9">
-          <div>All rights reserved. &copy; {moment().year()}</div>
+          <div className="text-base font-normal text-gray-G1">
+            {isShero()
+              ? ` All rights reserved. &copy; ${moment().year()}}`
+              : "این وبسایت متعلق به شرکت کاوشگران رادین فناور سلامت © به شماره ثبت 536101 است."}
+          </div>
           <div className="flex space-x-7">
             <a href={CONFIG.instagramUrl} target={"_blank"} rel="noreferrer">
               <FaInstagram />

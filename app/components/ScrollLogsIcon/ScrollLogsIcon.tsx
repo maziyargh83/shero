@@ -4,7 +4,7 @@ import { Logs } from "~/components";
 import { v4 } from "uuid";
 export const ScrollWheel = ({ data }: { data: LogType }) => {
   return (
-    <div className="flex px-10 space-x-10 mb-6 overflow-scroll scrollbar-hidden">
+    <div className="flex px-10 ltr:space-x-10 mb-6 overflow-scroll scrollbar-hidden">
       {Object.keys(data).map((key) => {
         return (
           <Logs

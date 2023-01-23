@@ -31,3 +31,4 @@ export * from "./NumberInput";
 export * from "./Notification";
 export * from "./TeamCircle";
 export * from "./ShadowFrame";
+export * from "./Feature";

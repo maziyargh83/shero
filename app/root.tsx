@@ -143,7 +143,7 @@ function PageLoadingMessage() {
         >
           <TeamCircle size={48} team="UNKNOWN" />
         </motion.div>
-        <div className="ml-4 inline-grid">
+        <div className="ltr:ml-4 rtl:mr-4 inline-grid">
           <AnimatePresence>
             <div className="col-start-1 row-start-1 flex overflow-hidden">
               <motion.span

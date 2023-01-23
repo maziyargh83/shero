@@ -7,7 +7,7 @@ interface LogsType {
 }
 export const Logs = ({ icon: Icon, title }: LogsType) => {
   return (
-    <div className="inline-flex items-center bg-white rounded-full p-2 ">
+    <div className="inline-flex items-center  rtl:ml-5 bg-white rounded-full p-2 ">
       <div className="bg-purple-P5 rounded-[100px] mr-2">
         <Icon />
       </div>

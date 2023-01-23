@@ -1,20 +1,18 @@
 import type { LangConfigValueType, languageKeys } from "~/types/langKeys";
 
 const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
-  HEADER_HOME: "خانه",
-  HEADER_SUPPORT: "پشتیبانی",
-  HEADER_PREGNANCY_TOOLS: "ابزار بارداری",
-  HEADER_BLOG: "بلاگ",
-  HEADER_ABOUT_US: "درباره ما",
-  HEADER_OVULATION_CALCULATOR: "محاسبه‌گر پریود",
-  HEADER_DOWNLOAD: "دانلود",
-  APP_NAME: "لونا",
-  APP_SUBTITLE: "هم راه سلامتی",
-
+  HEADER_HOME: "home",
+  HEADER_SUPPORT: "support",
+  HEADER_PREGNANCY_TOOLS: "Pregnancy Tools",
+  HEADER_BLOG: "blog",
+  HEADER_ABOUT_US: "About Us",
+  HEADER_OVULATION_CALCULATOR: "Ovulation Calculator",
+  HEADER_DOWNLOAD: "download",
+  APP_NAME: "Shero, ",
+  APP_SUBTITLE: "be the hero of your health awareness",
   APP_DESCRIPTION:
-    "لونا یک تقویم هوشمند و ساده برای دنبال کردن سلامتی زنان است. لونا دارای امکاناتی مانند ردیابی و پیش‌بینی تقویم دقیق پریود و دوران تخمک‌گذاری است و به زودی ردیابی دوران بارداری هم به امکانات لونا اضافه خواهد شد.",
-  GETTING_START: "راهنمای نصب و استفاده",
-
+    "Shero is a smart and simple calendar for tracking your menstrual cycle. Shero makes you a hero in tracking your symptoms with different features such as smart period tracking, ovulation tracking, pregnancy tracking, mood tracking and symptoms tracking. It predicts your upcoming cycle, and highlights the important events in your calendar to have it always on your palm. Being aware of your health situation makes you a hero in planning for your lifestyle.",
+  GETTING_START: "Getting Started",
   FEATURE_TITLE: "Shero Feature",
   FEATURE_DESCRIPTION: "The facilities we have in Shero can help your health",
   FEATURE_SECTION_1_TITLE: "Partnership (Prime)",

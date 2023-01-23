@@ -4,7 +4,7 @@ import { imageBuilder } from "~/utils";
 import { t } from "~/utils";
 export const Comment = ({ message, name, img }: commentType) => {
   return (
-    <div className="p-6 bg-white rounded-3xl h-56">
+    <div className="p-6 bg-white rounded-3xl md:h-56 min-h-[32px]">
       <div className="flex items-center">
         <div className="w-1/4  rtl:ml-2 ltr:mr-2">
           <img className="w-20 h-20" src={imageBuilder(img)} alt="" />
