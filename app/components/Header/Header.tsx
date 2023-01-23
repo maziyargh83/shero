@@ -62,7 +62,7 @@ export const Header = () => {
           </Link>
         </div>
         <div className={classNames("md:flex items-center hidden", {})}>
-          <Link to="/" className="md:mr-8">
+          <Link to="/" className="ltr:md:mr-8 rtl:md:ml-8">
             <LogoSvg />
           </Link>
           <HeaderWrapper>

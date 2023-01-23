@@ -23,9 +23,11 @@ export default function Download() {
           />
           <div className="md:flex space-x-7 mt-28 hidden">
             <div>
-              <div className="inline-flex items-center space-x-2">
+              <div className="inline-flex items-center">
                 <FaStar color="#FFBA07" />
-                <span className="text-gray-G4 text-sm font-medium">4.1</span>
+                <span className="text-gray-G4 text-sm font-medium mx-2">
+                  4.1
+                </span>
               </div>
               <DownloadWrapper
                 icon={<FaAndroid size={30} className="text-gray-G7" />}
@@ -34,9 +36,11 @@ export default function Download() {
               </DownloadWrapper>
             </div>
             <div>
-              <div className="inline-flex items-center space-x-2">
+              <div className="inline-flex items-center">
                 <FaStar color="#FFBA07" />
-                <span className="text-gray-G4 text-sm font-medium">4.9</span>
+                <span className="text-gray-G4 text-sm font-medium mx-2">
+                  4.9
+                </span>
               </div>
               <DownloadWrapper
                 icon={<FaApple size={30} className="text-gray-G7" />}

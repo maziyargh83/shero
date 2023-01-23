@@ -59,9 +59,9 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
     "I'm so happy that I can track and follow up my partner's period cycle",
   COMMENT_4_NAME: "ki****aa",
   //
-  TRIMESTER_1: "1st trimester",
-  TRIMESTER_2: "2nd trimester",
-  TRIMESTER_3: "3rd trimester",
+  TRIMESTER_1: "سه ماهه اول",
+  TRIMESTER_2: "سه ماهه دوم",
+  TRIMESTER_3: "سه ماهه سوم",
   // FAQ
   FAQ_1_TITLE: "Do I have to pay to use Shero?",
   FAQ_1_DESCRIPTION:
@@ -133,17 +133,17 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   FREQUENCY_DESCRIPTION:
     "Am I the only one? Read these FAQs to find out that you're not alone in your health journey.",
   // about us
-  ABOUT_US_TITLE: "About US",
+  ABOUT_US_TITLE: "درباره‌ لونا",
   ABOUT_US_DESCRIPTION:
-    "We came together in a friendly environment to help each other live healthier lives. We try to provide a smart solution for every problem that exists in the field of health and healthy lifestyle. ",
-  TEAM_NAME: "Shero Team",
+    "ما در یک محیط دوستانه دور هم جمع شدیم تا به همدیگه برای سالم‌تر زندگی کردن، کمک کنیم. ما تلاش می‌کنیم برای هر مشکلی که در زمینه‌ی سلامتی و سبک زندگی سالم وجود داره، راهکار هوشمندی ارائه کنیم. تا الان با اپلیکیشن‌های کرفس، بنتو، جیم و دنج سعی کردیم به این هدف برسیم و تونستیم به بیش از ۴ میلیون نفر تو این مسیر کمک کنیم. در همین راستا، محصول لونا رو توسعه دادیم. لونا جدیدترین محصول گروه کرفس، مربوط به حوزه سلامت زنان است که قراره خیلی شجاعانه، با زن‌ها و مردها، در مورد مسائلی که کمتر ازش حرف زده شده، ",
+  TEAM_NAME: "تیم لونا",
   // privacy
-  PRIVACY_TITLE: "Privacy Policy",
+  PRIVACY_TITLE: "حریم خصوصی",
   PRIVACY_DESCRIPTION: `Shero is a collection of software services including content, information and products in the field of predicting periods, ovulation and pregnancy, which is provided by the Radin Health Explorers Company. By registering in Shero, as well as every time using its services, users accept that they have read the present terms and conditions in full and have accepted it with full knowledge of its terms and meanings. These terms and conditions may change over time. Users' use of Shero after each change in terms and rules means acceptance of said changes. These rules are available for users to read on the Shero website and application.`,
   // Download
-  DOWNLOAD_TITLE: "Download",
+  DOWNLOAD_TITLE: "دانلود",
   DOWNLOAD_DESCRIPTION:
-    "You can download Shero directly and also in different stores",
+    "لونا رو می‌تونید مستقیم و همچنین در استورهای مختلف دانلود کنید",
   GETTING_STARTED_TITLE: "Getting Started",
   GETTING_STARTED_DESCRIPTION: "How to install Shero",
   GETTING_STARTED_DOWNLOAD_DETAIL:
@@ -162,19 +162,21 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   //
   TERMS_DESCRIPTION:
     "This Terms and Conditions for all products and services provided by Shero website and application. Shero is a period tracker application designed to raise awareness about women's health, predict menstruation and ovulation, and allow users to prevent possible disease by registering, entering their personal details, entering their symptoms, and following up on them in order to experience a healthier life.",
-  TERMS_TITLE: "Terms And Condition",
+  TERMS_TITLE: "قوانین",
   CONTACT_US_DESCRIPTION:
     "We help women put themselves first.Shero exists to empower women by giving them a space they can access the knowledge and support they need to prioritise their health and wellbeing.",
-  CONTACT_US_TITLE: "Contact US",
-  CONTACT_US_SUBMIT_TITLE: "Submit a request",
+  CONTACT_US_TITLE: "تماس با ما",
+  CONTACT_US_SUBMIT_TITLE: "ارتباط با لونا",
   CONTACT_US_SUBMIT_DESCRIPTION:
-    "Please enter the details of your request. A member of our support staff will respond as soon as possible.",
-  CONTACT_FORM_DESCRIPTION: `You can contact us through the following communication channels and
-    send us your comments, suggestions and criticisms. We need your
-    feedback to make Shero better.`,
-  PREGNANCY_TITLE: "Pregnancy due date calculator",
+    "پیشنهادات و انتقاداتون رو می‌تونید با ما درمیان بزارید",
+  CONTACT_FORM_DESCRIPTION: `از طریق راه‌های ارتباطی زیر می‌تونید با ما در ارتباط باشید و نظرات و پیشنهادات و انتقاداتون رو به گوش ما برسونید. ما برای بهتر شدن لونا به نظرات شما نیاز داریم.`,
+  PREGNANCY_TITLE: "محاسبه‌گر هفته بارداری",
   PREGNANCY_DESCRIPTION:
-    "Positive pregnancy test? You’ll probably have lots of questions like how far along am I? And when is my due date? Or maybe you’re thinking about timings before you start trying? Our Pregnancy Due Date Calculator can help you work out your estimated due date or when your baby might arrive.",
+    "برای اطلاع از هفته بارداری خود، تاریخ اولین روز از آخرین قاعدگی خود را وارد کنید.",
+  PREGNANCY_START_PERIOD: "تاریخ اولین روز از آخرین قاعدگی ",
+  PREGNANCY_CALCULATE: "محاسبه کن",
+  week: "هفته",
+
   //
   COMMENT_TITLE: "Why people love Shero",
   COMMENT_DESCRIPTION: "Some of your thoughts on Shero",
@@ -184,7 +186,7 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   //
   PREGNANCY_CONGRATULATION: "congratulations !",
   PREGNANCY_RESULT: ({ date, week }) =>
-    `You are ${week} weeks pregnant and You will meet your baby on ${date}`,
+    `شما در هفته ${week} هستید بارداری هستی و روز تولد کودک شما ${date} هست.`,
   PREGNANCY_MORE_DETAIL:
     "For more details, you can download the Shero application",
   PREGNANCY_DOWNLOAD: "Download app",

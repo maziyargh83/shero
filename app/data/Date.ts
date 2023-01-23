@@ -10,7 +10,7 @@ export const DateConfig: Record<
     monthName: "jMMM",
     dayName: "jdddd",
     defaultDate: "jYYYY/jMM/jDD",
-    monthNameWithYear: "",
+    monthNameWithYear: "jDD jMMMM  jYYYY",
   },
   en: {
     monthName: "MMM",

@@ -5,7 +5,7 @@ import { LogoSvg } from "~/components/Icons/Logo";
 import { t } from "~/utils";
 export const ContactForm = () => {
   return (
-    <div className="flex flex-wrap justify-center md:space-x-8">
+    <div className="flex flex-wrap justify-center ltr:md:space-x-8">
       <Container>
         <div className="flex w-full justify-center">
           <LogoSvg size={104} />
@@ -15,12 +15,12 @@ export const ContactForm = () => {
           {t("CONTACT_FORM_DESCRIPTION")}
         </p>
         <div className="mt-6 flex justify-start flex-col w-full">
-          <div className="flex mt-4 items-center space-x-2">
-            <FiMail className="text-purple-P2" />
+          <div className="flex mt-4 items-center">
+            <FiMail className="text-purple-P2 mx-2" />
             <p>{CONFIG.email}</p>
           </div>
-          <div className="flex mt-4 items-center space-x-2">
-            <FiInstagram className="text-purple-P2" />
+          <div className="flex mt-4 items-center">
+            <FiInstagram className="text-purple-P2 mx-2" />
             <p>{CONFIG.instagram}</p>
           </div>
         </div>
@@ -67,7 +67,7 @@ const Container = ({
   children?: JSX.Element[] | JSX.Element;
 }) => {
   return (
-    <div className="md:w-4/12 w-full bg-white p-12 rounded-2xl flex flex-col mt-6 md:mt-0">
+    <div className="md:w-4/12 w-full rtl:mx-4 bg-white p-12 rounded-2xl flex flex-col mt-6 md:mt-0">
       {children}
     </div>
   );

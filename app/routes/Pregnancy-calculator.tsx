@@ -6,16 +6,18 @@ import {
   DatePicker,
   PregnancyProgress,
 } from "~/components";
-import { imageBuilder, t } from "~/utils";
+import { imageBuilder, isShero, t } from "~/utils";
 import { Fragment, useState } from "react";
 import moment from "moment-jalaali";
-import { getDateConfig } from "~/data";
+import { DateConfig, getDateConfig } from "~/data";
 import type { PregnancyResultType } from "~/types";
 import styles from "~/styles/calendar.css";
 import { Link } from "@remix-run/react";
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
+
+if (!isShero()) moment.loadPersian({ dialect: "persian-modern" });
 
 export default function PregnancyCalculator() {
   const [date, changeData] = useState<Date>(new Date());
@@ -28,10 +30,10 @@ export default function PregnancyCalculator() {
     // end date
     const finalDate = moment(date).add(40, "w");
     const remainDays = finalDate.clone().diff(moment(), "d");
-
     const endDate = finalDate.format(getDateConfig("monthNameWithYear"));
+
     console.log("====================================");
-    console.log(week);
+    console.log(endDate, getDateConfig("monthNameWithYear"), finalDate);
     console.log("====================================");
     setResult({
       week: week,
@@ -63,11 +65,11 @@ export default function PregnancyCalculator() {
       <Section className="mt-12">
         <div className="flex self-center justify-center items-center flex-col">
           <p className="text-gray-G1 font-normal text-xl">
-            The first day of your last period
+            {t("PREGNANCY_START_PERIOD")}
           </p>
           <DatePicker maxDate={new Date()} value={date} onChange={changeData} />
           <button onClick={calculate} className="period-button">
-            Calculate
+            {t("PREGNANCY_CALCULATE")}
           </button>
         </div>
       </Section>

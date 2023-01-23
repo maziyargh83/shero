@@ -147,6 +147,9 @@ export enum languageKeys {
   // Pregnancy
   "PREGNANCY_TITLE",
   "PREGNANCY_DESCRIPTION",
+  "PREGNANCY_START_PERIOD",
+  "PREGNANCY_CALCULATE",
+  "week",
   // comment title
   "COMMENT_TITLE",
   "COMMENT_DESCRIPTION",

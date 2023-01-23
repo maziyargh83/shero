@@ -907,6 +907,11 @@ video {
   margin-right: 1rem;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -1756,6 +1761,11 @@ video {
   padding-right: 2.75rem;
 }
 
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -2154,14 +2164,48 @@ html {
   margin-left: calc(6rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+[dir="ltr"] .ltr\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 [dir="rtl"] .rtl\:mx-9 {
   margin-left: 2.25rem;
   margin-right: 2.25rem;
 }
 
+[dir="rtl"] .rtl\:mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+[dir="rtl"] .rtl\:mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .rtl\:mr-2 {
+  margin-right: 0.5rem;
+}
+
+[dir="rtl"] .rtl\:ml-2 {
+  margin-left: 0.5rem;
+}
+
 [dir="rtl"] .rtl\:translate-x-\[140px\] {
   --tw-translate-x: 140px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+[dir="rtl"] .rtl\:flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .rtl\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 [dir="rtl"] .rtl\:space-x-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -2449,6 +2493,20 @@ html {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  [dir="ltr"] .ltr\:md\:mr-8 {
+    margin-right: 2rem;
+  }
+
+  [dir="ltr"] .ltr\:md\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2rem * var(--tw-space-x-reverse));
+    margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  [dir="rtl"] .rtl\:md\:ml-8 {
+    margin-left: 2rem;
   }
 }
 

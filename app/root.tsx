@@ -14,10 +14,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useMemo, useState } from "react";
 import { imageBuilder, isShero } from "~/utils";
 import classNames from "classnames";
+import CONFIG from "~/Config";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "Shero",
+  title: CONFIG.product,
   viewport: "width=device-width,initial-scale=1",
 });
 

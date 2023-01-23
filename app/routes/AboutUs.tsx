@@ -1,6 +1,7 @@
 import { v4 } from "uuid";
 import {
   Blob,
+  ContactForm,
   ContainerSection,
   ImageBlob,
   RowSection,
@@ -47,6 +48,18 @@ export default function AboutUs() {
           subTitleClass="text-gray-G1 font-bold text-4xl"
         />
         <Team />
+      </Section>
+      <Section className="mt-32">
+        <SectionTitle
+          subTitle={t("CONTACT_US_SUBMIT_TITLE")}
+          subTitleClass="text-gray-G1 font-bold text-4xl"
+          description={t("CONTACT_US_SUBMIT_DESCRIPTION")}
+          descriptionClass="text-xl font-normal mt-2 text-gray-G2"
+        />
+
+        <div className="mt-3 md:mt-12">
+          <ContactForm />
+        </div>
       </Section>
     </div>
   );

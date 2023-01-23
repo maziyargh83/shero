@@ -60,8 +60,8 @@ const Progress = ({
       )}
       <div className=" bg-white rounded-full  h-full w-full overflow-hidden">
         <div
-          className="h-full bg-green-G2  rounded-full"
-          style={{ width: `${percent}%` }}
+          className="h-full bg-green-G2 rounded-full"
+          style={{ width: `${percent}%`, direction: "ltr" }}
         />
       </div>
     </div>
@@ -82,7 +82,7 @@ const Marker = ({ position, week }: { position: number; week: number }) => {
       />
       <div className="text-center p-2">
         <p className="text-2xl font-normal text-white">{week}</p>
-        <p className="text-2xl font-normal text-white">week</p>
+        <p className="text-2xl font-normal text-white">{t("week")}</p>
       </div>
     </div>
   );

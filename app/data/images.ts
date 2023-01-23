@@ -2,7 +2,7 @@ import type { imageTypes } from "~/types";
 export const images: imageTypes = {
   LOGO: {
     url: {
-      luna: "",
+      luna: "luna/Logo/logo.png",
       shero: "shero/Logo/logo.png",
     },
   },
