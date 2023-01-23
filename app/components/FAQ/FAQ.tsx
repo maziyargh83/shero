@@ -23,7 +23,7 @@ export const FAQ = () => {
           className="py-4 bg-gray-G10 rounded-xl flex w-full justify-center items-center"
           onClick={() => setLoadMore(true)}
         >
-          <span className="text-gray-G3 font-medium text-xl">
+          <span className="text-gray-G3 font-medium text-base md:text-xl">
             {t("FAQ_MORE")}
           </span>
         </button>

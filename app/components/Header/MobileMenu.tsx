@@ -131,6 +131,7 @@ export const MobileMenu = ({ close }: MobileMenuProps) => {
             {HeaderData.map((data) => {
               return (
                 <HeaderMenu
+                  close={close}
                   key={data.title + "_menu_item"}
                   extra
                   headerData={{
