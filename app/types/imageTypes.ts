@@ -56,6 +56,10 @@ export const enum imagesKey {
   "SHADOW",
   //
   "MARKER",
+  //
+  "APPLE",
+  "PLAY",
+  "BAZARICON",
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };

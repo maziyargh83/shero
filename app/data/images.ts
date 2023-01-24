@@ -43,6 +43,15 @@ export const images: imageTypes = {
       shero: "shero/downloadIcon/bazar.png",
     },
   },
+  APPLE: {
+    url: "luna/downloadIcon/apple.png",
+  },
+  PLAY: {
+    url: "luna/downloadIcon/play.png",
+  },
+  BAZARICON: {
+    url: "luna/downloadIcon/bazarIcon.png",
+  },
   PERSON_1: {
     url: {
       luna: "luna/people/person1.png",
