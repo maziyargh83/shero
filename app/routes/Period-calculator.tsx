@@ -453,7 +453,7 @@ export default function PeriodCalculator() {
               {t("PERIOD_CALCULATOR_PREV")}
             </button> */}
           </div>
-          <div className="flex space-x-2 mt-28 justify-center">
+          <div className="flex space-y-2 md:space-y-0 md:space-x-2 mt-28 justify-center flex-col md:flex-row">
             <Pallete color="#FF7878" text="Period" />
             <Pallete color="#9E81EC" text="Anticipated ovulation" />
           </div>
@@ -469,7 +469,7 @@ const Pallete = ({ color, text }: { text: string; color: string }) => {
   return (
     <div className="flex items-center">
       <div className="w-9 h-9 rounded-full" style={{ background: color }}></div>
-      <span className="pl-2 text-sm font-normal">{text}</span>
+      <span className="px-2 text-sm font-normal">{text}</span>
     </div>
   );
 };
