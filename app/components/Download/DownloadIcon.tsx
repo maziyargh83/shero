@@ -19,9 +19,11 @@ export const DownloadIcon = ({
       })}
     >
       {!!rate && (
-        <div className="inline-flex items-center space-x-2">
+        <div className="inline-flex items-center ltr:space-x-2">
           <FaStar color="#FFBA07" />
-          <span className="text-gray-G4 text-sm font-medium">{rate}</span>
+          <span className="text-gray-G4 text-sm font-medium rtl:mx-2">
+            {rate}
+          </span>
         </div>
       )}
       <img src={imageBuilder(image)} className={"mt-2"} alt="download icon" />

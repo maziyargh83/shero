@@ -2243,6 +2243,12 @@ html {
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+[dir="ltr"] .ltr\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 [dir="ltr"] .ltr\:bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -2279,6 +2285,11 @@ html {
 [dir="rtl"] .rtl\:mx-9 {
   margin-left: 2.25rem;
   margin-right: 2.25rem;
+}
+
+[dir="rtl"] .rtl\:mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 [dir="rtl"] .rtl\:mr-4 {
