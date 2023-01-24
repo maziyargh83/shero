@@ -2560,6 +2560,10 @@ html {
     margin-right: 2rem;
   }
 
+  [dir="ltr"] .ltr\:md\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   [dir="ltr"] .ltr\:md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));

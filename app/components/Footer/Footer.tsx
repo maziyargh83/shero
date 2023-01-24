@@ -34,7 +34,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex justify-center md:justify-between flex-col md:flex-row  items-center mt-9">
-          <div className="text-base text-justify font-normal text-gray-G1">
+          <div className="text-base font-normal text-gray-G1">
             {isShero()
               ? ` All rights reserved. &copy; ${moment().year()}}`
               : "این وبسایت متعلق به شرکت کاوشگران رادین فناور سلامت © به شماره ثبت 536101 است."}

@@ -436,7 +436,7 @@ export default function PeriodCalculator() {
             ))}
           </div>
 
-          <div className="flex flex-wrap justify-center mt-14 space-y-2 md:space-y-0">
+          <div className="flex flex-wrap justify-center mt-14 flex-col ltr:md:flex-row-reverse rtl:md:flex-row space-y-2 md:space-y-0">
             <button
               onClick={nextMonth}
               className="py-5 px-5 bg-purple-P3 text-white rounded-full text-xl font-medium"

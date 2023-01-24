@@ -195,8 +195,8 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   PREGNANCY_MORE_DETAIL:
     "For more details, you can download the Shero application",
   PREGNANCY_DOWNLOAD: "Download app",
-  PERIOD_CALCULATOR_NEXT: "Next Month",
-  PERIOD_CALCULATOR_CURRENT: "Current month",
-  PERIOD_CALCULATOR_PREV: "Prev month",
+  PERIOD_CALCULATOR_NEXT: "ماه بعدی",
+  PERIOD_CALCULATOR_CURRENT: "ماه فعلی",
+  PERIOD_CALCULATOR_PREV: "ماه قبلی",
 };
 export default FA;

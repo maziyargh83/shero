@@ -42,7 +42,21 @@ export const Header = () => {
           "flex container px-8 md:px-0 mx-auto justify-between rtl:md:flex-row rtl:flex-row-reverse  h-20 md:h-32 items-center"
         )}
       >
-        <div className="md:hidden w-1/2 rtl:md:hidden rtl:flex rtl:justify-end">
+        <div className="w-1/3 md:hidden flex  rtl:justify-end">
+          <Link
+            to="/Download"
+            className={classNames(
+              "text-base md:hidden  font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 px-8 py-2 ",
+              {
+                "bg-purple-P1 text-white": scrolled,
+                "text-purple-P1": !scrolled,
+              }
+            )}
+          >
+            {capitalizeFirstChar(t("HEADER_DOWNLOAD"))}
+          </Link>
+        </div>
+        <div className="md:hidden w-1/3 rtl:md:hidden rtl:flex justify-center">
           <Link to="/">
             <LogoSvg />
           </Link>
@@ -74,7 +88,7 @@ export const Header = () => {
           </Link>
         </div>
         <div
-          className="md:hidden w-1/2 flex rtl:justify-start ltr:justify-end items-center"
+          className="md:hidden w-1/3 flex rtl:justify-start ltr:justify-end items-center"
           onClick={() => setShowMobile(true)}
         >
           <FaBars />
