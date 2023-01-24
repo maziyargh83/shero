@@ -58,11 +58,14 @@ export const Box = ({
       )}
       <div
         id={title + "_id"}
-        className={classNames("bg-white w-full rounded-3xl h-[700px] ", {
-          "hidden md:block  py-14  mb-6 px-20 overflow-hidden":
-            !!hideMobile && !activePopUp(),
-          "block w-[90%] px-7 pt-4 mx-auto h-[80%] ": activePopUp(),
-        })}
+        className={classNames(
+          "overflow-hidden scrollbar-hidden bg-white w-full rounded-3xl h-[700px] ",
+          {
+            "hidden md:block  py-14  mb-6 px-20 overflow-hidden":
+              !!hideMobile && !activePopUp(),
+            "block w-[90%] px-7 pt-4 mx-auto h-[80%] ": activePopUp(),
+          }
+        )}
         onClick={(e) => e.stopPropagation()}
       >
         <div>
@@ -100,7 +103,7 @@ export const Box = ({
           )}
         </div>
 
-        <div className="overflow-auto h-[inherit] mt-10 md:mt-0">
+        <div className="overflow-auto scrollbar-hidden h-full mt-3 md:mt-0">
           {getActiveContent()}
         </div>
       </div>

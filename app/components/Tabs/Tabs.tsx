@@ -28,12 +28,15 @@ export const Tabs = ({
 }: TabsProps) => {
   const jsx = (
     <div
-      className={classNames("", {
-        "md:flex hidden": !activePortal && mobilePortal,
-        flex: activePortal || !mobilePortal,
-        "z-10 h-20 items-center flex-wrap overflow-auto bg-purple-P1 w-full pl-8 fixed top-20":
-          activePortal,
-      })}
+      className={classNames(
+        " overflow-y-hidden scrollbar-hidden overflow-x-auto",
+        {
+          "md:flex hidden": !activePortal && mobilePortal,
+          flex: activePortal || !mobilePortal,
+          "z-10 h-20 items-center  bg-purple-P1 w-full pl-8 fixed top-20":
+            activePortal,
+        }
+      )}
     >
       {data.map((el, index) => {
         return (
@@ -77,7 +80,7 @@ const Tab = ({
       onClick={onClick}
     >
       <span
-        className={classNames("text-lg font-medium", {
+        className={classNames("text-lg whitespace-nowrap font-medium", {
           "text-xs": box,
         })}
       >
