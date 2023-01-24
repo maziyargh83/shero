@@ -29,13 +29,22 @@ export const images: imageTypes = {
     url: "shero/downloadIcon/PWA.png",
   },
   PERSON_1: {
-    url: "shero/people/person1.png",
+    url: {
+      luna: "luna/people/person1.png",
+      shero: "shero/people/person1.png",
+    },
   },
   PERSON_2: {
-    url: "shero/people/person2.png",
+    url: {
+      luna: "luna/people/person2.png",
+      shero: "shero/people/person2.png",
+    },
   },
   PERSON_3: {
-    url: "shero/people/person3.png",
+    url: {
+      luna: "luna/people/person3.png",
+      shero: "shero/people/person3.png",
+    },
   },
   FRAME_1: {
     url: {

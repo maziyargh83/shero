@@ -148,7 +148,7 @@ export default function GettingStarted() {
             </BoxContent>
           </Box>
           <Box
-            title={"Profile"}
+            title={"ویرایش اطلاعات پروفایل"}
             activeBox={activeBox}
             changeActiveBox={setActiveBox}
           >

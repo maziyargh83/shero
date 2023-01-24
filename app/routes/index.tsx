@@ -91,7 +91,7 @@ export default function Index() {
           <div className="self-start md:self-auto">
             <ImageBlob
               img="PERSON_2"
-              className="w-24 h-24  md:h-auto md:w-auto"
+              className="w-24 h-24   md:h-auto md:w-auto"
               blobs={[
                 <Blob
                   key={v4()}
@@ -108,7 +108,7 @@ export default function Index() {
               ]}
             />
           </div>
-          <div className="self-end md:self-auto">
+          <div className="self-end rtl:md:translate-y-12 md:self-auto">
             <ImageBlob
               img="PERSON_1"
               className="w-36 h-36 md:h-auto md:w-auto"
@@ -128,7 +128,7 @@ export default function Index() {
               ]}
             />
           </div>
-          <div className="self-start md:self-auto">
+          <div className="self-start rtl:md:-translate-y-12 md:self-auto">
             <ImageBlob
               img="PERSON_3"
               className="w-28 h-28  md:h-auto md:w-auto"

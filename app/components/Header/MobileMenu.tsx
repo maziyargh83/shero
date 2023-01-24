@@ -134,6 +134,7 @@ export const MobileMenu = ({ close }: MobileMenuProps) => {
                   close={close}
                   key={data.title + "_menu_item"}
                   extra
+                  extra_mobile
                   headerData={{
                     ...data,
                     className: "text-center text-white text-xl font-bold ",
