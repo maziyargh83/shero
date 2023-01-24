@@ -36,17 +36,17 @@ export const FrameMobileHome = ({
         )}
       </div>
       {!downloadPage && (
-        <div className="flex relative md:static mt-14 space-x-4 md:mt-0">
+        <div className="flex relative md:static mt-14 ltr:space-x-4 md:mt-0">
           <Box
-            className="bg-blue-B2 bottom-48 -left-24"
+            className="bg-blue-B2 bottom-48 rtl:mx-4 -left-24"
             icon={<TryToConceiveIcon />}
           />
           <Box
-            className="bg-green-G2 bottom-24 -left-12"
+            className="bg-green-G2 bottom-24  rtl:mx-4 -left-12"
             icon={<PregnancyIcon />}
           />
           <Box
-            className="bg-red-R2 md:w-28 md:h-28 bottom-32 -right-12"
+            className="bg-red-R2 md:w-28 md:h-28  rtl:mx-4 bottom-32 -right-12"
             icon={<TrackingIcon />}
           />
         </div>
