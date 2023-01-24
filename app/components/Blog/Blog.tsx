@@ -7,7 +7,6 @@ export const Blog = ({ blogData }: { blogData: any }) => {
   return (
     <Fragment>
       <Swiper
-        modules={[Virtual]}
         pagination={{ clickable: true }}
         spaceBetween={50}
         slidesPerView={1}
@@ -16,11 +15,10 @@ export const Blog = ({ blogData }: { blogData: any }) => {
             slidesPerView: 3,
           },
         }}
-        virtual
       >
         {blogData.map((item, index) => {
           return (
-            <SwiperSlide key={v4()} virtualIndex={index}>
+            <SwiperSlide key={v4()}>
               <BlogItem
                 key={v4()}
                 permalink={item.permalink}
