@@ -10,7 +10,11 @@ import {
   Team,
 } from "~/components";
 import { t } from "~/utils";
+import styles from "swiper/swiper-bundle.min.css";
 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 export default function AboutUs() {
   return (
     <div>

@@ -454,8 +454,8 @@ export default function PeriodCalculator() {
             </button> */}
           </div>
           <div className="flex space-y-2 md:space-y-0 md:space-x-2 mt-28 justify-center flex-col md:flex-row">
-            <Pallete color="#FF7878" text="Period" />
-            <Pallete color="#9E81EC" text="Anticipated ovulation" />
+            <Pallete color="#FF7878" text="پریود" />
+            <Pallete color="#9E81EC" text="پنجره باروری" />
           </div>
           <p className="mt-5 text-center text-purple-P3 text-lg ">
             {t("PERIOD_NOTE")}

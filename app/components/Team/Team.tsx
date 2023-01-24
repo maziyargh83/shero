@@ -1,3 +1,6 @@
+import { Fragment } from "react";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { v4 } from "uuid";
 import { Blob } from "~/components/Blob";
 import { ImageBlob } from "~/components/ImageBlob";
@@ -5,11 +8,22 @@ import { team } from "~/data/team";
 import type { teamType } from "~/types";
 export const Team = () => {
   return (
-    <div className="flex flex-wrap  justify-between sm:justify-start">
-      {team.map((data) => (
-        <TeamBlob data={data} key={v4()} />
-      ))}
-    </div>
+    <Fragment>
+      <div className="flex md:hidden">
+        <Swiper spaceBetween={50} modules={[Pagination]} slidesPerView={1}>
+          {team.map((data, index) => (
+            <SwiperSlide key={v4()}>
+              <TeamBlob data={data} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      <div className="hidden md:flex flex-wrap  justify-between sm:justify-start">
+        {team.map((data) => (
+          <TeamBlob data={data} key={v4()} />
+        ))}
+      </div>
+    </Fragment>
   );
 };
 const TeamBlob = ({ data }: { data: teamType }) => {
