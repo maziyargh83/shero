@@ -1,3 +1,5 @@
+import { useLoaderData } from "@remix-run/react";
+import axios from "axios";
 import { FaAndroid, FaApple, FaStar } from "react-icons/fa";
 import {
   ContainerSection,
@@ -55,6 +57,7 @@ export default function Download() {
               </DownloadWrapper>
             </div>
           </div>
+          <div></div>
         </RowSection>
         <RowSection className="relative flex justify-center items-center">
           <div className="relative">

@@ -32,3 +32,4 @@ export * from "./Notification";
 export * from "./TeamCircle";
 export * from "./ShadowFrame";
 export * from "./Feature";
+export * from "./Blog";

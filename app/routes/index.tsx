@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
-import { Fragment, useEffect } from "react";
+import { Fragment } from "react";
 import { AiFillLeftCircle, AiFillRightCircle } from "react-icons/ai";
 import {
   Blob,
+  Blog,
   CommentSlider,
   ContainerSection,
   DownloadIcon,
@@ -18,16 +19,50 @@ import {
   SectionTitle,
   ShadowFrame,
 } from "~/components";
-import { imageBuilder, isShero, t } from "~/utils";
+import { isShero, t } from "~/utils";
 import { v4 } from "uuid";
 import styles from "swiper/swiper-bundle.min.css";
-import { Link } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
+import { json } from "@remix-run/node";
+import { FiExternalLink } from "react-icons/fi";
 
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
+export async function loader() {
+  try {
+    const res = await fetch(
+      "https://blog.luna.health/wp-json/better-rest-endpoints/v1/posts?&per_page=5",
+      {
+        headers: {
+          "Cache-Control": "public, max-age=3600",
+        },
+      }
+    );
+    const blog = await res.json();
+    return json(
+      { blog },
+      {
+        headers: {
+          "Cache-Control": "public, max-age=3600",
+        },
+      }
+    );
+  } catch (error) {
+    return json(
+      { blog: [] },
+      {
+        headers: {
+          "Cache-Control": "public, max-age=3600",
+        },
+      }
+    );
+  }
+}
 
 export default function Index() {
+  const data = useLoaderData<typeof loader>();
+
   return (
     <Fragment>
       <Section className="pt-5">
@@ -205,6 +240,36 @@ export default function Index() {
         />
         <FAQ />
       </Section>
+
+      {!isShero() && (
+        <Section className="mt-32">
+          <div className="flex">
+            <div className="flex-1">
+              <SectionTitle
+                subTitle={"بلاگ لونا"}
+                subTitleClass="text-gray-G1 font-bold text-4xl"
+                description={
+                  "اینجا میتونی مطالب مفیدی درباره‌ی سلامتی و دوران پریود و تخمک‌گذاری بخونی"
+                }
+                descriptionClass="text-xl font-normal mt-2 text-gray-G2"
+              />
+            </div>
+            <div className="flex items-center">
+              <a href="https://blog.luna.health/" target={"_blank"}>
+                <div className="flex items-center">
+                  <span className="mx-2 text-gray-G3 font-medium text-xl">
+                    همه مطالب
+                  </span>
+                  <FiExternalLink />
+                </div>
+              </a>
+            </div>
+          </div>
+          <div className="mt-12">
+            <Blog blogData={data.blog} />
+          </div>
+        </Section>
+      )}
       <Section className="mt-16 md:mt-32 ">
         <SectionTitle
           subTitle={t("COMMENT_TITLE")}
