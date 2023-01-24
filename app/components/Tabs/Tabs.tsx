@@ -33,7 +33,7 @@ export const Tabs = ({
         {
           "md:flex hidden": !activePortal && mobilePortal,
           flex: activePortal || !mobilePortal,
-          "z-10 h-20 items-center  bg-purple-P1 w-full pl-8 fixed top-20":
+          "z-10 h-20 items-center px-4  bg-purple-P1 w-full pl-8 fixed top-20":
             activePortal,
         }
       )}
@@ -80,7 +80,7 @@ const Tab = ({
       onClick={onClick}
     >
       <span
-        className={classNames("text-lg whitespace-nowrap font-medium", {
+        className={classNames("text-base whitespace-nowrap font-medium", {
           "text-xs": box,
         })}
       >

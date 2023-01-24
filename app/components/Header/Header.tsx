@@ -33,7 +33,7 @@ export const Header = () => {
         "z-50 transition-colors duration-300 w-full fixed top-0 ",
         {
           "bg-white/70 backdrop-blur-sm": scrolled,
-          "bg-transparent": !scrolled,
+          "bg-white md:bg-transparent": !scrolled,
         }
       )}
     >

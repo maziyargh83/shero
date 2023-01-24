@@ -917,6 +917,11 @@ video {
   margin-right: 1rem;
 }
 
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mt-7 {
   margin-top: 1.75rem;
 }
@@ -1163,6 +1168,10 @@ video {
 
 .min-h-\[600px\] {
   min-height: 600px;
+}
+
+.min-h-\[51px\] {
+  min-height: 51px;
 }
 
 .w-64 {
@@ -1782,6 +1791,11 @@ video {
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .pl-2 {
@@ -2515,6 +2529,10 @@ html {
 
   .md\:rounded-3xl {
     border-radius: 1.5rem;
+  }
+
+  .md\:bg-transparent {
+    background-color: transparent;
   }
 
   .md\:py-32 {

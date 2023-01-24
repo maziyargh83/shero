@@ -10,7 +10,7 @@ export const Blog = ({ blogData }: { blogData: any }) => {
         modules={[Virtual]}
         pagination={{ clickable: true }}
         spaceBetween={50}
-        slidesPerView={2}
+        slidesPerView={1}
         breakpoints={{
           768: {
             slidesPerView: 3,

@@ -81,6 +81,7 @@ export const Box = ({
               />
               <FiX
                 className="md:hidden"
+                size={30}
                 onClick={() => changeActiveBox && changeActiveBox(undefined)}
               />
             </div>
@@ -96,6 +97,7 @@ export const Box = ({
             >
               <p className="text-3xl font-medium text-purple-P1">{activeTab}</p>
               <FiX
+                size={30}
                 className="md:hidden"
                 onClick={() => changeActiveBox && changeActiveBox(undefined)}
               />
@@ -142,7 +144,7 @@ const MobileButton = ({
   <div className="px-2 my-3 w-1/2">
     <div
       onClick={changeActiveBox}
-      className="flex text-base font-medium text-gray-G2 md:hidden cursor-pointer  bg-white justify-center items-center h-14 shadow-sm rounded-2xl"
+      className="flex text-xs font-medium text-gray-G2 md:hidden cursor-pointer  bg-white justify-center items-center min-h-[51px] shadow-sm rounded-2xl"
     >
       {title}
     </div>

@@ -243,7 +243,7 @@ export default function Index() {
 
       {!isShero() && (
         <Section className="mt-32">
-          <div className="flex">
+          <div className="flex flex-col md:flex-row">
             <div className="flex-1">
               <SectionTitle
                 subTitle={"بلاگ لونا"}
@@ -256,7 +256,7 @@ export default function Index() {
             </div>
             <div className="flex items-center">
               <a href="https://blog.luna.health/" target={"_blank"}>
-                <div className="flex items-center">
+                <div className="flex items-center mt-3 md:mt-0">
                   <span className="mx-2 text-gray-G3 font-medium text-xl">
                     همه مطالب
                   </span>
