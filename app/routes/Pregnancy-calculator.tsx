@@ -7,12 +7,13 @@ import {
   PregnancyProgress,
 } from "~/components";
 import { imageBuilder, isShero, t } from "~/utils";
-import { Fragment, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import moment from "moment-jalaali";
 import { DateConfig, getDateConfig } from "~/data";
 import type { PregnancyResultType } from "~/types";
 import styles from "~/styles/calendar.css";
 import { Link } from "@remix-run/react";
+import { childWeeks } from "~/data/childWeek";
 export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
@@ -43,6 +44,11 @@ export default function PregnancyCalculator() {
     });
     changeSelectedData(date);
   };
+  const weekData = useMemo(() => {
+    const week = result && result.week && result.week > 0 ? result.week : 1;
+    return childWeeks.find((item) => item.weekNumber == week)
+      ?.additionalDescription;
+  }, [result]);
   return (
     <div>
       <Section>
@@ -92,12 +98,7 @@ export default function PregnancyCalculator() {
           <Section className="">
             <div className="w-[80%] mx-auto mt-52">
               <PregnancyProgress date={selectedDate} {...result} />
-              <p className="font-normal text-base mt-10">
-                At 8 week pregnant, you’re actually not pregnant yet. As your
-                pregnancy is calculated from the first day of your last
-                menstruation, your baby does not yet exist, and your body is
-                preparing for the ovulation during which you’ll get pregnant.
-              </p>
+              <p className="font-normal text-base mt-10">{weekData}</p>
               <div className="flex justify-between items-center mt-10 flex-wrap">
                 <p className="text-base font-normal text-gray-G4 ">
                   {t("PREGNANCY_MORE_DETAIL")}

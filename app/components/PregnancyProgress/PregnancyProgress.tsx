@@ -58,7 +58,12 @@ const Progress = ({
           />
         </Fragment>
       )}
-      <div className=" bg-white rounded-full  h-full w-full overflow-hidden">
+      <div
+        className=" bg-white rounded-full  h-full w-full overflow-hidden"
+        style={{
+          direction: "ltr",
+        }}
+      >
         <div
           className="h-full bg-green-G2 rounded-full"
           style={{ width: `${percent}%`, direction: "ltr" }}

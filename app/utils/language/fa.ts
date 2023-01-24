@@ -189,12 +189,11 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   LOG_KEY_TITLE: "ثبت وضعیت",
   LOG_KEY_DESCRIPTION: "میتونی وضعیتت و توی لونا ثبت کنی تا ..",
   //
-  PREGNANCY_CONGRATULATION: "congratulations !",
+  PREGNANCY_CONGRATULATION: "تبریک !",
   PREGNANCY_RESULT: ({ date, week }) =>
     `شما در هفته ${week} هستید بارداری هستی و روز تولد کودک شما ${date} هست.`,
-  PREGNANCY_MORE_DETAIL:
-    "For more details, you can download the Shero application",
-  PREGNANCY_DOWNLOAD: "Download app",
+  PREGNANCY_MORE_DETAIL: "برای جزییات بیشتر میتونی اپلیکیشن لونا رو دانلود کنی",
+  PREGNANCY_DOWNLOAD: "دانلود اپلیکیشن",
   PERIOD_CALCULATOR_NEXT: "ماه بعدی",
   PERIOD_CALCULATOR_CURRENT: "ماه فعلی",
   PERIOD_CALCULATOR_PREV: "ماه قبلی",
