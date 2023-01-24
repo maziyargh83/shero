@@ -67,6 +67,7 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   PERIOD_COL_3: "Average cycle length (periodLong)",
   PERIOD_NOTE:
     "Note that this calculation is approximate and should not be used to treat or prevent pregnancy.",
+  PERIOD_WARN: "Didn't enter the previous period date ",
   CHOICE: "Choose date",
   // FAQ
   FAQ_1_TITLE: "Do I have to pay to use Shero?",

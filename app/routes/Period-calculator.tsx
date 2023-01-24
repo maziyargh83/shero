@@ -406,7 +406,7 @@ export default function PeriodCalculator() {
             <NumberInput amount={periodCycle} setAmount={setPeriodCycle} />
           </Column>
         </div>
-        {!!warning && <p> Didn't enter the previous period date </p>}
+        {!!warning && <p> {t("PERIOD_WARN")}</p>}
 
         <button
           onClick={() => {

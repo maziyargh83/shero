@@ -897,6 +897,11 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
@@ -910,16 +915,6 @@ video {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
 
 .mt-7 {
@@ -2164,6 +2159,12 @@ html {
   justify-content: flex-end;
 }
 
+[dir="ltr"] .ltr\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 [dir="ltr"] .ltr\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(6rem * var(--tw-space-x-reverse));
@@ -2174,12 +2175,6 @@ html {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-[dir="ltr"] .ltr\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1rem * var(--tw-space-x-reverse));
-  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 [dir="ltr"] .ltr\:bg-gradient-to-r {
@@ -2205,6 +2200,11 @@ html {
   left: 0px;
 }
 
+[dir="rtl"] .rtl\:mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 [dir="rtl"] .rtl\:mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -2213,16 +2213,6 @@ html {
 [dir="rtl"] .rtl\:mx-9 {
   margin-left: 2.25rem;
   margin-right: 2.25rem;
-}
-
-[dir="rtl"] .rtl\:mx-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-
-[dir="rtl"] .rtl\:mx-5 {
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
 }
 
 [dir="rtl"] .rtl\:mr-4 {
@@ -2485,22 +2475,12 @@ html {
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
   }
 
-  .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   .md\:self-auto {
     align-self: auto;
   }
 
   .md\:rounded-3xl {
     border-radius: 1.5rem;
-  }
-
-  .md\:bg-transparent {
-    background-color: transparent;
   }
 
   .md\:py-32 {
@@ -2547,6 +2527,12 @@ html {
     margin-right: 2rem;
   }
 
+  [dir="ltr"] .ltr\:md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
   [dir="ltr"] .ltr\:md\:space-x-12 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(3rem * var(--tw-space-x-reverse));
@@ -2559,18 +2545,20 @@ html {
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  [dir="ltr"] .ltr\:md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(0.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
   [dir="rtl"] .rtl\:md\:mr-12 {
     margin-right: 3rem;
   }
 
   [dir="rtl"] .rtl\:md\:ml-8 {
     margin-left: 2rem;
+  }
+
+  [dir="rtl"] .rtl\:md\:hidden {
+    display: none;
+  }
+
+  [dir="rtl"] .rtl\:md\:flex-row {
+    flex-direction: row;
   }
 }
 

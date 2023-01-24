@@ -75,6 +75,7 @@ export enum languageKeys {
   "PERIOD_COL_3",
   "PERIOD_NOTE",
   "CHOICE",
+  "PERIOD_WARN",
   // logs
 
   "COLD",

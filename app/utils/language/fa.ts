@@ -68,6 +68,7 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   PERIOD_NOTE:
     "دقت کنید که این محاسبه تقریبی است و نباید برای درمان یا پیشگیری از بارداری از آن استفاده کرد.",
   CHOICE: "تاریخ رو انتخاب کنید",
+  PERIOD_WARN: "تاریخ پریود قبلی ات رو انتخاب نکردی",
   // FAQ
   FAQ_1_TITLE: "Do I have to pay to use Shero?",
   FAQ_1_DESCRIPTION:
