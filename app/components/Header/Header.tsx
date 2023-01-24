@@ -46,7 +46,7 @@ export const Header = () => {
           <Link
             to="/Download"
             className={classNames(
-              "text-base md:hidden  font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 px-8 py-2 ",
+              "text-base md:hidden  font-bold rounded-full transition-colors duration-300 border-2 border-purple-P1 px-8 py-2 whitespace-nowrap ",
               {
                 "bg-purple-P1 text-white": scrolled,
                 "text-purple-P1": !scrolled,
