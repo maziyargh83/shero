@@ -8,7 +8,7 @@ import {
   Section,
   SectionTitle,
 } from "~/components";
-import { t } from "~/utils";
+import { isShero, t } from "~/utils";
 
 export default function Download() {
   return (
@@ -23,29 +23,35 @@ export default function Download() {
           />
           <div className="md:flex space-x-7 mt-28 hidden">
             <div>
-              <div className="inline-flex items-center">
-                <FaStar color="#FFBA07" />
-                <span className="text-gray-G4 text-sm font-medium mx-2">
-                  4.1
-                </span>
-              </div>
+              {isShero() && (
+                <div className="inline-flex items-center">
+                  <FaStar color="#FFBA07" />
+                  <span className="text-gray-G4 text-sm font-medium mx-2">
+                    4.1
+                  </span>
+                </div>
+              )}
               <DownloadWrapper
                 icon={<FaAndroid size={30} className="text-gray-G7" />}
               >
                 <DownloadIcon image="GOOGLE_PLAY" />
+                {!isShero() && <DownloadIcon image="BAZAR" />}
               </DownloadWrapper>
             </div>
             <div>
-              <div className="inline-flex items-center">
-                <FaStar color="#FFBA07" />
-                <span className="text-gray-G4 text-sm font-medium mx-2">
-                  4.9
-                </span>
-              </div>
+              {isShero() && (
+                <div className="inline-flex items-center">
+                  <FaStar color="#FFBA07" />
+                  <span className="text-gray-G4 text-sm font-medium mx-2">
+                    4.9
+                  </span>
+                </div>
+              )}
               <DownloadWrapper
                 icon={<FaApple size={30} className="text-gray-G7" />}
               >
                 <DownloadIcon image="APP_STORE" />
+                {!isShero() && <DownloadIcon image="PWA" />}
               </DownloadWrapper>
             </div>
           </div>

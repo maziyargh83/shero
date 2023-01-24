@@ -20,13 +20,28 @@ export const images: imageTypes = {
     },
   },
   APP_STORE: {
-    url: "shero/downloadIcon/appstore.png",
+    url: {
+      luna: "luna/downloadIcon/appstore.png",
+      shero: "shero/downloadIcon/appstore.png",
+    },
   },
   GOOGLE_PLAY: {
-    url: "shero/downloadIcon/googleplay.png",
+    url: {
+      luna: "luna/downloadIcon/googleplay.png",
+      shero: "shero/downloadIcon/googleplay.png",
+    },
   },
   PWA: {
-    url: "shero/downloadIcon/PWA.png",
+    url: {
+      luna: "luna/downloadIcon/PWA.png",
+      shero: "shero/downloadIcon/PWA.png",
+    },
+  },
+  BAZAR: {
+    url: {
+      luna: "luna/downloadIcon/bazar.png",
+      shero: "shero/downloadIcon/bazar.png",
+    },
   },
   PERSON_1: {
     url: {

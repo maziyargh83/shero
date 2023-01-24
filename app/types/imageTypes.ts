@@ -5,6 +5,7 @@ export const enum imagesKey {
   "APP_STORE",
   "GOOGLE_PLAY",
   "PWA",
+  "BAZAR",
   //
   "PERSON_1",
   "PERSON_2",
