@@ -78,6 +78,8 @@ export enum languageKeys {
   "PERIOD_NOTE",
   "CHOICE",
   "PERIOD_WARN",
+  "PERIOD",
+  "PERIOD_OVULUATION",
   // logs
 
   "COLD",
