@@ -31,7 +31,7 @@ export const Calendar = ({
       }
       next2Label=""
       prev2Label=""
-      locale="fa"
+      locale={isShero() ? "en" : "fa"}
       tileContent={CalendarTileProp}
       nextLabel={isShero() ? <FiChevronRight /> : <FiChevronLeft />}
       prevLabel={isShero() ? <FiChevronLeft /> : <FiChevronRight />}

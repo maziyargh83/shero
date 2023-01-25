@@ -13,11 +13,18 @@ export const Feature = () => {
       />
       <div className="flex mt-28 ltr:space-x-24  justify-between">
         <div className="w-1/3 flex rtl:mx-9 flex-col">
-          <ShadowFrame img="FRAME_1" maxW={320} maxH={700} imgMinW={"170%"} />
+          <ShadowFrame
+            img="FRAME_1"
+            transform="0px"
+            maxW={320}
+            maxH={700}
+            imgMinW={"170%"}
+          />
           <ShadowFrame
             img="FRAME_2"
             maxW={320}
             maxH={700}
+            transform="0px"
             imgMinW={"170%"}
             className="mt-24"
           />
@@ -37,6 +44,7 @@ export const Feature = () => {
             maxW={320}
             maxH={700}
             imgMinW={"170%"}
+            transform="0px"
             className="mt-11 shadow-mobile "
           />
           <p className="mt-24 text-gray-G1 font-bold text-xl">
@@ -55,6 +63,7 @@ export const Feature = () => {
             img="FRAME_4"
             maxW={320}
             maxH={700}
+            transform="0px"
             imgMinW={"170%"}
             className="mt-24 shadow-mobile "
           />
@@ -76,6 +85,7 @@ export const Feature = () => {
             img="FRAME_5"
             maxW={320}
             maxH={700}
+            transform="0px"
             imgMinW={"170%"}
             className="mt-24 shadow-mobile "
           />

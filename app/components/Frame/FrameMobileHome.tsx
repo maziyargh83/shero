@@ -6,7 +6,7 @@ import {
   TryToConceiveIcon,
 } from "~/components";
 import { TrackingIcon } from "~/components/Icons/Home/TrackingIcon";
-import { imageBuilder } from "~/utils";
+import { imageBuilder, isShero } from "~/utils";
 
 export const FrameMobileHome = ({
   downloadPage,
@@ -18,6 +18,7 @@ export const FrameMobileHome = ({
       <div className="relative">
         <div className="relative phone">
           <ShadowFrame
+            transform={isShero() ? "0px" : undefined}
             img="FRAME_MAIN"
             maxW={340}
             maxH={670}

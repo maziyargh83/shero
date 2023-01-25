@@ -205,6 +205,7 @@ export default function Index() {
         <div className="flex w-full justify-center items-center">
           <ShadowFrame
             img="FRAME_2"
+            transform={isShero() ? "0px" : undefined}
             maxW={320}
             maxH={700}
             imgMaxW={"145%"}
