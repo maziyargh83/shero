@@ -94,9 +94,16 @@ export const Feature = () => {
       />
       <div className="flex mt-28 ltr:space-x-24  justify-between">
         <div className="w-1/3 flex rtl:mx-9 flex-col">
-          <ShadowFrame img="FRAME_1" maxW={320} maxH={700} imgMinW={"170%"} />
+          <ShadowFrame
+            transform="200px"
+            img="FRAME_1"
+            maxW={320}
+            maxH={700}
+            imgMinW={"170%"}
+          />
           <ShadowFrame
             img="FRAME_2"
+            transform="200px"
             maxW={320}
             maxH={700}
             imgMinW={"170%"}
@@ -109,6 +116,7 @@ export const Feature = () => {
           <img src={imageBuilder("ICON")} className="self-end shadow-mobile " />
 
           <ShadowFrame
+            transform="200px"
             img="FRAME_3"
             maxW={320}
             maxH={700}
@@ -116,36 +124,27 @@ export const Feature = () => {
             className="mt-11 shadow-mobile "
           />
 
-          <p className="mt-24 list-item   text-gray-G1 font-medium text-lg">
-            ثبت و ردیابی دوره پریود
+          <p className="mt-24 text-gray-G1 font-medium text-lg">
+            با تقویم هوشمند لونا می‌تونی از تاریخ‌های پریودت با خبر بشی و آماده
+            بشی.
           </p>
-          <p className="mt-2 list-item  text-gray-G1 font-medium text-lg">
-            ثبت حالت روزانه
-          </p>
-          <p className="mt-2  list-item  text-gray-G1 font-medium text-lg">
-            اعلام زمان تخمک گذاری
-          </p>
-          <p className="mt-2 list-item  text-gray-G1 font-medium text-lg">
-            ثبت تغییرات جنین و مادر
-          </p>
-          <p className="mt-2 list-item  text-gray-G1 font-medium text-lg">
-            اعلام زمان فاز PMS
+          <p className="mt-2 text-gray-G1 font-medium text-lg">
+            همچنین با ثبت علائمت در لونا، می‌تونی تغییرات بدنت رو بشناسی.
           </p>
 
           <ShadowFrame
             img="FRAME_4"
             maxW={320}
             maxH={700}
+            transform="200px"
             imgMinW={"170%"}
             className="mt-24 shadow-mobile "
           />
         </div>
         <div className="w-1/3 flex rtl:mx-9 flex-col justify-center relative">
-          <p className="mt-24 text-green-G1 font-bold text-xl">
-            {t("FEATURE_SECTION_4_TITLE")}
-          </p>
-          <p className="mt-2 text-gray-G1 font-medium text-lg">
-            {t("FEATURE_SECTION_4")}
+          <p className="mt-24 text-gray-G1 font-medium text-xl">
+            در مورد سلامتی‌ات سؤال داری؟پزشک‌ها تو کلینیک لونا ‌آماده‌اند تا
+            ازشون مشورت تخصصی بگیری و خیالت راحت بشه!
           </p>
 
           <ShadowFrame
@@ -153,23 +152,13 @@ export const Feature = () => {
             maxW={320}
             maxH={700}
             imgMinW={"170%"}
+            transform="200px"
             className="mt-24 shadow-mobile "
           />
 
-          <p className="mt-24 list-item   text-gray-G1 font-medium text-lg">
-            ثبت و ردیابی دوره پریود
-          </p>
-          <p className="mt-2 list-item  text-gray-G1 font-medium text-lg">
-            ثبت حالت روزانه
-          </p>
-          <p className="mt-2  list-item  text-gray-G1 font-medium text-lg">
-            اعلام زمان تخمک گذاری
-          </p>
-          <p className="mt-2 list-item  text-gray-G1 font-medium text-lg">
-            ثبت تغییرات جنین و مادر
-          </p>
-          <p className="mt-2 list-item  text-gray-G1 font-medium text-lg">
-            اعلام زمان فاز PMS
+          <p className="mt-24 text-gray-G1 font-medium text-lg">
+            با لونا می‌تونی هم‌راه شخصی خودت رو به اپ اضافه کنی و با تعیین کردن
+            سطح دسترسیش به تقویم پریودت، رابطه بهتری رو با هم تجربه کنین.
           </p>
 
           <Blob size={21} color="#9E81EC" className="absolute bottom-2" />

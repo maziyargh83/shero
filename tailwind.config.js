@@ -49,6 +49,11 @@ module.exports = {
           light: "#F3F3F6",
         },
       },
+      container: {
+        screens: {
+          xl: "1200px",
+        },
+      },
     },
   },
   plugins: [],

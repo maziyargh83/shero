@@ -10,6 +10,7 @@ export const ShadowFrame = ({
   imgMinW,
   imgMaxW,
   className,
+  transform = "140px",
 }: {
   img: keyof typeof imagesKey;
   maxW?: number;
@@ -18,6 +19,7 @@ export const ShadowFrame = ({
   imgMinW?: string;
   imgMaxW?: string;
   className?: string;
+  transform?: string;
 }) => {
   return (
     <div
@@ -29,11 +31,12 @@ export const ShadowFrame = ({
     >
       <img
         src={imageBuilder(img)}
-        className="relative top-0 left-0 rtl:translate-x-[140px]"
+        className="relative top-0 left-0"
         style={{
           minWidth: imgMinW,
           maxWidth: imgMaxW,
           width: imgWidth,
+          transform: `translateX(${transform})`,
         }}
         alt=""
       />
