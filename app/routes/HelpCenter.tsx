@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { v4 } from "uuid";
 import {
   Blob,
@@ -28,6 +28,10 @@ export default function GettingStarted() {
         behavior: "smooth",
       });
   };
+  const headerData = useMemo(() => {
+    const data = helpCenter.map((item) => ({ title: item.title }));
+    return data;
+  }, []);
   return (
     <div>
       <Section>
@@ -63,34 +67,7 @@ export default function GettingStarted() {
         <div className="mb-16">
           <Tabs
             activeIndex={activeTabIndex}
-            data={[
-              { title: "دانلود" },
-              { title: "راهنمای داشبورد" },
-              {
-                title: "ویرایش اطلاعات پروفایل",
-              },
-              {
-                title: "ثبت علائم",
-              },
-              {
-                title: "تغییر هدف",
-              },
-              // {
-              //   title: "Reminders",
-              // },
-              {
-                title: "کلینیک",
-              },
-              {
-                title: "تغییر پریود",
-              },
-              {
-                title: "اضافه‌کردن همراه",
-              },
-              {
-                title: "ثبت یادآور",
-              },
-            ]}
+            data={headerData}
             onChange={({ index, title }) => {
               setActiveTabIndex(index);
               width && width < 767 && setActiveBox(title);
@@ -122,6 +99,16 @@ export default function GettingStarted() {
         </div>
       </Section>
       <Section className="mt-24">
+        <div className="flex justify-center blobs">
+          <div className="text-center flex flex-col justify-center items-center">
+            <p className="text-5xl font-bold text-gray-G1">
+              {t("FAQ_TITLE_HELP")}
+            </p>
+            <p className="text-xl text-gray-G2 font-semibold mt-8 w-[80%] text-center">
+              {t("FAQ_TITLE_HELP_DESCRIPTION")}
+            </p>
+          </div>
+        </div>
         <FAQ />
       </Section>
     </div>

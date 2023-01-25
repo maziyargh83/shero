@@ -60,6 +60,15 @@ export const enum imagesKey {
   "APPLE",
   "PLAY",
   "BAZARICON",
+  //
+  "SUPPORT_FRAME_1",
+  "SUPPORT_FRAME_3",
+  "SUPPORT_FRAME_4",
+  "SUPPORT_FRAME_5",
+  "SUPPORT_FRAME_6",
+  "SUPPORT_FRAME_7",
+  "SUPPORT_FRAME_8",
+  "SUPPORT_FRAME_9",
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };

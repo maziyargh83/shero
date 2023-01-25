@@ -69,6 +69,8 @@ export enum languageKeys {
   "FAQ_7_TITLE",
   "FAQ_7_DESCRIPTION",
   "FAQ_MORE",
+  "FAQ_TITLE_HELP",
+  "FAQ_TITLE_HELP_DESCRIPTION",
   //
   "PERIOD_COL_1",
   "PERIOD_COL_2",

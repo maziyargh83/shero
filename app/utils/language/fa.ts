@@ -100,6 +100,9 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   FAQ_7_DESCRIPTION:
     "You must first go Prime. If you’ve done so already, go to Profile> My partner. Find your unique referral code there and hand it out to your partner to join you in Shero. ",
   FAQ_MORE: "سوالات بیشتر",
+  FAQ_TITLE_HELP: "سوالات متدوال",
+  FAQ_TITLE_HELP_DESCRIPTION:
+    "هر آنچه که باید در مورد لونا بدونید. درصورتی که پاسخ مورد نظرتون رو پیدا نمی‌کنید، از قسمت تماس با ما در ارتباط باشید.",
   //logs
   COLD: "سرماخوردگی",
   FEVER: "تب",

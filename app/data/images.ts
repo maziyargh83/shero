@@ -198,4 +198,29 @@ export const images: imageTypes = {
   MARKER: {
     url: "shero/element/marker.png",
   },
+  //
+  SUPPORT_FRAME_1: {
+    url: "luna/frames/support/support-1.png",
+  },
+  SUPPORT_FRAME_3: {
+    url: "luna/frames/support/support-3.png",
+  },
+  SUPPORT_FRAME_4: {
+    url: "luna/frames/support/support-4.png",
+  },
+  SUPPORT_FRAME_5: {
+    url: "luna/frames/support/support-5.png",
+  },
+  SUPPORT_FRAME_6: {
+    url: "luna/frames/support/support-6.png",
+  },
+  SUPPORT_FRAME_7: {
+    url: "luna/frames/support/support-7.png",
+  },
+  SUPPORT_FRAME_8: {
+    url: "luna/frames/support/support-8.png",
+  },
+  SUPPORT_FRAME_9: {
+    url: "luna/frames/support/support-9.png",
+  },
 };

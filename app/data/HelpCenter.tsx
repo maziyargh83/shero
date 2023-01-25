@@ -18,7 +18,7 @@ const lunaHelpCenter: helpCenter[] = [
     tabs: [
       {
         title: "دانلود اندروید",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_1",
         component: () => {
           return (
             <Fragment>
@@ -33,7 +33,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "IOS (کابران آیفون)",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_1",
         component: () => {
           return (
             <Fragment>
@@ -48,7 +48,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "نسخه وب اپلیکیشن",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_1",
         component: () => {
           return (
             <Fragment>
@@ -68,7 +68,7 @@ const lunaHelpCenter: helpCenter[] = [
     tabs: [
       {
         title: "راهنمای داشبورد",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_1",
         component: () => {
           return (
             <Fragment>
@@ -85,7 +85,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "نوتیفیکیشن",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_1",
         component: () => {
           return (
             <Fragment>
@@ -102,7 +102,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت وضعیت",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_1",
         component: () => {
           return (
             <Fragment>
@@ -124,7 +124,7 @@ const lunaHelpCenter: helpCenter[] = [
     tabs: [
       {
         title: "ویرایش اطلاعات پروفایل",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_3",
         component: () => {
           return (
             <Fragment>
@@ -145,7 +145,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ویرایش مشخصات",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_3",
         component: () => {
           return (
             <Fragment>
@@ -166,7 +166,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ویرایش طول دوره (منظم و نامنظم)",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_3",
         component: () => {
           return (
             <Fragment>
@@ -188,7 +188,7 @@ const lunaHelpCenter: helpCenter[] = [
 
       {
         title: "ویرایش طول پریود",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_3",
         component: () => {
           return (
             <Fragment>
@@ -214,7 +214,7 @@ const lunaHelpCenter: helpCenter[] = [
     tabs: [
       {
         title: "ثبت علائم",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -234,7 +234,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت تست BBT",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -254,7 +254,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت تست LH",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -274,7 +274,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت اطلاعات پریود",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -294,7 +294,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت رابطه جنسی",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -314,7 +314,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت لکه‌بینی",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -334,7 +334,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت ترشحات واژن",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -354,7 +354,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت وزن",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -374,7 +374,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت حال روحی",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -394,7 +394,7 @@ const lunaHelpCenter: helpCenter[] = [
       },
       {
         title: "ثبت علائم",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_4",
         component: () => {
           return (
             <Fragment>
@@ -419,7 +419,7 @@ const lunaHelpCenter: helpCenter[] = [
     tabs: [
       {
         title: "تغییر هدف",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_5",
         component: () => {
           return (
             <Fragment>
@@ -441,7 +441,7 @@ const lunaHelpCenter: helpCenter[] = [
     tabs: [
       {
         title: "راهنمای کلینیک لونا",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_6",
         component: () => {
           return (
             <Fragment>
@@ -460,7 +460,7 @@ const lunaHelpCenter: helpCenter[] = [
     tabs: [
       {
         title: "تغییر پریود",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_7",
         component: () => {
           return (
             <Fragment>
@@ -479,11 +479,11 @@ const lunaHelpCenter: helpCenter[] = [
     ],
   },
   {
-    title: "اضافه‌کردن همراه",
+    title: "ثبت یادآور",
     tabs: [
       {
         title: "ثبت یادآور",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_8",
         component: () => {
           return (
             <Fragment>
@@ -516,11 +516,11 @@ const lunaHelpCenter: helpCenter[] = [
     ],
   },
   {
-    title: "ثبت یادآور",
+    title: "اضافه کردن هم‌راه",
     tabs: [
       {
         title: "اضافه کردن هم‌راه",
-        image: "FRAME_MAIN_DARK_HALF",
+        image: "SUPPORT_FRAME_9",
         component: () => {
           return (
             <Fragment>
