@@ -423,6 +423,10 @@ const lunaHelpCenter: helpCenter[] = [
         component: () => {
           return (
             <Fragment>
+              <p className="text-3xl font-medium text-purple-P1 mb-3">
+                تغییر هدف
+              </p>
+
               <p className="text-lg font-normal text-gray-G6">
                 پس از وارد شدن به صفحه هدف من، روی هدف مورد نظر خود کلیک کنید.
                 در حال حاضر امکان انتخاب هدف برای «پیش‌بینی پریود» و «قصد
@@ -445,6 +449,8 @@ const lunaHelpCenter: helpCenter[] = [
         component: () => {
           return (
             <Fragment>
+              <p className="text-3xl font-medium text-purple-P1 mb-3">کلینیک</p>
+
               <p className="text-lg font-normal text-gray-G6">
                 پزشک‌ها تو کلینیک لونا ‌آماده‌اند تا ازشون مشورت تخصصی بگیری و
                 خیالت راحت بشه!
@@ -464,6 +470,9 @@ const lunaHelpCenter: helpCenter[] = [
         component: () => {
           return (
             <Fragment>
+              <p className="text-3xl font-medium text-purple-P1 mb-3">
+                تغییر پریود
+              </p>
               <p className="text-lg font-normal text-gray-G6">
                 پس از اتمام مراحل ثبت‌نام و وارد شدن به صفحه «امروز» در اپلیکیشن
                 لونا، روی دکمه «شروع پریود» در دایره وسط صفحه یا دکمه «+» کلیک
@@ -487,6 +496,9 @@ const lunaHelpCenter: helpCenter[] = [
         component: () => {
           return (
             <Fragment>
+              <p className="text-3xl font-medium text-purple-P1 mb-3">
+                ثبت یادآور
+              </p>
               <p className="text-lg font-normal text-gray-G6">
                 پس از اتمام مراحل ثبت‌نام و وارد شدن به صفحه «امروز» در اپلیکیشن
                 لونا، روی عکس پروفایل خود در بالای صفحه سمت راست کلیک کنید.پس از
