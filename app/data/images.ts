@@ -223,4 +223,8 @@ export const images: imageTypes = {
   SUPPORT_FRAME_9: {
     url: "luna/frames/support/support-9.png",
   },
+  //
+  KARAFS: {
+    url: "luna/Logo/karafs.png",
+  },
 };

@@ -69,6 +69,8 @@ export const enum imagesKey {
   "SUPPORT_FRAME_7",
   "SUPPORT_FRAME_8",
   "SUPPORT_FRAME_9",
+  //
+  "KARAFS",
 }
 interface imageTypesValue {
   url: string | { shero: string; luna: string };
