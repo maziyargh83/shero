@@ -100,6 +100,9 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   FAQ_7_DESCRIPTION:
     "You must first go Prime. If you’ve done so already, go to Profile> My partner. Find your unique referral code there and hand it out to your partner to join you in Shero. ",
   FAQ_MORE: "More...",
+  FAQ_TITLE_HELP: "Frequently asked questions",
+  FAQ_TITLE_HELP_DESCRIPTION:
+    "Am I the only one? Read these FAQs to find out that you're not alone in your health journey.",
   //logs
 
   // logs

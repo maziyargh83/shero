@@ -200,28 +200,52 @@ export const images: imageTypes = {
   },
   //
   SUPPORT_FRAME_1: {
-    url: "luna/frames/support/support-1.png",
+    url: {
+      luna: "luna/frames/support/support-1.png",
+      shero: "shero/frames/support/support-1.png",
+    },
   },
   SUPPORT_FRAME_3: {
-    url: "luna/frames/support/support-3.png",
+    url: {
+      luna: "luna/frames/support/support-3.png",
+      shero: "shero/frames/support/support-3.png",
+    },
   },
   SUPPORT_FRAME_4: {
-    url: "luna/frames/support/support-4.png",
+    url: {
+      luna: "luna/frames/support/support-4.png",
+      shero: "shero/frames/support/support-4.png",
+    },
   },
   SUPPORT_FRAME_5: {
-    url: "luna/frames/support/support-5.png",
+    url: {
+      luna: "luna/frames/support/support-5.png",
+      shero: "shero/frames/support/support-5.png",
+    },
   },
   SUPPORT_FRAME_6: {
-    url: "luna/frames/support/support-6.png",
+    url: {
+      luna: "luna/frames/support/support-6.png",
+      shero: "shero/frames/support/support-6.png",
+    },
   },
   SUPPORT_FRAME_7: {
-    url: "luna/frames/support/support-7.png",
+    url: {
+      luna: "luna/frames/support/support-7.png",
+      shero: "shero/frames/support/support-7.png",
+    },
   },
   SUPPORT_FRAME_8: {
-    url: "luna/frames/support/support-8.png",
+    url: {
+      luna: "luna/frames/support/support-8.png",
+      shero: "shero/frames/support/support-8.png",
+    },
   },
   SUPPORT_FRAME_9: {
-    url: "luna/frames/support/support-9.png",
+    url: {
+      luna: "luna/frames/support/support-9.png",
+      shero: "shero/frames/support/support-9.png",
+    },
   },
   //
   KARAFS: {

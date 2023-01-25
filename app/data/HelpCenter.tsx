@@ -11,7 +11,383 @@ interface helpCenter {
   title: string;
   tabs: helpCenterTabs[];
 }
-const sheroHelpCenter: helpCenter[] = [];
+const sheroHelpCenter: helpCenter[] = [
+  {
+    title: "Download",
+    tabs: [
+      {
+        title: "Android",
+        image: "SUPPORT_FRAME_1",
+
+        component: () => {
+          return (
+            <Fragment>
+              <p className="text-lg font-normal text-gray-G6">
+                You can download the Shero application through one of the
+                commands below.
+              </p>
+              <DownloadIcon image="GOOGLE_PLAY" className="my-10" />
+            </Fragment>
+          );
+        },
+      },
+      {
+        title: "Ios",
+        image: "SUPPORT_FRAME_1",
+
+        component: () => {
+          return (
+            <Fragment>
+              <p className="text-lg font-normal text-gray-G6">
+                You can download the Shero application through one of the
+                commands below.
+              </p>
+              <DownloadIcon image="GOOGLE_PLAY" className="my-10" />
+            </Fragment>
+          );
+        },
+      },
+    ],
+  },
+  {
+    title: "Today",
+    tabs: [
+      {
+        title: "Today",
+        image: "SUPPORT_FRAME_3",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              Based on the information you entered in your profile, this circle
+              shows the stages you go through during your period. The length of
+              your period is 31 days, including: - Day 1 to 5 of the period: you
+              will have your period (bleeding) - Day 11 to 19 of the period: the
+              window of fertility and ovulation - Day 24 to 31 of the period:
+              Premenstrual syndrome (PMS)
+            </p>
+          );
+        },
+      },
+      {
+        title: "Notification",
+        image: "SUPPORT_FRAME_3",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              Based on the information you entered in your profile, this circle
+              shows the stages you go through during your period. The length of
+              your period is 31 days, including: - Day 1 to 5 of the period: you
+              will have your period (bleeding) - Day 11 to 19 of the period: the
+              window of fertility and ovulation - Day 24 to 31 of the period:
+              Premenstrual syndrome (PMS)
+            </p>
+          );
+        },
+      },
+      {
+        title: "Add Log",
+        image: "SUPPORT_FRAME_3",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              Based on the information you entered in your profile, this circle
+              shows the stages you go through during your period. The length of
+              your period is 31 days, including: - Day 1 to 5 of the period: you
+              will have your period (bleeding) - Day 11 to 19 of the period: the
+              window of fertility and ovulation - Day 24 to 31 of the period:
+              Premenstrual syndrome (PMS)
+            </p>
+          );
+        },
+      },
+    ],
+  },
+  {
+    title: "Profile",
+    tabs: [
+      {
+        title: "Edit Profile",
+        image: "SUPPORT_FRAME_4",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              1- After completing the registration process and entering the
+              "Today" page in the Shero application, click on your profile
+              picture at the top of the right page. 2- After entering the
+              profile page, click on the "Edit" option at the top left of the
+              page. 3- By entering the "Edit Profile" page, you can edit "Name",
+              "Date of Birth", "Height", "Weight", "Period Length" and "Period
+              Cycle". Please note that it is not possible to edit the "mobile
+              number" and if you need to change it, create a new account or
+              contact Shero support if you need to keep your previous
+              information.
+            </p>
+          );
+        },
+      },
+      {
+        title: "Edit cycle length",
+        image: "SUPPORT_FRAME_4",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              1- After completing the registration process and entering the
+              "Today" page in the Shero application, click on your profile
+              picture at the top of the right page. 2- After entering the
+              profile page, click on the "Edit" option at the top left of the
+              page. 3- By entering the "Edit Profile" page, you can edit "Name",
+              "Date of Birth", "Height", "Weight", "Period Length" and "Period
+              Cycle". Please note that it is not possible to edit the "mobile
+              number" and if you need to change it, create a new account or
+              contact Shero support if you need to keep your previous
+              information.
+            </p>
+          );
+        },
+      },
+      {
+        title: "Edit period days",
+        image: "SUPPORT_FRAME_4",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              1- After completing the registration process and entering the
+              "Today" page in the Shero application, click on your profile
+              picture at the top of the right page. 2- After entering the
+              profile page, click on the "Edit" option at the top left of the
+              page. 3- By entering the "Edit Profile" page, you can edit "Name",
+              "Date of Birth", "Height", "Weight", "Period Length" and "Period
+              Cycle". Please note that it is not possible to edit the "mobile
+              number" and if you need to change it, create a new account or
+              contact Shero support if you need to keep your previous
+              information.
+            </p>
+          );
+        },
+      },
+    ],
+  },
+  {
+    title: "Logs",
+    tabs: [
+      {
+        title: "Add logs",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              1- After completing the registration process and entering the
+              "Today" page or the "Calendar" page in the Shero application,
+              click on the "+" button. 2- In the "Register new status" menu,
+              click on the field of the marks you want to enter, and after
+              registering the marks, press the "Add" button to save the marks
+              you want. Make sure that the information you record is recorded on
+              the date written on the upper right side of the page, and if you
+              need to change it, select the desired day from the "Calendar" tab
+              and then click the "+" button. Register for the same day.
+            </p>
+          );
+        },
+      },
+      {
+        title: "BBT",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return <p className="text-lg font-normal text-gray-G6">BBT</p>;
+        },
+      },
+
+      {
+        title: "LH",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return <p className="text-lg font-normal text-gray-G6">LH</p>;
+        },
+      },
+      {
+        title: "Sex",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return <p className="text-lg font-normal text-gray-G6">Sex</p>;
+        },
+      },
+
+      {
+        title: "Spot",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return <p className="text-lg font-normal text-gray-G6">Spot</p>;
+        },
+      },
+      {
+        title: "vaginal discharge",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              vaginal discharge
+            </p>
+          );
+        },
+      },
+      {
+        title: "Weight",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return <p className="text-lg font-normal text-gray-G6">Weight</p>;
+        },
+      },
+      {
+        title: "Mood",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return <p className="text-lg font-normal text-gray-G6">Mood</p>;
+        },
+      },
+      {
+        title: "Period information",
+        image: "SUPPORT_FRAME_5",
+        component: () => {
+          return (
+            <p className="text-lg font-normal text-gray-G6">
+              Period information
+            </p>
+          );
+        },
+      },
+    ],
+  },
+  {
+    title: "Goals",
+    tabs: [
+      {
+        title: "Change goal",
+        image: "SUPPORT_FRAME_7",
+        component: () => {
+          return (
+            <Fragment>
+              <p className="text-3xl font-medium text-purple-P1 mb-3">
+                Change goal
+              </p>
+              <p className="text-lg font-normal text-gray-G6">
+                Once you're on the My Goals page, click on the goal you want.
+                Currently, it is possible to select the target for "period
+                prediction" and "pregnancy intention", and for pregnant people,
+                special features during pregnancy will soon be included in the
+                application.
+              </p>
+            </Fragment>
+          );
+        },
+      },
+    ],
+  },
+  {
+    title: "Reminders",
+    tabs: [
+      {
+        title: "Reminder",
+        image: "SUPPORT_FRAME_8",
+        component: () => {
+          return (
+            <Fragment>
+              <p className="text-3xl font-medium text-purple-P1 mb-3">
+                Reminder
+              </p>
+              <p className="text-lg font-normal text-gray-G6">
+                After completing the registration process and entering the
+                "Today" page in the Shero application, click on your profile
+                picture at the top of the right page. After entering the profile
+                page, click on the "My reminders" option. On the reminders page,
+                you can add smart reminders and personalized reminders. The
+                smart reminder will automatically remind you before the expected
+                days for your period and ovulation, and the personalized
+                reminder can be set to set a reminder for yourself for periodic
+                checkups or medication use. - To create a smart reminder, in the
+                smart tab, click on one of the default options and enter the
+                reminder settings page by pressing the "Add reminder" button, or
+                click on the three dots if you need to edit or delete previous
+                reminders. - To add a new smart reminder, enter the desired text
+                and the appropriate time and hour for the reminder and press the
+                "Register" button to register your smart reminder. - To add a
+                new smart reminder, enter the desired text and the appropriate
+                time and hour for the reminder and press the "Register" button
+                to register your smart reminder. - To add a new personalized
+                reminder, enter the desired text and the appropriate date and
+                time for the reminder and press the "Register" button to
+                register your smart reminder. For the personalized reminder, you
+                can also choose weekly or monthly repetition and desired sound.
+              </p>
+            </Fragment>
+          );
+        },
+      },
+    ],
+  },
+  {
+    title: "Edit period",
+    tabs: [
+      {
+        title: "Period change",
+        image: "SUPPORT_FRAME_7",
+        component: () => {
+          return (
+            <Fragment>
+              <p className="text-3xl font-medium text-purple-P1 mb-3">
+                Period change
+              </p>
+              <p className="text-lg font-normal text-gray-G6">
+                After completing the registration process and entering the
+                "Today" page in the Shero application, click the "Start Period"
+                button in the middle circle of the page or the "+" button. In
+                the "Register new status" menu, press the "Register period"
+                button. Then select the number of days of your period and its
+                start date and press the "Register period" button. Your period
+                has been recorded and you can see it in the "Calendar" tab in
+                the calendar.
+              </p>
+            </Fragment>
+          );
+        },
+      },
+    ],
+  },
+  {
+    title: "Add partners",
+    tabs: [
+      {
+        title: "Period change",
+        image: "SUPPORT_FRAME_9",
+        component: () => {
+          return (
+            <Fragment>
+              <p className="text-3xl font-medium text-purple-P1 mb-3">
+                Add partners
+              </p>
+              <p className="text-lg font-normal text-gray-G6">
+                After completing the registration process and entering the
+                "Today" page in the Shero application, click on your profile
+                picture at the top of the right page. After entering the profile
+                page, click on the "My companion" option. Then click "Add
+                Companion". In this section, enter the name of your companion
+                and his mobile number and press the "Next" button. In this
+                section, you can choose what information your companion has
+                access to from your profile. Turn off the options you don't want
+                your companion to see in this section and click the "Final
+                Registration" option. Now your companion has been added and you
+                can inform him by sharing the application with him or ask him to
+                download the application. By going back to my companion menu,
+                you can see your companion's profile. If necessary, click on the
+                three dots in front of its name to delete the companion, and
+                after confirmation, delete the companion.
+              </p>
+            </Fragment>
+          );
+        },
+      },
+    ],
+  },
+];
 const lunaHelpCenter: helpCenter[] = [
   {
     title: "دانلود",
