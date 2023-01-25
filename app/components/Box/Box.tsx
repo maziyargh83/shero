@@ -59,9 +59,9 @@ export const Box = ({
       <div
         id={title + "_id"}
         className={classNames(
-          "overflow-hidden scrollbar-hidden bg-white w-full rounded-3xl h-[700px] ",
+          "overflow-hidden scrollbar-hidden bg-white w-full md:pb-0 rounded-3xl h-[700px] ",
           {
-            "hidden md:block  py-14  mb-6 px-20 overflow-hidden":
+            "hidden md:block  py-14   mb-6 px-20 overflow-hidden":
               !!hideMobile && !activePopUp(),
             "block w-[90%] px-7 pt-4 mx-auto h-[80%] ": activePopUp(),
           }

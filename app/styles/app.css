@@ -1361,6 +1361,10 @@ video {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1829,6 +1833,10 @@ video {
 
 .pl-8 {
   padding-left: 2rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
 }
 
 .text-center {
@@ -2468,6 +2476,10 @@ html {
     height: 70vh;
   }
 
+  .md\:h-full {
+    height: 100%;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -2577,6 +2589,19 @@ html {
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:pb-0 {
+    padding-bottom: 0px;
+  }
+
+  .md\:pt-14 {
+    padding-top: 3.5rem;
   }
 
   .md\:text-2xl {
