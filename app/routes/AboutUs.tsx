@@ -65,12 +65,12 @@ export default function AboutUs() {
           <ContactForm />
         </div>
         {!isShero() && (
-          <div className="flex bg-white rounded-3xl py-16 px-12 w-[70%] mx-auto items-center flex-col mt-32 md:flex-row">
+          <div className="flex bg-white rounded-3xl px-8 py-10  md:py-16 md:px-12 w-full md:w-[70%] mx-auto items-center flex-col mt-12 md:flex-row">
             <div className="w-2/6">
               <img src={imageBuilder("KARAFS")} alt="" />
             </div>
             <div className="pr-5">
-              <p className="text-gray-G1 text-base font-normal">
+              <p className="text-gray-G1 text-base font-normal mt-8 md:mt-0">
                 ما در یک محیط دوستانه دور هم جمع شدیم تا به همدیگه برای سالم‌تر
                 زندگی کردن، کمک کنیم. ما تلاش می‌کنیم برای هر مشکلی که در
                 زمینه‌ی سلامتی و سبک زندگی سالم وجود داره، راهکار هوشمندی ارائه

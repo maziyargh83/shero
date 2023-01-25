@@ -67,7 +67,7 @@ const Container = ({
   children?: JSX.Element[] | JSX.Element;
 }) => {
   return (
-    <div className="md:w-4/12 w-full rtl:mx-4 bg-white p-12 rounded-2xl flex flex-col mt-6 md:mt-0">
+    <div className="md:w-4/12 w-full rtl:md:mx-4 bg-white p-12 rounded-2xl flex flex-col mt-6 md:mt-0">
       {children}
     </div>
   );
