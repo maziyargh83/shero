@@ -12,6 +12,9 @@ export const Blog = ({ blogData }: { blogData: any }) => {
         slidesPerView={1}
         breakpoints={{
           768: {
+            slidesPerView: 2,
+          },
+          1000: {
             slidesPerView: 3,
           },
         }}

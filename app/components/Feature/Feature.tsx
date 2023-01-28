@@ -34,7 +34,7 @@ export const Feature = () => {
           <p className="mt-2 text-gray-G1 font-medium text-lg">
             {t("FEATURE_SECTION_1")}
           </p>
-          <Blob size={46} color="#FBCBC5" className="self-center mt-10" />
+          <Blob size={46} color="#FBCBC5" className="self-center mt-20" />
         </div>
         <div className="w-1/3 flex rtl:mx-9 flex-col">
           <img src={imageBuilder("ICON")} className="self-end shadow-mobile " />
@@ -117,10 +117,10 @@ export const Feature = () => {
             maxW={320}
             maxH={700}
             imgMinW={"170%"}
-            className="mt-24"
+            className="mt-44"
           />
 
-          <Blob size={46} color="#FBCBC5" className="self-center mt-10" />
+          <Blob size={46} color="#FBCBC5" className="self-center mt-20" />
         </div>
         <div className="w-1/3 flex rtl:mx-9 flex-col">
           <img src={imageBuilder("ICON")} className="self-end shadow-mobile " />

@@ -82,7 +82,7 @@ export default function Index() {
 
             <SectionTitle
               title={t("APP_NAME")}
-              titleClass="text-7xl rtl:text-black ltr:text-transparent ltr:bg-clip-text ltr:bg-gradient-to-r ltr:from-purple-P2 to-[#FEAAA8] inline-block font-black"
+              titleClass="text-7xl rtl:text-black ltr:text-transparent rtl:text-gray-G1 ltr:bg-clip-text ltr:bg-gradient-to-r ltr:from-purple-P2 to-[#FEAAA8] inline-block font-black"
               subTitle={isShero() ? t("APP_SUBTITLE") : undefined}
               subTitleClass="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-[#8A919F] to-gray-G1 inline-block  font-bold"
               description={t("APP_DESCRIPTION")}
@@ -218,7 +218,7 @@ export default function Index() {
         <Feature />
       </Section>
 
-      <Section>
+      <Section className="mt-5">
         <ScrollSlider />
       </Section>
       <Section padding={false} className="mt-12 md:mt-24">

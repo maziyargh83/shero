@@ -7,6 +7,7 @@ import { HeaderWrapper } from "~/components/Header/HeaderWrapper";
 import { FooterWave } from "~/components/Icons";
 import { TypoLogo } from "~/components/Icons/Logo";
 import { HeaderData } from "~/data";
+import { Social } from "~/data/Scoial";
 import { imageBuilder, isShero } from "~/utils";
 export const Footer = () => {
   return (
@@ -40,7 +41,7 @@ export const Footer = () => {
               : "این وبسایت متعلق به شرکت کاوشگران رادین فناور سلامت © به شماره ثبت 536101 است."}
           </div>
           <div className="flex space-x-7 mt-4 md:mt-0">
-            <a href={CONFIG.instagramUrl} target={"_blank"} rel="noreferrer">
+            <a href={Social.instagramUrl} target={"_blank"} rel="noreferrer">
               <FaInstagram />
             </a>
             {/* <FaTwitter /> */}

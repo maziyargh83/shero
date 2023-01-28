@@ -72,11 +72,13 @@ export const Icons = () => {
           </DownloadWrapper>
         </div>
       </div>
-      <div className=" flex justify-center flex-1 items-center space-y-12 md:space-y-0 md:justify-between  mt-8 flex-col md:flex-row">
-        <Logo icon="APPLE" rate="4.9" />
-        <Logo icon="PLAY" rate="4.1" />
-        <Logo icon="BAZARICON" rate="4.5" />
-      </div>
+      {!isShero() && (
+        <div className=" flex justify-center flex-1 items-center space-y-12 md:space-y-0 md:justify-between  mt-8 flex-col md:flex-row">
+          <Logo icon="APPLE" rate="4.9" />
+          <Logo icon="PLAY" rate="4.1" />
+          <Logo icon="BAZARICON" rate="4.5" />
+        </div>
+      )}
     </div>
   );
 };

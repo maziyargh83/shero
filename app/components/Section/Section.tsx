@@ -12,7 +12,7 @@ export const Section = ({
   return (
     <div
       className={classNames("", {
-        "px-5 md:px-0": padding,
+        "px-5 xl:px-0": padding,
         [className!]: !!className,
       })}
     >

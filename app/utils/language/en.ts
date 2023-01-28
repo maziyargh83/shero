@@ -210,5 +210,14 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   PERIOD_CALCULATOR_NEXT: "Next Month",
   PERIOD_CALCULATOR_CURRENT: "Current month",
   PERIOD_CALCULATOR_PREV: "Prev month",
+  // contact
+  CONTACT_NAME: "Name",
+  CONTACT_PHONE: "Phone (optional)",
+  CONTACT_EMAIL: "Email",
+  CONTACT_MESSAGE: "Your message",
+  CONTACT_PLACEHOLDER_NAME: "Enter your name",
+  CONTACT_PLACEHOLDER_PHONE: "Enter your mobile number ",
+  CONTACT_PLACEHOLDER_EMAIL: "Enter your email",
+  CONTACT_PLACEHOLDER_MESSAGE: "Note ...",
 };
 export default EN;

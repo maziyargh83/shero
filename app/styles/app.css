@@ -1013,6 +1013,10 @@ video {
   margin-bottom: 0.5rem;
 }
 
+.mt-44 {
+  margin-top: 11rem;
+}
+
 .block {
   display: block;
 }
@@ -2301,6 +2305,11 @@ html {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+[dir="rtl"] .rtl\:text-gray-G1 {
+  --tw-text-opacity: 1;
+  color: rgb(42 53 81 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:mx-0 {
     margin-left: 0px;
@@ -2692,6 +2701,11 @@ html {
 
   .xl\:p-0 {
     padding: 0px;
+  }
+
+  .xl\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .xl\:text-base {

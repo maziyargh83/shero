@@ -39,7 +39,7 @@ export const Header = () => {
     >
       <div
         className={classNames(
-          "flex container px-8 md:px-0 mx-auto justify-between rtl:md:flex-row rtl:flex-row-reverse  h-20 md:h-32 items-center"
+          "flex container px-8 xl:px-0 mx-auto justify-between rtl:md:flex-row rtl:flex-row-reverse  h-20 md:h-32 items-center"
         )}
       >
         <div className="w-1/3 md:hidden flex  rtl:justify-end">

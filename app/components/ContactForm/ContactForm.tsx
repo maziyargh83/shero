@@ -2,7 +2,9 @@ import React, { cloneElement } from "react";
 import { FiInstagram, FiMail } from "react-icons/fi";
 import CONFIG from "~/Config";
 import { LogoSvg } from "~/components/Icons/Logo";
+import { Social } from "~/data/Scoial";
 import { t } from "~/utils";
+import { getDirection } from "~/utils/helpers/direction";
 export const ContactForm = () => {
   return (
     <div className="flex flex-wrap justify-center ltr:md:space-x-8">
@@ -17,11 +19,11 @@ export const ContactForm = () => {
         <div className="mt-6 flex justify-start flex-col w-full">
           <div className="flex mt-4 items-center">
             <FiMail className="text-purple-P2 mx-2" />
-            <p>{CONFIG.email}</p>
+            <p>{Social.email}</p>
           </div>
           <div className="flex mt-4 items-center">
             <FiInstagram className="text-purple-P2 mx-2" />
-            <p>{CONFIG.instagram}</p>
+            <p style={{ direction: "ltr" }}>{Social.instagram}</p>
           </div>
         </div>
       </Container>

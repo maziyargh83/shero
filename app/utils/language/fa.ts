@@ -8,7 +8,7 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   HEADER_ABOUT_US: "درباره ما",
   HEADER_OVULATION_CALCULATOR: "محاسبه‌گر پریود",
   HEADER_DOWNLOAD: "دانلود",
-  APP_NAME: "لونا، هم راه سلامتی",
+  APP_NAME: "لونا، هم‌راه سلامتی",
   APP_SUBTITLE: "be the hero of your health awareness",
   APP_DESCRIPTION:
     "لونا یک تقویم هوشمند و ساده برای دنبال کردن سلامتی زنان است. لونا دارای امکاناتی مانند ردیابی و پیش‌بینی تقویم دقیق پریود و دوران تخمک‌گذاری است و به زودی ردیابی دوران بارداری هم به امکانات لونا اضافه خواهد شد.",
@@ -202,5 +202,14 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   PERIOD_CALCULATOR_NEXT: "ماه بعدی",
   PERIOD_CALCULATOR_CURRENT: "ماه فعلی",
   PERIOD_CALCULATOR_PREV: "ماه قبلی",
+  // contact
+  CONTACT_NAME: "نام",
+  CONTACT_PHONE: "تلفن (اختیاری)",
+  CONTACT_EMAIL: "ایمیل",
+  CONTACT_MESSAGE: "پیام",
+  CONTACT_PLACEHOLDER_NAME: "نام خود را وارد کنید",
+  CONTACT_PLACEHOLDER_PHONE: "تلفن خود را وارد کنید",
+  CONTACT_PLACEHOLDER_EMAIL: "ایمیل خود را وارد کنید",
+  CONTACT_PLACEHOLDER_MESSAGE: "متن پیام ...",
 };
 export default FA;

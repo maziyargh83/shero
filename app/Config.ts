@@ -8,11 +8,8 @@ import type { configType } from "~/types";
 
 export const CONFIG: configType = {
   imageUrlPrefix: "/images/",
-  product: SHERO_PRODUCT,
-  language: LANGUAGE_EN,
+  product: LUNA_PRODUCT,
+  language: LANGUAGE_FA,
   disableTheme: ["routes/diaries/$objectId"],
-  email: "support@Shero.info",
-  instagram: "@Shero.application",
-  instagramUrl: "https://www.instagram.com/sheroapp/",
 };
 export default CONFIG;
