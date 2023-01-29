@@ -1,4 +1,4 @@
-import { LUNA_PRODUCT } from "~/data/constants";
+import { LUNA_PRODUCT, SHERO_PRODUCT } from "~/data/constants";
 import type { headerType } from "~/types/headerTypes";
 import { isShero } from "~/utils";
 
@@ -29,6 +29,7 @@ export const HeaderData: headerType = [
     title: "PRIVACY_TITLE",
     link: "/Privacy",
     extra: true,
+    condition: SHERO_PRODUCT,
   },
   {
     title: "CONTACT_US_TITLE",

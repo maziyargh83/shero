@@ -44,42 +44,42 @@
 @font-face {
   font-family: "SansX";
   font-weight: 100;
-  src: url("/font/IRANSansXUltraLight.ttf");
+  src: url("/font/IRANSans(FaNum)_UltraLight.ttf");
 }
 
 /** Thin */
 @font-face {
   font-family: "SansX";
   font-weight: 200;
-  src: url("/font/IRANSansXThin.ttf");
+  src: url("/font/IRANSans(FaNum)_Light.ttf");
 }
 
 /** Regular */
 @font-face {
   font-family: "SansX";
   font-weight: 400;
-  src: url("/font/IRANSansXRegular.ttf");
+  src: url("/font/IRANSans(FaNum)_Medium.ttf");
 }
 
 /** Medium */
 @font-face {
   font-family: "SansX";
   font-weight: 500;
-  src: url("/font/IRANSansXMedium.ttf");
+  src: url("/font/IRANSans(FaNum)_Medium.ttf");
 }
 
 /** Semi Bold */
 @font-face {
   font-family: "SansX";
   font-weight: 600;
-  src: url("/font/IRANSansXDemiBold.ttf");
+  src: url("/font/IRANSans(FaNum)_Bold.ttf");
 }
 
 /** Bold */
 @font-face {
   font-family: "SansX";
   font-weight: 700;
-  src: url("/font/IRANSansXBold.ttf");
+  src: url("/font/IRANSans(FaNum)_Black.ttf");
 }
 
 .ltr *,
