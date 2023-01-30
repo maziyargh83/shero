@@ -138,5 +138,9 @@ This set of fonts are used in this project under the license: (U6ARM6)
 .rtl *,
 .rtl *::after,
 .rtl *::before {
-  font-family: IRANSansX;
+  font-family: "IranSansX", sans-serif;
+  font-family: IranSansX, sans-serif;
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
 }
