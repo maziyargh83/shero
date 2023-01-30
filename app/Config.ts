@@ -8,8 +8,8 @@ import type { configType } from "~/types";
 
 export const CONFIG: configType = {
   imageUrlPrefix: "/images/",
-  product: LUNA_PRODUCT,
-  language: LANGUAGE_FA,
+  product: SHERO_PRODUCT,
+  language: LANGUAGE_EN,
   disableTheme: ["routes/diaries/$objectId"],
 };
 export default CONFIG;
