@@ -374,9 +374,9 @@ export default function PeriodCalculator() {
         <ContainerSection className="md:mt-20">
           <RowSection className="relative ">
             <SectionTitle
-              subTitle={t("PREGNANCY_TITLE")}
+              subTitle={t("PERIOD_TITLE")}
               subTitleClass="text-gray-G1 font-bold text-4xl"
-              description={t("PREGNANCY_DESCRIPTION")}
+              description={t("PERIOD_DESCRIPTION")}
               descriptionClass="text-base font-normal mt-7 text-gray-G2"
             />
           </RowSection>

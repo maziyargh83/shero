@@ -40,12 +40,23 @@ export const Footer = () => {
               ? ` All rights reserved. &copy; ${moment().year()}}`
               : "این وبسایت متعلق به شرکت کاوشگران رادین فناور سلامت © به شماره ثبت 536101 است."}
           </div>
-          <div className="flex space-x-7 mt-4 md:mt-0">
-            <a href={Social.instagramUrl} target={"_blank"} rel="noreferrer">
+          <div className="flex ltr:space-x-7 mt-4 md:mt-0">
+            <a
+              href={Social.instagramUrl}
+              className="rtl:mx-3"
+              target={"_blank"}
+              rel="noreferrer"
+            >
               <FaInstagram />
             </a>
-            {/* <FaTwitter /> */}
-            {/* <FaLinkedin /> */}
+            <a
+              href={Social.twitterLink}
+              className="rtl:mx-3"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <FaTwitter />
+            </a>
           </div>
         </div>
       </footer>

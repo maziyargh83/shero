@@ -219,5 +219,9 @@ const EN: Record<keyof typeof languageKeys, LangConfigValueType> = {
   CONTACT_PLACEHOLDER_PHONE: "Enter your mobile number ",
   CONTACT_PLACEHOLDER_EMAIL: "Enter your email",
   CONTACT_PLACEHOLDER_MESSAGE: "Note ...",
+  PERIOD_DESCRIPTION:
+    "Being able to predict when your next period will arrive can save you a lot of hassle and help you to understand your own menstrual cycle. Predict your next period now with Shero easy-to-use period calculator.",
+  PERIOD_TITLE: "Period calculator",
+  SEND: "Send",
 };
 export default EN;

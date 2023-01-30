@@ -2245,6 +2245,12 @@ html {
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+[dir="ltr"] .ltr\:space-x-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 [dir="ltr"] .ltr\:bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }

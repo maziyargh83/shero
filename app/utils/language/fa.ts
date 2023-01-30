@@ -31,6 +31,11 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
 
   FEATURE_SECTION_5_TITLE: " ",
   FEATURE_SECTION_5: ``,
+  //
+  PERIOD_TITLE: "محاسبه‌گر پریود لونا",
+  PERIOD_DESCRIPTION:
+    "برای محاسبه پیش‌بینی و روزهای پریود در ماه‌های آینده اطلاعات زیر را تکمیل کن.",
+
   // slider
   SLIDER_1_TITLE: "تقویم قاعدگی 🗓",
   SLIDER_1_DESCRIPTION: "ثبت اطلاعات پریود و پیش بینی زمان تخمک گذاری",
@@ -211,5 +216,6 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   CONTACT_PLACEHOLDER_PHONE: "تلفن خود را وارد کنید",
   CONTACT_PLACEHOLDER_EMAIL: "ایمیل خود را وارد کنید",
   CONTACT_PLACEHOLDER_MESSAGE: "متن پیام ...",
+  SEND: "ارسال",
 };
 export default FA;

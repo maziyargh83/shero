@@ -25,6 +25,9 @@ export enum languageKeys {
   "FEATURE_SECTION_2_TITLE",
   "FEATURE_SECTION_1",
   "FEATURE_SECTION_1_TITLE",
+  "PERIOD_TITLE",
+  "PERIOD_DESCRIPTION",
+  "SEND",
 
   // slider
   "SLIDER_1_TITLE",
