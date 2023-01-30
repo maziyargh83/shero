@@ -26,6 +26,8 @@ export default function GettingStarted() {
     if (el)
       el?.scrollIntoView({
         behavior: "smooth",
+        block: "nearest",
+        inline: "nearest",
       });
   };
   const headerData = useMemo(() => {
