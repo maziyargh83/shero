@@ -797,16 +797,8 @@ video {
   right: 1rem;
 }
 
-.left-\[10\%\] {
-  left: 10%;
-}
-
 .-bottom-\[30px\] {
   bottom: -30px;
-}
-
-.right-\[10\%\] {
-  right: 10%;
 }
 
 .top-20 {
@@ -1495,6 +1487,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -1509,10 +1505,6 @@ video {
 
 .rounded-\[100px\] {
   border-radius: 100px;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
 }
 
 .rounded-b-none {
@@ -1680,12 +1672,12 @@ video {
      object-fit: cover;
 }
 
-.p-3 {
-  padding: 0.75rem;
-}
-
 .p-4 {
   padding: 1rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-6 {
@@ -2407,6 +2399,14 @@ html {
     right: -0.5rem;
   }
 
+  .md\:left-\[10\%\] {
+    left: 10%;
+  }
+
+  .md\:right-\[10\%\] {
+    right: 10%;
+  }
+
   .md\:mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -2593,12 +2593,20 @@ html {
     white-space: nowrap;
   }
 
+  .md\:rounded-none {
+    border-radius: 0px;
+  }
+
   .md\:rounded-3xl {
     border-radius: 1.5rem;
   }
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:p-0 {
+    padding: 0px;
   }
 
   .md\:py-16 {

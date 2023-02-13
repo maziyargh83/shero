@@ -12,10 +12,15 @@ import moment from "moment-jalaali";
 import { DateConfig, getDateConfig } from "~/data";
 import type { PregnancyResultType } from "~/types";
 import styles from "~/styles/calendar.css";
+import styles2 from "react-modern-calendar-datepicker/lib/DatePicker.css";
+
 import { Link } from "@remix-run/react";
 import { childWeeks } from "~/data/childWeek";
 export function links() {
-  return [{ rel: "stylesheet", href: styles }];
+  return [
+    { rel: "stylesheet", href: styles },
+    { rel: "stylesheet", href: styles2 },
+  ];
 }
 
 if (!isShero()) moment.loadPersian({ dialect: "persian-modern" });
@@ -98,7 +103,9 @@ export default function PregnancyCalculator() {
           <Section className="">
             <div className="w-[80%] mx-auto mt-52">
               <PregnancyProgress date={selectedDate} {...result} />
-              <p className="font-normal text-base mt-10">{weekData}</p>
+              <p className="font-normal text-base mt-10 bg-white md:bg-transparent md:rounded-none md:p-0 rounded-lg p-4">
+                {weekData}
+              </p>
               <div className="flex justify-between items-center mt-10 flex-wrap">
                 <p className="text-base font-normal text-gray-G4 ">
                   {t("PREGNANCY_MORE_DETAIL")}

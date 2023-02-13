@@ -2,8 +2,12 @@ import moment from "moment-jalaali";
 import { getDateConfig } from "~/data";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import ReactCalendar from "react-calendar";
-import { CalendarTileProp } from "~/types";
-import { isShero } from "~/utils";
+import type { CalendarTileProp } from "~/types";
+import { getDay, getMonth, getYear, isShero } from "~/utils";
+import { Calendar as DatePicker } from "react-modern-calendar-datepicker";
+import type { DayValue } from "react-modern-calendar-datepicker";
+import { useMemo } from "react";
+
 if (!isShero()) moment.loadPersian({ dialect: "persian-modern" });
 
 interface CalendarProps {
@@ -18,6 +22,36 @@ export const Calendar = ({
   maxDate = undefined,
   CalendarTileProp = undefined,
 }: CalendarProps) => {
+  const migrateDate = (date: Date): DayValue => {
+    const _date = moment(date);
+
+    return {
+      day: getDay(_date),
+      month: getMonth(_date),
+      year: getYear(_date),
+    };
+  };
+  const persianDate = useMemo(() => {
+    return migrateDate(value);
+  }, [value]);
+  const changeDate = (data: DayValue) => {
+    const date = moment(
+      `${data?.year}/${data?.month}/${data?.day}`,
+      "jYYYY/jM/jD"
+    );
+
+    onChange(date.toDate());
+  };
+  if (!isShero()) {
+    return (
+      <DatePicker
+        value={persianDate}
+        onChange={changeDate}
+        shouldHighlightWeekends
+        locale="fa"
+      />
+    );
+  }
   return (
     <ReactCalendar
       maxDetail="month"
@@ -31,7 +65,8 @@ export const Calendar = ({
       }
       next2Label=""
       prev2Label=""
-      locale={isShero() ? "en" : "fa"}
+      // locale={isShero() ? "en" : "fa"}
+      // calendarType="Arabic"
       tileContent={CalendarTileProp}
       nextLabel={isShero() ? <FiChevronRight /> : <FiChevronLeft />}
       prevLabel={isShero() ? <FiChevronLeft /> : <FiChevronRight />}

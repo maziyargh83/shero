@@ -17,13 +17,13 @@ export const PregnancyProgress = ({
     <div className="relative">
       <div className="flex">
         <Progress handleMarker first week={week} percent={precent} />
-        <p className="text-base font-normal left-[10%] -bottom-[30px] text-gray-G7 absolute">
+        <p className="text-xs md:text-base font-normal left-0 md:left-[10%] -bottom-[30px] text-gray-G7 absolute">
           {t("TRIMESTER_1")}
         </p>
-        <p className="text-base font-normal left-[50%] -translate-x-[50%] -bottom-[30px] text-gray-G7 absolute">
+        <p className="text-xs md:text-base font-normal left-[50%] -translate-x-[50%] -bottom-[30px] text-gray-G7 absolute">
           {t("TRIMESTER_2")}
         </p>
-        <p className="text-base font-normal right-[10%] -bottom-[30px] text-gray-G7 absolute">
+        <p className="text-xs md:text-base font-normal right-0 md:right-[10%] -bottom-[30px] text-gray-G7 absolute">
           {t("TRIMESTER_3")}
         </p>
       </div>
