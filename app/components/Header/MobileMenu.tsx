@@ -126,7 +126,7 @@ export const MobileMenu = ({ close }: MobileMenuProps) => {
           </div>
           <div
             draggable={false}
-            className={"flex flex-col justify-center w-full space-y-10"}
+            className={"flex flex-col justify-center w-full space-y-[5vh]"}
           >
             {HeaderData.map((data) => {
               return (

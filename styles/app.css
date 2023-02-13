@@ -94,6 +94,9 @@ html {
   display: block;
   position: absolute;
 }
+*:focus {
+  outline: none !important;
+}
 @layer components {
   .blobs {
     @apply relative  -z-50 inline-block;

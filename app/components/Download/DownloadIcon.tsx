@@ -1,5 +1,7 @@
 import classNames from "classnames";
+import { useMemo } from "react";
 import { FaStar } from "react-icons/fa";
+import { market } from "~/data/market";
 import type { imagesKey } from "~/types";
 import { imageBuilder } from "~/utils";
 
@@ -12,8 +14,23 @@ export const DownloadIcon = ({
   image: keyof typeof imagesKey;
   className?: string;
 }) => {
+  const link = useMemo(() => {
+    switch (image) {
+      case "GOOGLE_PLAY":
+        return market.googlePlay;
+      case "BAZAR":
+        return market.cafeBazar;
+      case "PWA":
+        return market.PWA;
+      case "APP_STORE":
+        return market.appStore;
+      default:
+        return "#";
+    }
+  }, [image]);
   return (
-    <div
+    <a
+      href={link}
       className={classNames("", {
         [className!]: !!className,
       })}
@@ -27,6 +44,6 @@ export const DownloadIcon = ({
         </div>
       )}
       <img src={imageBuilder(image)} className={"mt-2"} alt="download icon" />
-    </div>
+    </a>
   );
 };

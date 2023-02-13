@@ -18,7 +18,9 @@ import CONFIG from "~/Config";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: CONFIG.product,
+  title: isShero()
+    ? "Shero"
+    : " اپلیکیشن لونا | تقویم پریود و پیش‌بینی دوره تخمک‌گذاری | با لونا سلامتی خود را دنبال کنید",
   viewport: "width=device-width,initial-scale=1",
 });
 

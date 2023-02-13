@@ -79,7 +79,7 @@ const BlogItem = ({
           href={permalink}
           target={"_blank"}
           rel={"noreferrer"}
-          className="text-base font-medium border rounded-full inline-block py-5 px-14 mt-6 hover:bg-[#EBEAED] duration-200 transition-all hover:text-white  border-[#EBEAED]"
+          className="text-base font-medium border rounded-full inline-block py-5 px-14 mt-6 hover:shadow hover:shadow-md duration-200 transition-all   border-[#EBEAED]"
         >
           بیشتر
         </a>

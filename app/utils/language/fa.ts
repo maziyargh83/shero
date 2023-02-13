@@ -201,7 +201,7 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   //
   PREGNANCY_CONGRATULATION: "تبریک !",
   PREGNANCY_RESULT: ({ date, week }) =>
-    `شما در هفته ${week} هستید بارداری هستی و روز تولد کودک شما ${date} هست.`,
+    `شما در هفته ${week} بارداری هستی و روز تولد کودک شما ${date} هست.`,
   PREGNANCY_MORE_DETAIL: "برای جزییات بیشتر میتونی اپلیکیشن لونا رو دانلود کنی",
   PREGNANCY_DOWNLOAD: "دانلود اپلیکیشن",
   PERIOD_CALCULATOR_NEXT: "ماه بعدی",

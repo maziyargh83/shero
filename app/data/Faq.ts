@@ -195,12 +195,5 @@ const lunaFaq: FaqDataType[] = [
     description:
       "فاز لوتئال یا مرحله‌ی ترشحی بعد از مرحله‌ی فولیکولار شروع میشه و آخرین مرحله‌ی سیکل پریود، قبل از پریودیه.",
   },
-  {
-    title: "چه راه‌های ارتباطی با لونا وجود داره؟",
-    description: `اینستاگرام
-    توییتر
-    تماس با ما
-    `,
-  },
 ];
 export const FaqData = isShero() ? sheroFaq : lunaFaq;
