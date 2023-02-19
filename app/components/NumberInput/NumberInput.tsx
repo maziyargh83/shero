@@ -16,7 +16,7 @@ export const NumberInput = ({ amount, setAmount }: NumberInputProps) => {
     [amount]
   );
   return (
-    <div className="flex justify-between items-center mt-8">
+    <div className="flex cursor-pointer justify-between items-center mt-8">
       <div
         className=" p-6 bg-white rounded-3xl shadow-sm "
         onClick={() => updateAmount("up")}

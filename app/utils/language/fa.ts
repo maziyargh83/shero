@@ -159,7 +159,7 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   // Download
   DOWNLOAD_TITLE: "دانلود",
   DOWNLOAD_DESCRIPTION:
-    "لونا رو می‌تونید مستقیم و همچنین در استورهای مختلف دانلود کنید",
+    "لونا را می‌تونی مستقیم و همچنین در استورهای مختلف دانلود کنی",
   GETTING_STARTED_TITLE: "Getting Started",
   GETTING_STARTED_DESCRIPTION: "How to install Shero",
   GETTING_STARTED_DOWNLOAD_DETAIL:
@@ -187,14 +187,14 @@ const FA: Record<keyof typeof languageKeys, LangConfigValueType> = {
   CONTACT_FORM_DESCRIPTION: `از طریق راه‌های ارتباطی زیر می‌تونید با ما در ارتباط باشید و نظرات و پیشنهادات و انتقاداتون رو به گوش ما برسونید. ما برای بهتر شدن لونا به نظرات شما نیاز داریم.`,
   PREGNANCY_TITLE: "محاسبه‌گر هفته بارداری",
   PREGNANCY_DESCRIPTION:
-    "برای اطلاع از هفته بارداری خود، تاریخ اولین روز از آخرین قاعدگی خود را وارد کنید.",
+    "برای اطلاع از هفته بارداری، تاریخ اولین روز از آخرین قاعدگی خودت رو وارد کن.",
   PREGNANCY_START_PERIOD: "تاریخ اولین روز از آخرین قاعدگی ",
   PREGNANCY_CALCULATE: "محاسبه کن",
   week: "هفته",
 
   //
   COMMENT_TITLE: "نظرات شما",
-  COMMENT_DESCRIPTION: "بعضی از نظرات شما در مورد لونا",
+  COMMENT_DESCRIPTION: "بعضی از نظراتتون در مورد لونا",
   //
   LOG_KEY_TITLE: "ثبت وضعیت",
   LOG_KEY_DESCRIPTION: "میتونی وضعیتت و توی لونا ثبت کنی تا ..",

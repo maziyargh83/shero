@@ -32,7 +32,7 @@ export default function PeriodCalculator() {
   const [openCalendars, setOpenCalendars] = useState(false);
   const [periodLong, setPeriodLong] = useState(3);
   const [periodCycle, setPeriodCycle] = useState(28);
-  const [date, setDate] = useState<Date>();
+  const [date, setDate] = useState<Date>(new Date());
   const [selectedDay, setSelectedDay] = useState<dateType>();
   const [range, setRange] = useState([]);
   const [rangeTwo, setRangeTwo] = useState([]);

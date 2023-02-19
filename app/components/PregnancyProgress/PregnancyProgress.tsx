@@ -11,7 +11,6 @@ export const PregnancyProgress = ({
   const precent = useMemo(() => {
     return (moment().diff(moment(date), "day") / (40 * 7)) * 100;
   }, [date]);
-  console.log(precent);
 
   return (
     <div className="relative">
@@ -43,9 +42,7 @@ const Progress = ({
 }) => {
   return (
     <div className="relative h-4 w-full">
-      {((percent > 0 && percent < 100) || (first && percent < 100)) && (
-        <Marker week={week} position={percent} />
-      )}
+      <Marker week={week} position={percent} />
       {handleMarker && (
         <Fragment>
           <div
@@ -77,7 +74,7 @@ const Marker = ({ position, week }: { position: number; week: number }) => {
     <div
       className="w-[95px] h-[120px] absolute bottom-[100%] -translate-x-[50%] bg-red"
       style={{
-        left: `${position}%`,
+        left: `${Math.min(position, 100)}%`,
       }}
     >
       <img

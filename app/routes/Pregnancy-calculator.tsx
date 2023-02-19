@@ -42,7 +42,7 @@ export default function PregnancyCalculator() {
     console.log(endDate, getDateConfig("monthNameWithYear"), finalDate);
     console.log("====================================");
     setResult({
-      week: week,
+      week: Math.min(week, 40),
       day: days - weekInDay,
       endDate: endDate,
       remainDays,
@@ -51,7 +51,9 @@ export default function PregnancyCalculator() {
   };
   const weekData = useMemo(() => {
     const week = result && result.week && result.week > 0 ? result.week : 1;
-    return childWeeks.find((item) => item.weekNumber == week)
+    const res = Math.min(week, childWeeks.length);
+
+    return childWeeks.find((item) => item.weekNumber == res)
       ?.additionalDescription;
   }, [result]);
   return (
@@ -92,7 +94,7 @@ export default function PregnancyCalculator() {
                 {t("PREGNANCY_CONGRATULATION")}
               </p>
 
-              <p className="font-normal text-2xl">
+              <p className="font-normal text-2xl mt-10">
                 {t("PREGNANCY_RESULT", {
                   week: result.week,
                   date: result.endDate,
@@ -103,7 +105,7 @@ export default function PregnancyCalculator() {
           <Section className="">
             <div className="w-[80%] mx-auto mt-52">
               <PregnancyProgress date={selectedDate} {...result} />
-              <p className="font-normal text-base mt-10 bg-white md:bg-transparent md:rounded-none md:p-0 rounded-lg p-4">
+              <p className="font-normal text-base mt-16 bg-white md:bg-transparent md:rounded-none md:p-0 rounded-lg p-4">
                 {weekData}
               </p>
               <div className="flex justify-between items-center mt-10 flex-wrap">

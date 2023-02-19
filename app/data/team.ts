@@ -34,7 +34,7 @@ export const team: teamType[] = [
   },
   {
     img: "RAMIN",
-    name: "RaminNorouzzade",
+    name: "Ramin Norouzzadeh",
     role: "Product Designer",
   },
   {

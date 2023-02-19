@@ -9,10 +9,12 @@ export const DownloadIcon = ({
   rate,
   image,
   className,
+  shadow = false,
 }: {
   rate?: string;
   image: keyof typeof imagesKey;
   className?: string;
+  shadow?: boolean;
 }) => {
   const link = useMemo(() => {
     switch (image) {
@@ -43,7 +45,11 @@ export const DownloadIcon = ({
           </span>
         </div>
       )}
-      <img src={imageBuilder(image)} className={"mt-2"} alt="download icon" />
+      <img
+        src={imageBuilder(image)}
+        className={classNames("mt-2", { "download-shadow": shadow })}
+        alt="download icon"
+      />
     </a>
   );
 };

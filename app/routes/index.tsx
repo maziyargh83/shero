@@ -96,11 +96,13 @@ export default function Index() {
                 className="self-center"
                 rate="4.9"
                 image="GOOGLE_PLAY"
+                shadow
               />
               <DownloadIcon
                 className="self-center mt-8 md:mt-0 rtl:md:mr-12"
                 rate="4.5"
                 image="APP_STORE"
+                shadow
               />
             </div>
             <Link to="HelpCenter ">
