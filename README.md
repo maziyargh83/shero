@@ -1,53 +1,44 @@
-# Welcome to Remix!
+# (luna-shero) website
 
-- [Remix Docs](https://remix.run/docs)
+built with [remix](https://remix.run/ "remix")
+writen in type script
+designed by tailwind
 
-## Development
+# command
 
-From your terminal:
+##### development
 
-```sh
-npm run dev
-```
+run both below code in two terminal at project folder or config cocurrency.
+run `yarn dev` or `npm run dev`
+run `yarn dev:css` or `npm run dev:css`
 
-This starts your app in development mode, rebuilding assets on file changes.
+##### production
 
-## Deployment
+read this will helpfull [how deploy next js app in ngnix](https://gist.github.com/jjsquady/5399d6e1b23f501083a9c262d806e248 "how deploy next js app in ngnix")
 
-First, build your app for production:
+first run `yarn build` then `yarn start`
+you may need to use `npx remix setup`
 
-```sh
-npm run build
-```
+###config
+we have config for create two version of website for shero and luna
+shero in master and luna in luna branch
+for translate text we use own functionality can config with "en"|"fa"
+we put string in app/utils/language
+to add new string you must add key in enum of the object
+some of data will not in language folder should be in data folder and split with `isShero()` function
+to chanfe language you have to change config to this
+| lang | product | lang |
+| ------------ | ------------ | ------------ |
+| fa | LUNA_PRODUCT | LANGUAGE_FA |
+| en | SHERO_PRODUCT | LANGUAGE_EN |
 
-Then run the app in production mode:
+### image
 
-```sh
-npm start
-```
+images are in `public / images` folder
+use can use image with `imageBuilder()` function
+in `data / images ` you can add new image with this schema
+indivual image for shero and luna use this format :
+` SUPPORT_FRAME_1: { url: { luna: "luna/frames/support/support-1.png", shero: "shero/frames/support/support-1.png", }, },`
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `remix build`
-
-- `build/`
-- `public/build/`
-
-### Using a Template
-
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over your `app/` folder to the new project that's pre-configured for your target server.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+for both support :
+` MARKER: { url: "shero/element/marker.png", },`
